@@ -311,6 +311,265 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <td align="center">Alta</td>
     <td align="center">RNF02</td>
   </tr>
+  <tr>
+    <td align="center">H3</td>
+    <td><b>Desenvolvimento do Front-End - Usabilidade</b></td>
+    <td>
+      <b>Como</b> desenvolvedor Front-End,<br>
+      <b>Quero</b> que o sistema se comunique com o Back-End e esteja bem estruturado,<br>
+      <b>Para</b> consumir os dados do banco e tratá-los para exibir ao usuário.
+    </td>
+    <td>
+      • Desenvolver lógicas para consumir os endpoints da API<br>
+      • Aplicar métodos de segurança no front-end
+    </td>
+    <td>
+      • Sistema com lógicas para consumo dos endpoints funcionando<br>
+      • Sistema com validações de segurança mínimas
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td align="center">H4</td>
+    <td><b>Desenvolvimento do Front-End - Mapa Interativo</b></td>
+    <td>
+      <b>Como</b> secretaria acadêmica,<br>
+      <b>Quero</b> que o sistema possua um mapa interativo de salas,<br>
+      <b>Para</b> visualizar a situação dos ambientes e suas alocações ao longo do dia.
+    </td>
+    <td>
+      • Garantir layout adaptável (CSS puro)<br>
+      • Criar interface de filtro e busca<br>
+      • Endpoint de consulta no backend<br>
+      • Exibir resultados em formato responsivo<br>
+      • Ajustar elementos para telas menores<br>
+      • Testar em dispositivos diferentes
+    </td>
+    <td>
+      • Filtros (turma/professor/turno/ambiente) funcionando<br>
+      • Resultados atualizados dinamicamente<br>
+      • Mapa utilizável em dispositivos móveis<br>
+      • Layout responsivo em diferentes telas<br>
+      • Navegação entre mapas funcionando
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RNF01</td>
+  </tr>
+  <tr>
+    <td align="center">H5</td>
+    <td><b>Interatividade de Ambientes</b></td>
+    <td>
+      <b>Como</b> usuário,<br>
+      <b>Quero</b> ver um mapa das salas e clicar em cada sala para ver as alocações do dia,<br>
+      <b>Para</b> ter uma visão clara e visual da ocupação da faculdade.
+    </td>
+    <td>
+      • Implementar interação via click (mostrar horários)<br>
+      • Exibir status (livre/ocupada) no mapa<br>
+      • Configurar mapa para receber informações do back-end
+    </td>
+    <td>
+      • Mapa exibe status visual de ocupação<br>
+      • Clique em ambiente abre painel com horários detalhados<br>
+      • Mapa consumindo informações do back-end corretamente
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RNF01</td>
+  </tr>
+  <tr>
+    <td align="center">H6</td>
+    <td><b>Definição de Estrutura Backend</b></td>
+    <td>
+      <b>Como</b> time de desenvolvimento,<br>
+      <b>Quero</b> ter uma estrutura de como vai ser o projeto do servidor,<br>
+      <b>Para</b> garantir um código organizado e robusto para fácil entendimento e manutenção.
+    </td>
+    <td>
+      • Definir design do projeto (Estrutura das Pastas)<br>
+      • Escolher Stack do back-end (Node.js com Express)<br>
+      • Configurar ambiente inicial de desenvolvimento<br>
+      • Configurar variáveis de ambiente (dotenv)<br>
+      • Configurar servidor básico com rota raiz
+    </td>
+    <td>
+      • Tecnologias bem definidas<br>
+      • Design do projeto organizado e estrutura coesa<br>
+      • Projeto configurado com ferramentas escolhidas<br>
+      • Rota raiz (GET/) responde com status 200<br>
+      • Estrutura de pastas organizada e escalável
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RP02</td>
+  </tr>
+  <tr>
+    <td align="center">H7</td>
+    <td><b>Banco de Dados</b></td>
+    <td>
+      <b>Como</b> desenvolvedor,<br>
+      <b>Quero</b> modelar e configurar o banco de dados,<br>
+      <b>Para</b> armazenar os dados necessários ao sistema de forma eficiente e organizada.
+    </td>
+    <td>
+      • Escolher banco de dados relacional (PostgreSQL)<br>
+      • Modelar e criar tabelas iniciais:<br>
+      &nbsp;&nbsp;• Semestre<br>
+      &nbsp;&nbsp;• Cursos<br>
+      &nbsp;&nbsp;• Período (Horários e dias)<br>
+      &nbsp;&nbsp;• Matérias<br>
+      &nbsp;&nbsp;• Docentes<br>
+      &nbsp;&nbsp;• Ambientes<br>
+      • Adicionar migrações para mudanças futuras<br>
+      • Testar conexão e criação das tabelas
+    </td>
+    <td>
+      • Banco de dados configurado e acessível pelo back-end<br>
+      • Tabelas necessárias criadas conforme modelagem<br>
+      • Conexão testada e funcional
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RP02</td>
+  </tr>
+  <tr>
+    <td align="center">H8</td>
+    <td><b>Endpoints CRUD</b></td>
+    <td>
+      <b>Como</b> desenvolvedor Back-End,<br>
+      <b>Quero</b> criar endpoints para operações CRUD,<br>
+      <b>Para</b> permitir a manipulação dos dados pelo sistema.
+    </td>
+    <td>
+      • Criar rotas para cada entidade:<br>
+      &nbsp;&nbsp;• GET /entidade (Listar)<br>
+      &nbsp;&nbsp;• POST /entidade (Criar)<br>
+      &nbsp;&nbsp;• PUT /entidade/:id (Atualizar)<br>
+      &nbsp;&nbsp;• DELETE /entidade/:id (Excluir)<br>
+      • Implementar controladores<br>
+      • Validar campos obrigatórios<br>
+      • Retornar mensagens e códigos apropriados
+    </td>
+    <td>
+      • Endpoints CRUD implementados e integrados<br>
+      • Operações retornam respostas adequadas<br>
+      • Validações garantem integridade dos dados
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RF02</td>
+  </tr>
+  <tr>
+    <td align="center">H9</td>
+    <td><b>Exportação em PDF</b></td>
+    <td>
+      <b>Como</b> secretaria acadêmica,<br>
+      <b>Quero</b> gerar um PDF com os horários e alocações,<br>
+      <b>Para</b> facilitar a impressão ou o envio digital do cronograma.
+    </td>
+    <td>
+      • Criar endpoint de geração de PDF no backend<br>
+      • Definir layout do PDF (mapa e tabelas)<br>
+      • Implementar botão de exportar na interface
+    </td>
+    <td>
+      • PDF gerado contém todas as informações necessárias<br>
+      • Layout legível e pronto para impressão
+    </td>
+    <td align="center">Média</td>
+    <td align="center">RF04</td>
+  </tr>
+  <tr>
+    <td align="center">H10</td>
+    <td><b>Upload de CSV e Processamento</b></td>
+    <td>
+      <b>Como</b> secretaria acadêmica,<br>
+      <b>Quero</b> fazer upload de arquivos CSV com dados do sistema,<br>
+      <b>Para</b> alimentar rapidamente o banco de dados com informações em massa.
+    </td>
+    <td>
+      • Criar endpoint para upload de arquivos CSV<br>
+      • Implementar lógica de validação:<br>
+      &nbsp;&nbsp;• Verificar formato do arquivo<br>
+      &nbsp;&nbsp;• Validar campos obrigatórios<br>
+      &nbsp;&nbsp;• Salvar dados válidos no banco<br>
+      • Retornar feedback ao usuário:<br>
+      &nbsp;&nbsp;• Quantidade de registros processados<br>
+      &nbsp;&nbsp;• Lista de erros encontrados
+    </td>
+    <td>
+      • Sistema aceita arquivos CSV com estrutura válida<br>
+      • Dados válidos salvos; inválidos listados como erros<br>
+      • Feedback detalhado sobre o processamento
+    </td>
+    <td align="center">Média</td>
+    <td align="center">RF01</td>
+  </tr>
+  <tr>
+    <td align="center">H11</td>
+    <td><b>Validação de Regras de Negócio</b></td>
+    <td>
+      <b>Como</b> secretaria acadêmica,<br>
+      <b>Quero</b> validar as regras de alocação de horários,<br>
+      <b>Para</b> evitar conflitos como professores em dois lugares ao mesmo tempo.
+    </td>
+    <td>
+      • Desenvolver lógica de validação para:<br>
+      &nbsp;&nbsp;• Conflito de horários de professores<br>
+      &nbsp;&nbsp;• Duplicidade de ambiente<br>
+      &nbsp;&nbsp;• Horários sobrepostos por turma<br>
+      • Implementar sistema de pendências<br>
+      • Salvar dados válidos parcialmente
+    </td>
+    <td>
+      • Sistema bloqueia alocações inválidas<br>
+      • Pendências salvas para correção futura<br>
+      • Dados válidos armazenados sem interrupções
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RF03</td>
+  </tr>
+  <tr>
+    <td align="center">H12</td>
+    <td><b>Segurança</b></td>
+    <td>
+      <b>Como</b> desenvolvedor,<br>
+      <b>Quero</b> implementar autenticação e autorização no sistema,<br>
+      <b>Para</b> proteger endpoints e garantir que apenas usuários autorizados tenham acesso.
+    </td>
+    <td>
+      • Configurar autenticação JWT<br>
+      • Implementar middleware de autorização<br>
+      • Criar sistema de roles (admin/usuário)<br>
+      • Adicionar controle de sessões
+    </td>
+    <td>
+      • Endpoints protegidos por autenticação<br>
+      • Tokens JWT validados corretamente<br>
+      • Ações restritas por nível de permissão
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td align="center">H13</td>
+    <td><b>Documentação</b></td>
+    <td>
+      <b>Como</b> desenvolvedor,<br>
+      <b>Quero</b> documentar a API,<br>
+      <b>Para</b> garantir que o sistema seja confiável e fácil de usar por outros times.
+    </td>
+    <td>
+      • Criar documentação dos endpoints usando Insomnia/Postman<br>
+      • Documentar estruturas de requisição e resposta<br>
+      • Incluir exemplos de uso<br>
+      • Documentar códigos de status e erros
+    </td>
+    <td>
+      • Documentação completa e acessível<br>
+      • Endpoints documentados com exemplos<br>
+      • Formatos de requisição/resposta detalhados
+    </td>
+    <td align="center">Média</td>
+    <td align="center">RP02</td>
+  </tr>
 </table>
 
 </details>
