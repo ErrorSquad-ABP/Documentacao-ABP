@@ -68,6 +68,188 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - **10/jun:** Review da Sprint 3.
 - **11/jun:** Apresentação final do projeto no formato de feira (data sujeita a alteração).
 
+## 🔄 Sprints
+
+<details open>
+<summary><h3>Sprint 1 - Planejamento Inicial e Infraestrutura</h3></summary>
+
+### 📅 Período
+**Início:** 24/03/2025
+**Término:** 14/04/2025
+**Review:** 15/04/2025
+
+### 🎯 Objetivos Principais
+- Estabelecer infraestrutura básica do sistema (backend e banco de dados)
+- Desenvolver protótipo e iniciar frontend com responsividade
+- Garantir configuração adequada das bases de dados
+- Implementar endpoints CRUD iniciais
+
+### 📋 Histórias Planejadas
+
+<table>
+  <tr align="center">
+    <th>ID</th>
+    <th>História</th>
+    <th>Detalhamento</th>
+    <th>Critérios de Aceite</th>
+  </tr>
+  <tr>
+    <td align="center">H1</td>
+    <td><b>Prototipação</b></td>
+    <td>
+      - Criar wireframes detalhados no Figma<br>
+      - Definir e validar paleta de cores com cliente<br>
+      - Realizar refinamentos iterativos<br>
+      - Documentar decisões de design
+    </td>
+    <td>
+      ✓ Wireframes aprovados<br>
+      ✓ Paleta de cores definida<br>
+      ✓ Protótipo responsivo<br>
+      ✓ Design system documentado
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H7</td>
+    <td><b>Estrutura Frontend</b></td>
+    <td>
+      - Definir arquitetura de pastas<br>
+      - Configurar ambiente de desenvolvimento<br>
+      - Estabelecer padrões de código<br>
+      - Configurar ferramentas de desenvolvimento
+    </td>
+    <td>
+      ✓ Estrutura definida<br>
+      ✓ Ambiente configurado<br>
+      ✓ Documentação inicial
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H8</td>
+    <td><b>Estrutura Backend</b></td>
+    <td>
+      - Definir arquitetura do servidor<br>
+      - Configurar ambiente Node.js<br>
+      - Implementar servidor base<br>
+      - Configurar rota de teste "OK"
+    </td>
+    <td>
+      ✓ Servidor respondendo<br>
+      ✓ Estrutura organizada<br>
+      ✓ Documentação API
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H9</td>
+    <td><b>Banco de Dados</b></td>
+    <td>
+      - Configurar PostgreSQL<br>
+      - Modelar tabelas iniciais<br>
+      - Criar scripts de migração<br>
+      - Realizar testes de conexão
+    </td>
+    <td>
+      ✓ Banco configurado<br>
+      ✓ Modelos criados<br>
+      ✓ Conexão testada
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H2</td>
+    <td><b>Frontend Base</b></td>
+    <td>
+      - Implementar layout do Figma<br>
+      - Desenvolver responsividade<br>
+      - Testar em múltiplos dispositivos<br>
+      - Garantir acessibilidade básica
+    </td>
+    <td>
+      ✓ Layout implementado<br>
+      ✓ Responsividade OK<br>
+      ✓ Testes documentados
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H10</td>
+    <td><b>Endpoints CRUD</b></td>
+    <td>
+      - Criar rotas CRUD para:<br>
+      &nbsp;&nbsp;• Semestres<br>
+      &nbsp;&nbsp;• Cursos<br>
+      &nbsp;&nbsp;• Períodos<br>
+      &nbsp;&nbsp;• Matérias<br>
+      &nbsp;&nbsp;• Docentes<br>
+      &nbsp;&nbsp;• Ambientes<br>
+      - Implementar validações
+    </td>
+    <td>
+      ✓ Endpoints criados<br>
+      ✓ Validações OK<br>
+      ✓ Documentação API
+    </td>
+  </tr>
+</table>
+
+### ✅ Critérios de Aceite Gerais
+
+<table>
+  <tr>
+    <th>Área</th>
+    <th>Critérios</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td><b>Design</b></td>
+    <td>
+      - Protótipo aprovado e documentado<br>
+      - Design system estabelecido<br>
+      - Componentes base definidos
+    </td>
+    <td align="center">🟡</td>
+  </tr>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td>
+      - Estrutura de pastas organizada<br>
+      - Ambiente configurado<br>
+      - Layout base responsivo
+    </td>
+    <td align="center">🟡</td>
+  </tr>
+  <tr>
+    <td><b>Backend</b></td>
+    <td>
+      - Servidor base funcional<br>
+      - Endpoints CRUD implementados<br>
+      - Validações configuradas
+    </td>
+    <td align="center">🟡</td>
+  </tr>
+  <tr>
+    <td><b>Banco de Dados</b></td>
+    <td>
+      - PostgreSQL configurado<br>
+      - Modelos iniciais criados<br>
+      - Scripts de migração prontos
+    </td>
+    <td align="center">🟡</td>
+  </tr>
+</table>
+
+### 📊 Métricas da Sprint
+- **Histórias Planejadas:** 6
+- **Complexidade Total:** Média
+- **Prioridade:** Alta
+- **Dependências:** Nenhuma (Sprint inicial)
+
+### 🎥 Review
+- Data: 15/04/2025
+- Duração máxima: 4 minutos
+- Formato: Vídeo não listado no YouTube
+- Entrega: Via Teams para o Focal Point
+
+</details>
+
 ## 🛠️ Tecnologias
 
 <div align="center">
