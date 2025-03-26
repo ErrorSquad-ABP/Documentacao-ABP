@@ -582,6 +582,52 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](#)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](#)
+
+</div>
+
+### 🔧 Ferramentas
+- **Design:** Figma
+- **Versionamento:** Git/GitHub
+- **Gestão:** GitHub Projects
+- **Documentação:** Markdown
+- **Testes:** Jest
+
+## Documentação
+Toda a documentação e artefatos do projeto serão mantidos neste repositório público no GitHub.
+
+## 👥 Nossa Equipe
+
+<div align="center">
+    <table>
+        <tr>
+            <td align="center"><b>Gestão</b></td>
+            <td align="center"><b>Desenvolvimento</b></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <b>Tiago Jardel Costa</b><br>
+                            <i>Product Owner</i><br>
+                            <a href="https://github.com/Tiago199516">
+                                <img src="https://img.shields.io/badge/GitHub-333?style=flat-square&logo=github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tiago-jardel-da-costa-0b595bba/">
+                                <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <b>Arthur Facchinetti Peixoto</b><br>
+                            <i>Scrum Master</i><br>
+                            <a href="https://github.com/ArthurFacchinetti">
+                                <img src="https://img.shields.io/badge/GitHub-333?style=flat-square&logo=github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arthur-facchinetti-peixoto/">
+                                <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
                             </a>
                         </td>
                     </tr>
