@@ -110,51 +110,6 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
   </tr>
   <tr>
-    <td align="center">H7</td>
-    <td><b>Estrutura Frontend</b></td>
-    <td>
-      - Definir arquitetura de pastas<br>
-      - Configurar ambiente de desenvolvimento<br>
-      - Estabelecer padrões de código<br>
-      - Configurar ferramentas de desenvolvimento
-    </td>
-    <td>
-      ✓ Estrutura definida<br>
-      ✓ Ambiente configurado<br>
-      ✓ Documentação inicial
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H8</td>
-    <td><b>Estrutura Backend</b></td>
-    <td>
-      - Definir arquitetura do servidor<br>
-      - Configurar ambiente Node.js<br>
-      - Implementar servidor base<br>
-      - Configurar rota de teste "OK"
-    </td>
-    <td>
-      ✓ Servidor respondendo<br>
-      ✓ Estrutura organizada<br>
-      ✓ Documentação API
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H9</td>
-    <td><b>Banco de Dados</b></td>
-    <td>
-      - Configurar PostgreSQL<br>
-      - Modelar tabelas iniciais<br>
-      - Criar scripts de migração<br>
-      - Realizar testes de conexão
-    </td>
-    <td>
-      ✓ Banco configurado<br>
-      ✓ Modelos criados<br>
-      ✓ Conexão testada
-    </td>
-  </tr>
-  <tr>
     <td align="center">H2</td>
     <td><b>Frontend Base</b></td>
     <td>
@@ -170,7 +125,52 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
   </tr>
   <tr>
-    <td align="center">H10</td>
+    <td align="center">H3</td>
+    <td><b>Estrutura Frontend</b></td>
+    <td>
+      - Definir arquitetura de pastas<br>
+      - Configurar ambiente de desenvolvimento<br>
+      - Estabelecer padrões de código<br>
+      - Configurar ferramentas de desenvolvimento
+    </td>
+    <td>
+      ✓ Estrutura definida<br>
+      ✓ Ambiente configurado<br>
+      ✓ Documentação inicial
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H4</td>
+    <td><b>Estrutura Backend</b></td>
+    <td>
+      - Definir arquitetura do servidor<br>
+      - Configurar ambiente Node.js<br>
+      - Implementar servidor base<br>
+      - Configurar rota de teste "OK"
+    </td>
+    <td>
+      ✓ Servidor respondendo<br>
+      ✓ Estrutura organizada<br>
+      ✓ Documentação API
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H5</td>
+    <td><b>Banco de Dados</b></td>
+    <td>
+      - Configurar PostgreSQL<br>
+      - Modelar tabelas iniciais<br>
+      - Criar scripts de migração<br>
+      - Realizar testes de conexão
+    </td>
+    <td>
+      ✓ Banco configurado<br>
+      ✓ Modelos criados<br>
+      ✓ Conexão testada
+    </td>
+  </tr>
+  <tr>
+    <td align="center">H6</td>
     <td><b>Endpoints CRUD</b></td>
     <td>
       - Criar rotas CRUD para:<br>
@@ -247,6 +247,71 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - Duração máxima: 4 minutos
 - Formato: Vídeo não listado no YouTube
 - Entrega: Via Teams para o Focal Point
+
+</details>
+
+## 📝 Product Backlog
+
+<details open>
+<summary><h3>Épico: Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos</h3></summary>
+
+### 🎯 Histórias de Usuário
+
+<table>
+  <tr align="center">
+    <th>ID</th>
+    <th>História</th>
+    <th>Descrição</th>
+    <th>Tarefas</th>
+    <th>Critérios de Aceite</th>
+    <th>Prioridade</th>
+    <th>RF/RNF</th>
+  </tr>
+  <tr>
+    <td align="center">H1</td>
+    <td><b>Prototipação (Figma)</b></td>
+    <td>
+      <b>Como</b> time de desenvolvimento,<br>
+      <b>Quero</b> ter uma prototipagem validada no Figma,<br>
+      <b>Para</b> garantir uma interface intuitiva antes da codificação.
+    </td>
+    <td>
+      • Criar wireframes detalhados para as principais páginas<br>
+      • Definir cores primárias e secundárias do projeto<br>
+      • Validar com o cliente/usuário<br>
+      • Refinar até aprovação final
+    </td>
+    <td>
+      • Wireframes contemplam todas as funcionalidades solicitadas<br>
+      • Fluxos principais do sistema representados no protótipo<br>
+      • Protótipo aprovado antes do desenvolvimento frontend
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RP01</td>
+  </tr>
+  <tr>
+    <td align="center">H2</td>
+    <td><b>Desenvolvimento do Front-End - Design e Responsividade</b></td>
+    <td>
+      <b>Como</b> usuário,<br>
+      <b>Quero</b> que o sistema funcione bem em dispositivos móveis e desktop,<br>
+      <b>Para</b> ter uma boa experiência em qualquer contexto.
+    </td>
+    <td>
+      • Criar as telas transformando layout do Figma em código<br>
+      • Garantir layout adaptável (CSS puro, sem frameworks)<br>
+      • Ajustar elementos para telas menores<br>
+      • Testar em dispositivos diferentes
+    </td>
+    <td>
+      • Sistema é utilizável em smartphones e tablets<br>
+      • Layout não quebra em diferentes tamanhos de tela<br>
+      • Sistema navega entre as telas corretamente
+    </td>
+    <td align="center">Alta</td>
+    <td align="center">RNF02</td>
+  </tr>
+</table>
 
 </details>
 
