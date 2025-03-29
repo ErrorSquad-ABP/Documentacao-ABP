@@ -577,33 +577,120 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 ## 🗄️ Banco de Dados
 
 <details>
-<summary><b>📊 Estrutura do Banco de Dados</b></summary>
+<summary><b>📊 Documentação do Banco de Dados de Gestão Acadêmica</b></summary>
 
-### 📋 Descrição
-O banco de dados utilizado no sistema é o **PostgreSQL**, escolhido por sua robustez e suporte a operações complexas. Ele foi modelado para atender aos requisitos do sistema, garantindo integridade e consistência dos dados. Abaixo está a estrutura inicial do banco de dados, incluindo as tabelas principais:
+### 📋 Visão Geral
+Este banco de dados foi projetado para gerenciar um sistema acadêmico, com foco na organização de períodos letivos, alocação de disciplinas, horários, ambientes e docentes. A estrutura permite o controle de atividades acadêmicas associadas a diferentes cursos, organizadas por semestres, com registro detalhado de quando e onde as aulas acontecem.
 
-- **Semestres:** Armazena informações sobre os períodos acadêmicos.
-- **Cursos:** Contém os dados dos cursos oferecidos pela faculdade.
-- **Períodos:** Define os horários e dias da semana.
-- **Matérias:** Lista as disciplinas disponíveis.
-- **Docentes:** Registra os professores e suas informações.
-- **Ambientes:** Representa as salas e laboratórios disponíveis para alocação.
+---
 
-### 🖼️ Estrutura do Banco de Dados
+### 🖼️ Diagrama do Banco de Dados
 A imagem abaixo ilustra o modelo relacional do banco de dados:
 
 <div align="center">
-    <img src="caminho/para/o/print-do-banco-de-dados.png" alt="Modelo Relacional do Banco de Dados" width="80%">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-03-28%20210815.png" alt="Modelo Relacional do Banco de Dados" width="90%">
 </div>
 
-### 🛠️ Detalhes Técnicos
-- **SGBD:** PostgreSQL
-- **Conexão:** Configurada no backend utilizando a biblioteca `pg` para Node.js.
-- **Scripts de Migração:** Criados para facilitar a evolução do banco de dados ao longo do projeto.
+---
 
-### 📑 Observações
-- As tabelas foram modeladas para evitar redundância e garantir a normalização.
-- As relações entre as tabelas seguem as regras de alocação definidas nos requisitos funcionais (ex.: evitar conflitos de horários e salas).
+### 🛠️ Entidades e Atributos
+
+1. **semestre**
+   - `id` (INT): Identificador único do semestre (PK)
+   - `nivel` (INT): Nível ou etapa do semestre
+
+2. **ambiente**
+   - `id` (INT): Identificador único do ambiente (PK)
+   - `nome` (VARCHAR(45)): Nome ou identificação do ambiente (sala, laboratório, etc.)
+
+3. **curso**
+   - `id` (INT): Identificador único do curso (PK)
+   - `nome` (VARCHAR(45)): Nome do curso
+
+4. **dia**
+   - `id` (INT): Identificador único do dia (PK)
+   - `nome` (VARCHAR(45)): Nome do dia da semana
+
+5. **horario**
+   - `id` (INT): Identificador único do horário (PK)
+   - `hr_inicio` (TIME): Hora de início
+   - `hr_fim` (TIME): Hora de término
+
+6. **disciplina**
+   - `id` (INT): Identificador único da disciplina (PK)
+   - `nome` (VARCHAR): Nome da disciplina
+   - `docente_id` (INT): Referência ao docente responsável pela disciplina (FK)
+
+7. **docente**
+   - `id` (INT): Identificador único do docente (PK)
+   - `nome` (VARCHAR(8)): Nome do docente
+   - `cor` (VARCHAR(9)): Código de cor associado ao docente (possivelmente para uso em interfaces gráficas)
+
+8. **admin**
+   - `id` (INT): Identificador único do administrador (PK)
+   - `name` (VARCHAR(60)): Nome do administrador
+   - `email` (VARCHAR(60)): Email do administrador
+   - `senha` (VARCHAR(8)): Senha do administrador
+
+9. **periodo**
+   - `id` (VARCHAR(45)): Identificador único do período (PK)
+   - `turno` (VARCHAR(45)): Identificação do turno (manhã, tarde, noite)
+   - `dia_id` (INT): Referência ao dia da semana (FK)
+   - `horario_id` (INT): Referência ao horário (FK)
+   - `semestre_id` (INT): Referência ao semestre (FK)
+   - `curso_id` (INT): Referência ao curso (FK)
+   - `disciplina_id` (INT): Referência à disciplina (FK)
+   - `disciplina_docente_id` (INT): Referência ao docente da disciplina (FK)
+   - `ambiente_id` (INT): Referência ao ambiente (FK)
+
+---
+
+### 🔗 Relacionamentos
+
+1. **semestre → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um semestre pode ter múltiplos períodos associados a ele
+   - **Campos:** `semestre.id → periodo.semestre_id`
+
+2. **ambiente → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um ambiente pode ser utilizado em múltiplos períodos
+   - **Campos:** `ambiente.id → periodo.ambiente_id`
+
+3. **curso → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um curso pode ter múltiplos períodos de aula
+   - **Campos:** `curso.id → periodo.curso_id`
+
+4. **dia → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um dia da semana pode ter múltiplos períodos de aula
+   - **Campos:** `dia.id → periodo.dia_id`
+
+5. **horario → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um horário pode estar associado a múltiplos períodos
+   - **Campos:** `horario.id → periodo.horario_id`
+
+6. **disciplina → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Uma disciplina pode ser ministrada em múltiplos períodos
+   - **Campos:** `disciplina.id → periodo.disciplina_id`
+
+7. **docente → disciplina**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um docente pode ser responsável por múltiplas disciplinas
+   - **Campos:** `docente.id → disciplina.docente_id`
+
+8. **docente → periodo**
+   - **Tipo:** Um para muitos (1:N)
+   - **Descrição:** Um docente pode estar associado a múltiplos períodos através do campo `disciplina_docente_id`
+   - **Campos:** `docente.id → periodo.disciplina_docente_id`
+
+---
+
+### 📜 Conclusão
+O banco de dados apresenta uma estrutura funcional para um sistema acadêmico básico, focado principalmente na gestão de horários e alocação de recursos. Com as melhorias sugeridas, pode se tornar mais robusto e flexível para atender necessidades acadêmicas mais complexas.
 
 </details>
 
@@ -622,7 +709,7 @@ A imagem abaixo ilustra o modelo relacional do banco de dados:
 ### 🔧 Ferramentas
 - **Design:** Figma
 - **Versionamento:** Git/GitHub
-- **Gestão:** GitHub Projects
+- **Gestão:** Trello
 - **Documentação:** Markdown
 - **Testes:** Jest
 
