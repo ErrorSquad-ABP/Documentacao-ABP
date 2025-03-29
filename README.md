@@ -574,6 +574,39 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 </details>
 
+## 🗄️ Banco de Dados
+
+<details>
+<summary><b>📊 Estrutura do Banco de Dados</b></summary>
+
+### 📋 Descrição
+O banco de dados utilizado no sistema é o **PostgreSQL**, escolhido por sua robustez e suporte a operações complexas. Ele foi modelado para atender aos requisitos do sistema, garantindo integridade e consistência dos dados. Abaixo está a estrutura inicial do banco de dados, incluindo as tabelas principais:
+
+- **Semestres:** Armazena informações sobre os períodos acadêmicos.
+- **Cursos:** Contém os dados dos cursos oferecidos pela faculdade.
+- **Períodos:** Define os horários e dias da semana.
+- **Matérias:** Lista as disciplinas disponíveis.
+- **Docentes:** Registra os professores e suas informações.
+- **Ambientes:** Representa as salas e laboratórios disponíveis para alocação.
+
+### 🖼️ Estrutura do Banco de Dados
+A imagem abaixo ilustra o modelo relacional do banco de dados:
+
+<div align="center">
+    <img src="caminho/para/o/print-do-banco-de-dados.png" alt="Modelo Relacional do Banco de Dados" width="80%">
+</div>
+
+### 🛠️ Detalhes Técnicos
+- **SGBD:** PostgreSQL
+- **Conexão:** Configurada no backend utilizando a biblioteca `pg` para Node.js.
+- **Scripts de Migração:** Criados para facilitar a evolução do banco de dados ao longo do projeto.
+
+### 📑 Observações
+- As tabelas foram modeladas para evitar redundância e garantir a normalização.
+- As relações entre as tabelas seguem as regras de alocação definidas nos requisitos funcionais (ex.: evitar conflitos de horários e salas).
+
+</details>
+
 ## 🛠️ Tecnologias
 
 <div align="center">
