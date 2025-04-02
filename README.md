@@ -8,34 +8,45 @@
 
 </div>
 
+---
+
 ## 📋 Sobre o Projeto
 
-Sistema web desenvolvido para otimizar a gestão de horários acadêmicos da FATEC Jacareí, visando modernizar o processo de divulgação e consulta de grades horárias através de uma plataforma digital integrada.
+Sistema web desenvolvido para otimizar a gestão de horários acadêmicos da FATEC Jacareí, modernizando o processo de divulgação e consulta de grades horárias por meio de uma plataforma digital integrada.
 
 <details>
 <summary><b>ℹ️ Informações do Projeto</b></summary>
 
-| Categoria | Detalhes |
-|-----------|----------|
-| 📍 Instituição | FATEC Jacareí |
-| 📚 Curso | DSM - 1º Semestre 2025 |
-| 🔄 Metodologia | Aprendizagem Baseada em Projetos (ABP) |
-| 👤 Focal Point | Prof. Marcelo Augusto Sudo |
-| 📧 Contato | [marcelo.sudo@fatec.sp.gov.br](mailto:marcelo.sudo@fatec.sp.gov.br) |
-| 📅 Início | 18/03/2025 |
-| 📊 Status | Em desenvolvimento |
+| Categoria      | Detalhes                                                            |
+| -------------- | ------------------------------------------------------------------- |
+| 📍 Instituição | FATEC Jacareí                                                       |
+| 📚 Curso       | DSM - 1º Semestre 2025                                              |
+| 🔄 Metodologia | Aprendizagem Baseada em Projetos (ABP)                              |
+| 👤 Focal Point | Prof. Marcelo Augusto Sudo                                          |
+| 📧 Contato     | [marcelo.sudo@fatec.sp.gov.br](mailto:marcelo.sudo@fatec.sp.gov.br) |
+| 📅 Início      | 18/03/2025                                                          |
+| 📊 Status      | Em desenvolvimento                                                  |
 
 </details>
 
+---
+
 ## Tema do Semestre
+
 Desenvolver um sistema web para consulta de horários de aulas e alocação de ambientes, substituindo os informes impressos e otimizando a gestão acadêmica.
 
+---
+
 ## Desafio
-Atualmente, os horários de aulas são divulgados por meio de informes impressos e e-mails. Alterações nos horários exigem a reimpressão dos informes, o que gera retrabalho. O sistema proposto visa resolver esse problema, permitindo consultas por curso, ambiente, turno e turma.
+
+Atualmente, os horários de aulas são divulgados por meio de informes impressos e e-mails. Alterações nos horários exigem a reimpressão dos informes, gerando retrabalho. O sistema proposto visa resolver esse problema, permitindo consultas por curso, ambiente, turno e turma.
+
+---
 
 ## Requisitos
 
 ### Requisitos Funcionais
+
 - **RF01:** Fazer a ingestão de dados no sistema a partir de um arquivo CSV.
 - **RF02 (Opcional):** Gerenciar os dados do sistema (CRUD) através da interface da aplicação.
 - **RF03:** Garantir que os dados respeitem as regras de alocação (ex.: evitar conflitos de horários e salas).
@@ -43,10 +54,12 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - **RF05:** Permitir consultas no sistema (ex.: por turma, turno, professor, data).
 
 ### Requisitos Não Funcionais
+
 - **RNF01:** Exibir um mapa interativo de salas, permitindo visualizar a situação do ambiente.
 - **RNF02:** Garantir que o sistema seja responsivo e tenha um layout consistente em dispositivos móveis.
 
 ### Restrições de Projeto
+
 - **RP01:** Prototipar e validar o sistema utilizando o Figma.
 - **RP02:** Seguir o catálogo de tecnologias:
   - HTML, CSS e JavaScript (Vanilla JS).
@@ -55,7 +68,10 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
   - Repositório público no GitHub.
   - Ferramenta de controle de tarefas (ex.: GitHub Projects, Trello).
 
+---
+
 ## Cronograma
+
 - **18/mar:** Kick off e entrega da planilha de avaliação do ABP com informações da equipe e repositório.
 - **24/mar:** Início da Sprint 1.
 - **14/abr:** Envio do vídeo da Review da Sprint 1 (até 4 minutos, não listado no YouTube).
@@ -68,21 +84,25 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - **10/jun:** Review da Sprint 3.
 - **11/jun:** Apresentação final do projeto no formato de feira (data sujeita a alteração).
 
+---
+
 ## 🔄 Sprints
 
 <details open>
 <summary><h3>Sprint 1 - Planejamento Inicial e Infraestrutura</h3></summary>
 
 ### 📅 Período
-**Início:** 24/03/2025
-**Término:** 14/04/2025
-**Review:** 15/04/2025
+
+- **Início:** 24/03/2025  
+- **Término:** 14/04/2025  
+- **Review:** 15/04/2025  
 
 ### 🎯 Objetivos Principais
-- Estabelecer infraestrutura básica do sistema (backend e banco de dados)
-- Desenvolver protótipo e iniciar frontend com responsividade
-- Garantir configuração adequada das bases de dados
-- Implementar endpoints CRUD iniciais
+
+- Estabelecer infraestrutura básica do sistema (backend e banco de dados).
+- Desenvolver protótipo e iniciar frontend com responsividade.
+- Garantir configuração adequada das bases de dados.
+- Implementar endpoints CRUD iniciais.
 
 ### 📋 Histórias Planejadas
 
@@ -237,18 +257,22 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 </table>
 
 ### 📊 Métricas da Sprint
-- **Histórias Planejadas:** 6
-- **Complexidade Total:** Média
-- **Prioridade:** Alta
-- **Dependências:** Nenhuma (Sprint inicial)
+
+- **Histórias Planejadas:** 6  
+- **Complexidade Total:** Média  
+- **Prioridade:** Alta  
+- **Dependências:** Nenhuma (Sprint inicial)  
 
 ### 🎥 Review
-- Data: 15/04/2025
-- Duração máxima: 4 minutos
-- Formato: Vídeo não listado no YouTube
-- Entrega: Via Teams para o Focal Point
+
+- **Data:** 15/04/2025  
+- **Duração máxima:** 4 minutos  
+- **Formato:** Vídeo não listado no YouTube  
+- **Entrega:** Via Teams para o Focal Point  
 
 </details>
+
+---
 
 ## 📝 Product Backlog
 
@@ -574,125 +598,176 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 </details>
 
-## 🗄️ Banco de Dados
+## 🗄️ Documentação do Modelo de Dados - Sistema de Gestão Educacional
 
 <details>
-<summary><b>📊 Documentação do Banco de Dados de Gestão Acadêmica</b></summary>
+<summary><b>📊 Visão Geral do Modelo</b></summary>
+<br>
+Este modelo de dados foi desenvolvido para atender às necessidades de um sistema de gestão educacional, permitindo o gerenciamento completo de cursos, disciplinas, cronogramas de aulas, turnos, ambientes e corpo docente. Ele organiza de forma estruturada os períodos letivos, a alocação de recursos físicos e humanos, e a programação detalhada de atividades acadêmicas.
 
-### 📋 Visão Geral
-Este banco de dados foi projetado para gerenciar um sistema acadêmico, com foco na organização de períodos letivos, alocação de disciplinas, horários, ambientes e docentes. A estrutura permite o controle de atividades acadêmicas associadas a diferentes cursos, organizadas por semestres, com registro detalhado de quando e onde as aulas acontecem.
+O modelo é composto por 9 tabelas principais interconectadas, formando uma solução robusta e escalável para instituições de ensino gerenciarem suas operações acadêmicas e administrativas.
 
 ---
 
 ### 🖼️ Diagrama do Banco de Dados
-A imagem abaixo ilustra o modelo relacional do banco de dados:
+
+Abaixo está o diagrama relacional que ilustra a estrutura do banco de dados:
 
 <div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-03-28%20210815.png" alt="Modelo Relacional do Banco de Dados" width="90%">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/WhatsApp%20Image%202025-04-01%20at%2020.32.51_03f4cd7c.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
 </div>
 
 ---
 
-### 🛠️ Entidades e Atributos
+### 🛠️ Descrição Detalhada das Tabelas
 
-1. **semestre**
-   - `id` (INT): Identificador único do semestre (PK)
-   - `nivel` (INT): Nível ou etapa do semestre
+#### 1. Tabela `curso`
 
-2. **ambiente**
-   - `id` (INT): Identificador único do ambiente (PK)
-   - `nome` (VARCHAR(45)): Nome ou identificação do ambiente (sala, laboratório, etc.)
-
-3. **curso**
-   - `id` (INT): Identificador único do curso (PK)
-   - `nome` (VARCHAR(45)): Nome do curso
-
-4. **dia**
-   - `id` (INT): Identificador único do dia (PK)
-   - `nome` (VARCHAR(45)): Nome do dia da semana
-
-5. **horario**
-   - `id` (INT): Identificador único do horário (PK)
-   - `hr_inicio` (TIME): Hora de início
-   - `hr_fim` (TIME): Hora de término
-
-6. **disciplina**
-   - `id` (INT): Identificador único da disciplina (PK)
-   - `nome` (VARCHAR): Nome da disciplina
-   - `docente_id` (INT): Referência ao docente responsável pela disciplina (FK)
-
-7. **docente**
-   - `id` (INT): Identificador único do docente (PK)
-   - `nome` (VARCHAR(8)): Nome do docente
-   - `cor` (VARCHAR(9)): Código de cor associado ao docente (possivelmente para uso em interfaces gráficas)
-
-8. **admin**
-   - `id` (INT): Identificador único do administrador (PK)
-   - `name` (VARCHAR(60)): Nome do administrador
-   - `email` (VARCHAR(60)): Email do administrador
-   - `senha` (VARCHAR(8)): Senha do administrador
-
-9. **periodo**
-   - `id` (VARCHAR(45)): Identificador único do período (PK)
-   - `turno` (VARCHAR(45)): Identificação do turno (manhã, tarde, noite)
-   - `dia_id` (INT): Referência ao dia da semana (FK)
-   - `horario_id` (INT): Referência ao horário (FK)
-   - `semestre_id` (INT): Referência ao semestre (FK)
-   - `curso_id` (INT): Referência ao curso (FK)
-   - `disciplina_id` (INT): Referência à disciplina (FK)
-   - `disciplina_docente_id` (INT): Referência ao docente da disciplina (FK)
-   - `ambiente_id` (INT): Referência ao ambiente (FK)
+- **Descrição:** Representa os cursos oferecidos pela instituição.
+- **Estrutura:**
+  - `id` (INT): Identificador único do curso, chave primária.
+  - `nome` (VARCHAR(45)): Nome do curso.
+- **Relacionamentos:**
+  - Um curso pode ter vários semestres no cronograma (relação 1:N com `semestre_cronograma`).
+- **Função no Sistema:** Base estrutural que define as formações acadêmicas oferecidas.
 
 ---
 
-### 🔗 Relacionamentos
+#### 2. Tabela `turno`
 
-1. **semestre → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um semestre pode ter múltiplos períodos associados a ele
-   - **Campos:** `semestre.id → periodo.semestre_id`
+- **Descrição:** Define os turnos disponíveis para as atividades acadêmicas (ex.: matutino, vespertino, noturno).
+- **Estrutura:**
+  - `id` (INT): Identificador único do turno, chave primária.
+  - `nome` (VARCHAR(45)): Nome do turno.
+- **Relacionamentos:**
+  - Um turno pode ser associado a vários semestres no cronograma (relação 1:N com `semestre_cronograma`).
+- **Função no Sistema:** Organiza as atividades acadêmicas em diferentes períodos do dia.
 
-2. **ambiente → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um ambiente pode ser utilizado em múltiplos períodos
-   - **Campos:** `ambiente.id → periodo.ambiente_id`
+---
 
-3. **curso → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um curso pode ter múltiplos períodos de aula
-   - **Campos:** `curso.id → periodo.curso_id`
+#### 3. Tabela `semestre_cronograma`
 
-4. **dia → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um dia da semana pode ter múltiplos períodos de aula
-   - **Campos:** `dia.id → periodo.dia_id`
+- **Descrição:** Representa o planejamento semestral dos cursos, associando cursos e turnos a períodos específicos do ano.
+- **Estrutura:**
+  - `id` (INT): Identificador único do semestre no cronograma, chave primária.
+  - `nivel` (INT): Nível ou etapa do curso (ex.: 1º semestre, 2º semestre).
+  - `ano` (YEAR): Ano letivo ao qual o semestre pertence.
+  - `curso_id` (INT): Referência ao curso associado, chave estrangeira.
+  - `turno_id` (INT): Referência ao turno associado, chave estrangeira.
+- **Relacionamentos:**
+  - Pertence a um curso específico (relação N:1 com `curso`).
+  - Está associado a um turno específico (relação N:1 com `turno`).
+  - Pode ter vários períodos associados (relação 1:N com `periodo`).
+- **Função no Sistema:** Estrutura organizacional que coordena a execução de cursos em turnos específicos durante o ano letivo.
 
-5. **horario → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um horário pode estar associado a múltiplos períodos
-   - **Campos:** `horario.id → periodo.horario_id`
+---
 
-6. **disciplina → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Uma disciplina pode ser ministrada em múltiplos períodos
-   - **Campos:** `disciplina.id → periodo.disciplina_id`
+#### 4. Tabela `dia`
 
-7. **docente → disciplina**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um docente pode ser responsável por múltiplas disciplinas
-   - **Campos:** `docente.id → disciplina.docente_id`
+- **Descrição:** Representa os dias da semana em que as atividades acadêmicas são realizadas.
+- **Estrutura:**
+  - `id` (INT): Identificador único do dia, chave primária.
+  - `nome` (VARCHAR(45)): Nome do dia (ex.: Segunda-feira, Terça-feira).
+- **Relacionamentos:**
+  - Um dia pode ter vários períodos de aula (relação 1:N com `periodo`).
+- **Função no Sistema:** Organiza as atividades acadêmicas nos diferentes dias da semana.
 
-8. **docente → periodo**
-   - **Tipo:** Um para muitos (1:N)
-   - **Descrição:** Um docente pode estar associado a múltiplos períodos através do campo `disciplina_docente_id`
-   - **Campos:** `docente.id → periodo.disciplina_docente_id`
+---
+
+#### 5. Tabela `ambiente`
+
+- **Descrição:** Cadastro dos espaços físicos onde as atividades acadêmicas são realizadas.
+- **Estrutura:**
+  - `id` (INT): Identificador único do ambiente, chave primária.
+  - `nome` (VARCHAR(45)): Nome ou identificação do ambiente (ex.: Sala 101, Laboratório de Informática).
+- **Relacionamentos:**
+  - Um ambiente pode ser usado em vários períodos (relação 1:N com `periodo`).
+- **Função no Sistema:** Gerencia os recursos físicos disponíveis para atividades educacionais.
+
+---
+
+#### 6. Tabela `horario`
+
+- **Descrição:** Define os horários de início e término das atividades acadêmicas.
+- **Estrutura:**
+  - `id` (INT): Identificador único do horário, chave primária.
+  - `hr_inicio` (TIME): Horário de início da atividade.
+  - `hr_fim` (TIME): Horário de término da atividade.
+- **Relacionamentos:**
+  - Um horário pode ser utilizado em vários períodos (relação 1:N com `periodo`).
+- **Função no Sistema:** Estabelece a grade temporal para as atividades acadêmicas.
+
+---
+
+#### 7. Tabela `docente`
+
+- **Descrição:** Cadastro dos professores da instituição.
+- **Estrutura:**
+  - `id` (INT): Identificador único do docente, chave primária.
+  - `nome` (VARCHAR(80)): Nome completo do docente.
+  - `cor` (VARCHAR(9)): Código de cor associado ao docente (para identificação visual em interfaces).
+- **Relacionamentos:**
+  - Um docente pode ministrar várias disciplinas (relação 1:N com `disciplina`).
+  - Um docente pode ter várias alocações específicas em períodos (via `disciplina_docente_id` em `periodo`).
+- **Função no Sistema:** Gerencia o corpo docente e suas atribuições acadêmicas.
+
+---
+
+#### 8. Tabela `disciplina`
+
+- **Descrição:** Cadastro das disciplinas oferecidas pela instituição.
+- **Estrutura:**
+  - `id` (INT): Identificador único da disciplina, chave primária.
+  - `nome` (VARCHAR(45)): Nome da disciplina.
+  - `docente_id` (INT): Referência ao docente responsável, chave estrangeira.
+- **Relacionamentos:**
+  - Está associada a um docente principal (relação N:1 com `docente`).
+  - Pode ser ministrada em vários períodos (relação 1:N com `periodo`).
+- **Função no Sistema:** Representa as unidades curriculares que compõem os cursos.
+
+---
+
+#### 9. Tabela `periodo`
+
+- **Descrição:** Entidade central que integra todas as informações relacionadas a uma sessão específica de aula, combinando dia, horário, ambiente, disciplina e docente.
+- **Estrutura:**
+  - `id` (VARCHAR(45)): Identificador único do período, chave primária.
+  - `dia_id` (INT): Referência ao dia da semana, chave estrangeira.
+  - `horario_id` (INT): Referência ao horário, chave estrangeira.
+  - `disciplina_id` (INT): Referência à disciplina, chave estrangeira.
+  - `disciplina_docente_id` (INT): Referência a uma possível alocação específica de docente para esta disciplina neste período.
+  - `semestre_cronograma_id` (INT): Referência ao semestre no cronograma, chave estrangeira.
+  - `ambiente_id` (INT): Referência ao ambiente onde ocorrerá a aula, chave estrangeira.
+- **Relacionamentos:**
+  - Associado a um dia específico (relação N:1 com `dia`).
+  - Ocorre em um horário definido (relação N:1 com `horario`).
+  - Está vinculado a uma disciplina (relação N:1 com `disciplina`).
+  - Está alocado em um ambiente específico (relação N:1 com `ambiente`).
+  - Pertence a um semestre específico no cronograma (relação N:1 com `semestre_cronograma`).
+- **Função no Sistema:** Núcleo do sistema que coordena quando e onde cada disciplina será ministrada, por qual professor e para qual curso/turno.
+
+---
+
+#### 10. Tabela `admin`
+
+- **Descrição:** Armazena informações dos usuários administradores do sistema.
+- **Estrutura:**
+  - `id` (INT): Identificador único do administrador, chave primária.
+  - `name` (VARCHAR(60)): Nome do administrador.
+  - `email` (VARCHAR(60)): Email do administrador, usado para login.
+  - `senha` (VARCHAR(80)): Senha criptografada do administrador.
+- **Relacionamentos:** Não possui relacionamentos diretos com outras tabelas.
+- **Função no Sistema:** Gerencia o acesso administrativo ao sistema.
 
 ---
 
 ### 📜 Conclusão
-O banco de dados apresenta uma estrutura funcional para um sistema acadêmico básico, focado principalmente na gestão de horários e alocação de recursos. Com as melhorias sugeridas, pode se tornar mais robusto e flexível para atender necessidades acadêmicas mais complexas.
+
+Este modelo de dados oferece uma solução robusta e escalável para gestão educacional, com ênfase na organização de cronogramas acadêmicos e alocação de recursos. Sua estrutura centralizada na tabela `periodo` permite flexibilidade e eficiência no gerenciamento de atividades acadêmicas, atendendo às necessidades de instituições de ensino de diferentes portes.
 
 </details>
+
+---
 
 ## 🛠️ Tecnologias
 
@@ -706,14 +781,20 @@ O banco de dados apresenta uma estrutura funcional para um sistema acadêmico b�
 
 </div>
 
+---
+
 ### 🔧 Ferramentas
-- **Design:** Figma
-- **Versionamento:** Git/GitHub
-- **Gestão:** Trello
-- **Documentação:** Markdown
-- **Testes:** Jest
+
+- **Design:** Figma  
+- **Versionamento:** Git/GitHub  
+- **Gestão:** Trello  
+- **Documentação:** Markdown  
+- **Testes:** Jest  
+
+---
 
 ## Documentação
+
 Toda a documentação e artefatos do projeto serão mantidos neste repositório público no GitHub.
 
 ## 👥 Nossa Equipe
@@ -808,7 +889,7 @@ Toda a documentação e artefatos do projeto serão mantidos neste repositório 
                         <td align="center">
                             <b>Caio Araujo</b><br>
                             <a href="https://github.com/Caiuuutecnologico">
-                                <img src="https://img.shie/ds/io/badge/GitHub-333?style=flat-square&logo=github"/>
+                                <img src="https://img.shields.io/badge/GitHub-333?style=flat-square&logo=github"/>
                             </a>
                             <a href="https://www.linkedin.com/in/caio-arauj/">
                                 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
@@ -853,7 +934,6 @@ Toda a documentação e artefatos do projeto serão mantidos neste repositório 
 
 ---
 
-
 ## 📜 Licença
 
 <div align="center">
@@ -865,4 +945,3 @@ Toda a documentação e artefatos do projeto serão mantidos neste repositório 
 <div align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=4a90e2&height=100&section=footer" width="100%"/>
 </div>
-
