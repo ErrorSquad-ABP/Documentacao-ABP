@@ -277,7 +277,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 ## 📝 Product Backlog
 
 <details open>
-<summary><h3>Épico: Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos</h3></summary>
+<summary><b>Épico: Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos</b></summary>
 
 ### 🎯 Histórias de Usuário
 
