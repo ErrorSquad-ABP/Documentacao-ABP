@@ -598,176 +598,169 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 </details>
 
-## 🗄️ Documentação do Modelo de Dados - Sistema de Gestão Educacional
+## Funcionalidades Implementadas
 
-<details>
-<summary><b>📊 Visão Geral do Modelo</b></summary>
-<br>
-Este modelo de dados foi desenvolvido para atender às necessidades de um sistema de gestão educacional, permitindo o gerenciamento completo de cursos, disciplinas, cronogramas de aulas, turnos, ambientes e corpo docente. Ele organiza de forma estruturada os períodos letivos, a alocação de recursos físicos e humanos, e a programação detalhada de atividades acadêmicas.
+### Backend
+- **API REST com Express.js**
+  - Rotas para gerenciamento de cursos (CRUD completo)
+    - Criação de curso com validação de nome
+    - Listagem de todos os cursos
+    - Atualização de curso com validação
+    - Deleção de curso por ID
+  - Rotas para gerenciamento de usuários (listagem e criação)
+  - Rota de verificação de saúde do servidor
+  - Tratamento de erros padronizado
+    - Logs de erro no console
+    - Respostas de erro padronizadas
+    - Status HTTP apropriados
+  - Respostas JSON estruturadas
+  - Utilitários
+    - Função para capitalização de primeira letra
 
-O modelo é composto por 9 tabelas principais interconectadas, formando uma solução robusta e escalável para instituições de ensino gerenciarem suas operações acadêmicas e administrativas.
+### Banco de Dados
+- **PostgreSQL**
+  - Suporte a transações ACID
+  - Queries complexas
+  - Integridade referencial
 
----
+- **Google BigQuery**
+  - Dataset: sitefatecdsm-01-2025
+  - Tabela: SiteFatecDSM.curso
+  - Análise de dados em larga escala
+  - Queries SQL otimizadas
 
-### 🖼️ Diagrama do Banco de Dados
+### Frontend
+- **Estrutura de Páginas**
+  - Login
+  - Dashboard
+  - Mapa
+  - Grade
+  - Edição de Grade
+  - Edição de Mapa
+  - Página 404
 
-Abaixo está o diagrama relacional que ilustra a estrutura do banco de dados:
+## 🔧 Backend
+
+### Estrutura do Servidor
+
+- **Framework**: Node.js com Express
+- **Arquitetura**: MVC (Model-View-Controller)
+- **Estrutura de Pastas**:
+  - `controllers`: Lógica de negócios e manipulação de requisições
+  - `database`: Configuração e modelos de banco de dados
+  - `lib`: Bibliotecas e utilitários
+  - `routes`: Definição de endpoints da API
+  - `utils`: Funções auxiliares
+  - `config`: Configurações do servidor
+  - `services`: Serviços e integrações externas
+
+### Rotas Implementadas
+
+- `/health`: Verificação de status do servidor
+- `/cursos`: CRUD completo de cursos
+- `/users`: Listagem e criação de usuários (definida, mas controlador não encontrado)
+
+### Controladores
+
+- **HealthController**: Monitoramento do servidor
+- **CursoController**: Gerenciamento de cursos
+  - Criação de cursos
+  - Listagem de cursos
+  - Atualização de cursos
+  - Remoção de cursos
+
+### Migrations
+
+- Controle de versão do banco de dados
+- Scripts para criação e atualização de tabelas
+- Manutenção da integridade dos dados
+
+## 🗄️ Banco de Dados
+
+### Tecnologias
+
+- **PostgreSQL**: Banco de dados relacional principal
+  - Suporte a transações ACID
+  - Queries complexas
+  - Integridade referencial
+
+- **Google BigQuery**: Analytics e relatórios
+  - Dataset: `sitefatecdsm-01-2025`
+  - Tabela: `SiteFatecDSM.curso`
+  - Análise de dados em larga escala
+  - Queries SQL otimizadas
+
+### Modelo de Dados
 
 <div align="center">
     <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/WhatsApp%20Image%202025-04-01%20at%2020.32.51_03f4cd7c.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
 </div>
 
----
+### Entidades Implementadas
 
-### 🛠️ Descrição Detalhada das Tabelas
+- **Curso**: Gerenciamento de cursos
+- **Ambiente**: Cadastro de ambientes físicos
+- **Dia**: Controle de dias da semana
+- **Disciplina**: Cadastro de disciplinas
+- **Docente**: Gerenciamento de professores
+- **Horario**: Controle de horários
+- **Periodo**: Gerenciamento de períodos letivos
+- **Semestre**: Controle de semestres
+- **Turno**: Gerenciamento de turnos
 
-#### 1. Tabela `curso`
+### Operações Implementadas
 
-- **Descrição:** Representa os cursos oferecidos pela instituição.
-- **Estrutura:**
-  - `id` (INT): Identificador único do curso, chave primária.
-  - `nome` (VARCHAR(45)): Nome do curso.
-- **Relacionamentos:**
-  - Um curso pode ter vários semestres no cronograma (relação 1:N com `semestre_cronograma`).
-- **Função no Sistema:** Base estrutural que define as formações acadêmicas oferecidas.
+- CRUD completo para todas as entidades
+- Validação de existência de registros
+- Queries otimizadas para recuperação de dados
+- Tratamento de erros e respostas padronizadas
+- Migrations para controle de versão do banco
+- Relacionamentos com integridade referencial
+- Índices para melhor performance
 
----
+## 🎨 Frontend
 
-#### 2. Tabela `turno`
+### Estrutura de Páginas
 
-- **Descrição:** Define os turnos disponíveis para as atividades acadêmicas (ex.: matutino, vespertino, noturno).
-- **Estrutura:**
-  - `id` (INT): Identificador único do turno, chave primária.
-  - `nome` (VARCHAR(45)): Nome do turno.
-- **Relacionamentos:**
-  - Um turno pode ser associado a vários semestres no cronograma (relação 1:N com `semestre_cronograma`).
-- **Função no Sistema:** Organiza as atividades acadêmicas em diferentes períodos do dia.
+- **Páginas Principais**:
+  - `index.html`: Página inicial
+  - `login.html`: Autenticação de usuários
+  - `dashboard.html`: Painel principal
+  - `grade.html`: Visualização de grade horária
+  - `editar_grade.html`: Edição de grade horária
+  - `mapa.html`: Visualização de mapa
+  - `editar_mapa.html`: Edição de mapa
+  - `404.html`: Página de erro
 
----
+### Recursos Estáticos
 
-#### 3. Tabela `semestre_cronograma`
+- **CSS**: Estilos e layouts
+- **Fonts**: Tipografias
+- **Imagens**: Recursos visuais
+- **JavaScript**: Lógica do cliente
+- **Vendors**: Bibliotecas de terceiros
 
-- **Descrição:** Representa o planejamento semestral dos cursos, associando cursos e turnos a períodos específicos do ano.
-- **Estrutura:**
-  - `id` (INT): Identificador único do semestre no cronograma, chave primária.
-  - `nivel` (INT): Nível ou etapa do curso (ex.: 1º semestre, 2º semestre).
-  - `ano` (YEAR): Ano letivo ao qual o semestre pertence.
-  - `curso_id` (INT): Referência ao curso associado, chave estrangeira.
-  - `turno_id` (INT): Referência ao turno associado, chave estrangeira.
-- **Relacionamentos:**
-  - Pertence a um curso específico (relação N:1 com `curso`).
-  - Está associado a um turno específico (relação N:1 com `turno`).
-  - Pode ter vários períodos associados (relação 1:N com `periodo`).
-- **Função no Sistema:** Estrutura organizacional que coordena a execução de cursos em turnos específicos durante o ano letivo.
+### Prototipagem
 
----
+- **Figma**: Protótipos e wireframes
+  - Design system
+  - Fluxos de usuário
+  - Componentes de interface
 
-#### 4. Tabela `dia`
+### Casos de Uso
 
-- **Descrição:** Representa os dias da semana em que as atividades acadêmicas são realizadas.
-- **Estrutura:**
-  - `id` (INT): Identificador único do dia, chave primária.
-  - `nome` (VARCHAR(45)): Nome do dia (ex.: Segunda-feira, Terça-feira).
-- **Relacionamentos:**
-  - Um dia pode ter vários períodos de aula (relação 1:N com `periodo`).
-- **Função no Sistema:** Organiza as atividades acadêmicas nos diferentes dias da semana.
+- Documentação detalhada dos casos de uso do sistema
+- Fluxos de interação do usuário
+- Requisitos funcionais e não funcionais
 
----
+### Tecnologias Frontend
 
-#### 5. Tabela `ambiente`
-
-- **Descrição:** Cadastro dos espaços físicos onde as atividades acadêmicas são realizadas.
-- **Estrutura:**
-  - `id` (INT): Identificador único do ambiente, chave primária.
-  - `nome` (VARCHAR(45)): Nome ou identificação do ambiente (ex.: Sala 101, Laboratório de Informática).
-- **Relacionamentos:**
-  - Um ambiente pode ser usado em vários períodos (relação 1:N com `periodo`).
-- **Função no Sistema:** Gerencia os recursos físicos disponíveis para atividades educacionais.
-
----
-
-#### 6. Tabela `horario`
-
-- **Descrição:** Define os horários de início e término das atividades acadêmicas.
-- **Estrutura:**
-  - `id` (INT): Identificador único do horário, chave primária.
-  - `hr_inicio` (TIME): Horário de início da atividade.
-  - `hr_fim` (TIME): Horário de término da atividade.
-- **Relacionamentos:**
-  - Um horário pode ser utilizado em vários períodos (relação 1:N com `periodo`).
-- **Função no Sistema:** Estabelece a grade temporal para as atividades acadêmicas.
-
----
-
-#### 7. Tabela `docente`
-
-- **Descrição:** Cadastro dos professores da instituição.
-- **Estrutura:**
-  - `id` (INT): Identificador único do docente, chave primária.
-  - `nome` (VARCHAR(80)): Nome completo do docente.
-  - `cor` (VARCHAR(9)): Código de cor associado ao docente (para identificação visual em interfaces).
-- **Relacionamentos:**
-  - Um docente pode ministrar várias disciplinas (relação 1:N com `disciplina`).
-  - Um docente pode ter várias alocações específicas em períodos (via `disciplina_docente_id` em `periodo`).
-- **Função no Sistema:** Gerencia o corpo docente e suas atribuições acadêmicas.
-
----
-
-#### 8. Tabela `disciplina`
-
-- **Descrição:** Cadastro das disciplinas oferecidas pela instituição.
-- **Estrutura:**
-  - `id` (INT): Identificador único da disciplina, chave primária.
-  - `nome` (VARCHAR(45)): Nome da disciplina.
-  - `docente_id` (INT): Referência ao docente responsável, chave estrangeira.
-- **Relacionamentos:**
-  - Está associada a um docente principal (relação N:1 com `docente`).
-  - Pode ser ministrada em vários períodos (relação 1:N com `periodo`).
-- **Função no Sistema:** Representa as unidades curriculares que compõem os cursos.
-
----
-
-#### 9. Tabela `periodo`
-
-- **Descrição:** Entidade central que integra todas as informações relacionadas a uma sessão específica de aula, combinando dia, horário, ambiente, disciplina e docente.
-- **Estrutura:**
-  - `id` (VARCHAR(45)): Identificador único do período, chave primária.
-  - `dia_id` (INT): Referência ao dia da semana, chave estrangeira.
-  - `horario_id` (INT): Referência ao horário, chave estrangeira.
-  - `disciplina_id` (INT): Referência à disciplina, chave estrangeira.
-  - `disciplina_docente_id` (INT): Referência a uma possível alocação específica de docente para esta disciplina neste período.
-  - `semestre_cronograma_id` (INT): Referência ao semestre no cronograma, chave estrangeira.
-  - `ambiente_id` (INT): Referência ao ambiente onde ocorrerá a aula, chave estrangeira.
-- **Relacionamentos:**
-  - Associado a um dia específico (relação N:1 com `dia`).
-  - Ocorre em um horário definido (relação N:1 com `horario`).
-  - Está vinculado a uma disciplina (relação N:1 com `disciplina`).
-  - Está alocado em um ambiente específico (relação N:1 com `ambiente`).
-  - Pertence a um semestre específico no cronograma (relação N:1 com `semestre_cronograma`).
-- **Função no Sistema:** Núcleo do sistema que coordena quando e onde cada disciplina será ministrada, por qual professor e para qual curso/turno.
-
----
-
-#### 10. Tabela `admin`
-
-- **Descrição:** Armazena informações dos usuários administradores do sistema.
-- **Estrutura:**
-  - `id` (INT): Identificador único do administrador, chave primária.
-  - `name` (VARCHAR(60)): Nome do administrador.
-  - `email` (VARCHAR(60)): Email do administrador, usado para login.
-  - `senha` (VARCHAR(80)): Senha criptografada do administrador.
-- **Relacionamentos:** Não possui relacionamentos diretos com outras tabelas.
-- **Função no Sistema:** Gerencia o acesso administrativo ao sistema.
-
----
-
-### 📜 Conclusão
-
-Este modelo de dados oferece uma solução robusta e escalável para gestão educacional, com ênfase na organização de cronogramas acadêmicos e alocação de recursos. Sua estrutura centralizada na tabela `periodo` permite flexibilidade e eficiência no gerenciamento de atividades acadêmicas, atendendo às necessidades de instituições de ensino de diferentes portes.
-
-</details>
-
----
+- HTML5 para estrutura
+- CSS3 para estilização
+- JavaScript para interatividade
+- Bibliotecas de terceiros para componentes
+- Design responsivo
+- Interface moderna e intuitiva
 
 ## 🛠️ Tecnologias
 
@@ -778,6 +771,7 @@ Este modelo de dados oferece uma solução robusta e escalável para gestão edu
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](#)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](#)
+[![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)](#)
 
 </div>
 
@@ -789,7 +783,6 @@ Este modelo de dados oferece uma solução robusta e escalável para gestão edu
 - **Versionamento:** Git/GitHub  
 - **Gestão:** Trello  
 - **Documentação:** Markdown  
-- **Testes:** Jest  
 
 ---
 
