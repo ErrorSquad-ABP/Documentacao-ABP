@@ -225,7 +225,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Design system estabelecido<br>
       - Componentes base definidos
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Frontend</b></td>
@@ -234,7 +234,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Ambiente configurado<br>
       - Layout base responsivo
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Backend</b></td>
@@ -243,7 +243,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Endpoints CRUD implementados<br>
       - Validações configuradas
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Banco de Dados</b></td>
@@ -252,7 +252,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Modelos iniciais criados<br>
       - Scripts de migração prontos
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
 </table>
 
