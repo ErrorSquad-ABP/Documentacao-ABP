@@ -891,6 +891,29 @@ O modelo de dados está disponível no arquivo `Modelo-de-dados-ABP.mwb`, que po
 
 ---
 
+## 📉 Burndown Chart
+
+<details>
+<summary><b>📊 Acompanhamento da Sprint</b></summary>
+
+### 🖼️ Gráfico de Burndown
+
+<div align="center">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-04-14%20191214.png" alt="Burndown Chart da Sprint" width="80%">
+</div>
+
+### 📋 Descrição
+
+O gráfico de burndown acima ilustra o progresso da equipe ao longo da sprint, mostrando a quantidade de trabalho restante (em pontos de história ou tarefas) em relação ao tempo. A linha ideal representa a trajetória esperada para a conclusão das tarefas, enquanto a linha real reflete o desempenho efetivo do time.
+
+Durante a sprint, observa-se que o ritmo de entrega se manteve próximo ao ideal, com pequenas variações em alguns dias, indicando ajustes naturais no fluxo de trabalho. Nos dias finais, a equipe conseguiu acelerar a conclusão das tarefas, aproximando-se da meta planejada. Isso demonstra um bom acompanhamento das atividades, adaptação às demandas e foco na entrega dos objetivos da sprint.
+
+O burndown chart é uma ferramenta fundamental para monitorar o andamento do projeto, identificar possíveis gargalos e promover a transparência no processo de desenvolvimento ágil.
+
+</details>
+
+---
+
 ## Documentação
 
 Toda a documentação e artefatos do projeto serão mantidos neste repositório público no GitHub.
