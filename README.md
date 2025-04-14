@@ -637,6 +637,72 @@ O diagrama de casos de uso descreve as interações entre os usuários (atores) 
 
 ---
 
+## 📁 Estrutura do Repositório
+
+```
+Documentacao-ABP/
+├── LICENSE                      # Licença do projeto
+├── Modelo-de-dados-ABP.mwb      # Modelo de dados MySQL Workbench
+├── Product-Backlog.docx         # Documento de Product Backlog
+├── README.md                    # Este arquivo de documentação
+├── Sprint 1.docx                # Documentação da Sprint 1
+└── Casos_de_Uso/                # Documentação de casos de uso
+    └── UseCase_ABP.asta         # Diagrama de casos de uso (Astah)
+```
+
+## 🗂️ Estrutura Geral do Projeto ABP
+
+A estrutura completa do projeto está dividida em 4 repositórios principais:
+
+```
+ABP/
+├── Documentacao-ABP/            # Documentação e artefatos do projeto
+├── ErrorSquad-Assets1/          # Recursos visuais e mídia
+│   └── Images/                  # Imagens utilizadas no projeto
+├── ErrorSquad-Front/            # Frontend da aplicação
+│   ├── FIGMA/                   # Protótipos e wireframes
+│   └── frontend/                # Código fonte do frontend
+│       ├── assets/              # Recursos estáticos
+│       ├── config/              # Configurações do frontend
+│       ├── includes/            # Componentes reutilizáveis
+│       └── pages/               # Páginas da aplicação
+└── ErrorSquad-Server/           # Backend da aplicação
+    └── src/                     # Código fonte do backend
+        ├── config/              # Configurações do servidor
+        ├── controllers/         # Controladores da API
+        ├── database/            # Camada de acesso a dados
+        ├── lib/                 # Bibliotecas e utilitários
+        ├── routes/              # Rotas da API
+        ├── services/            # Serviços de negócio
+        └── utils/               # Funções auxiliares
+```
+
+## ⚙️ Configuração do Ambiente
+
+Para cada componente do projeto, existem arquivos de configuração específicos:
+
+### Frontend
+- O frontend utiliza arquivos de configuração em JavaScript localizados em `ErrorSquad-Front/frontend/config/`:
+  - `api_endpoints.js`: Configuração de endpoints da API
+  - `auth_config.js`: Configuração de autenticação
+  - `config.js`: Configurações gerais do frontend
+
+### Backend
+- O backend utiliza um arquivo `.env` localizado na raiz de `ErrorSquad-Server/`:
+  - Caminho: `ErrorSquad-Server/.env`
+  - Contém configurações de banco de dados, porta do servidor e outras variáveis de ambiente
+  - **Importante**: Este arquivo contém informações sensíveis e não é versionado
+
+## 📊 Modelo de Dados
+
+O modelo de dados está disponível no arquivo `Modelo-de-dados-ABP.mwb`, que pode ser aberto com o MySQL Workbench. Este modelo representa a estrutura do banco de dados PostgreSQL utilizado no projeto.
+
+<div align="center">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/bdatualizado.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
+</div>
+
+---
+
 ## Funcionalidades Implementadas
 
 ### Backend
@@ -732,7 +798,7 @@ O diagrama de casos de uso descreve as interações entre os usuários (atores) 
 ### Modelo de Dados
 
 <div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/WhatsApp%20Image%202025-04-01%20at%2020.32.51_03f4cd7c.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/bdatualizado.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
 </div>
 
 ### Entidades Implementadas
