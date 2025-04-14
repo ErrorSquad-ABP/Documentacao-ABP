@@ -780,49 +780,6 @@ O modelo de dados está disponível no arquivo `Modelo-de-dados-ABP.mwb`, que po
 - Scripts para criação e atualização de tabelas
 - Manutenção da integridade dos dados
 
-## 🗄️ Banco de Dados
-
-### Tecnologias
-
-- **PostgreSQL**: Banco de dados relacional principal
-  - Suporte a transações ACID
-  - Queries complexas
-  - Integridade referencial
-
-- **Google BigQuery**: Analytics e relatórios
-  - Dataset: `sitefatecdsm-01-2025`
-  - Tabela: `SiteFatecDSM.curso`
-  - Análise de dados em larga escala
-  - Queries SQL otimizadas
-
-### Modelo de Dados
-
-<div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/bdatualizado.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
-</div>
-
-### Entidades Implementadas
-
-- **Curso**: Gerenciamento de cursos
-- **Ambiente**: Cadastro de ambientes físicos
-- **Dia**: Controle de dias da semana
-- **Disciplina**: Cadastro de disciplinas
-- **Docente**: Gerenciamento de professores
-- **Horario**: Controle de horários
-- **Periodo**: Gerenciamento de períodos letivos
-- **Semestre**: Controle de semestres
-- **Turno**: Gerenciamento de turnos
-
-### Operações Implementadas
-
-- CRUD completo para todas as entidades
-- Validação de existência de registros
-- Queries otimizadas para recuperação de dados
-- Tratamento de erros e respostas padronizadas
-- Migrations para controle de versão do banco
-- Relacionamentos com integridade referencial
-- Índices para melhor performance
-
 ## 🎨 Frontend
 
 ### Estrutura de Páginas
