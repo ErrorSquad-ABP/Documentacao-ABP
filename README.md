@@ -598,6 +598,45 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 </details>
 
+---
+
+## 📋 Casos de Uso
+
+<details>
+<summary><b>🔄 Diagrama de Casos de Uso</b></summary>
+
+### 📊 Visão Geral
+
+O diagrama de casos de uso descreve as interações entre os usuários (atores) e o sistema, ilustrando as principais funcionalidades disponíveis e como elas se relacionam.
+
+### 🖼️ Diagrama
+
+<div align="center">
+    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Casos_de_Uso/Screenshot%202025-04-14%20103344.png" alt="Diagrama de Casos de Uso" width="90%">
+</div>
+
+> O diagrama completo está disponível na pasta `Casos_de_Uso` no arquivo `UseCase_ABP.asta`
+
+### 📝 Descrição dos Casos de Uso
+
+- **Consultar Horários**: Permite aos usuários visualizar os horários de aulas por curso, turma, professor ou ambiente.
+- **Visualizar Mapa de Salas**: Exibe o mapa interativo de ambientes da faculdade com status de ocupação.
+- **Exportar PDF**: Gera relatórios em formato PDF dos horários e alocações.
+- **Fazer Upload de CSV**: Permite à secretaria acadêmica importar dados através de arquivos CSV.
+- **Gerenciar Dados (CRUD)**: Permite aos administradores criar, ler, atualizar e excluir registros no sistema.
+- **Validar Regras de Alocação**: Garante que não existam conflitos de horários ou ambientes.
+
+### 👥 Atores Principais
+
+- **Comunidade Acadêmica**: Alunos, professores e funcionários que consultam horários.
+- **Secretaria Acadêmica**: Responsável pela gestão e atualização dos horários.
+- **Coordenações de Curso**: Participam do processo de alocação de horários e ambientes.
+- **Administradores do Sistema**: Gerenciam configurações e permissões de acesso.
+
+</details>
+
+---
+
 ## Funcionalidades Implementadas
 
 ### Backend
