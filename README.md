@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/⚙️_Status-Desenvolvimento-yellow?style=for-the-badge)](#-sobre-o-projeto)
-[![Sprint](https://img.shields.io/badge/📅_Sprint-1/3-orange?style=for-the-badge)](#-cronograma)
+[![Sprint](https://img.shields.io/badge/📅_Sprint-1/3-orange?style=for-the-badge)](#-sprint-1)
 [![Docs](https://img.shields.io/badge/📚_Docs-Wiki-4a90e2?style=for-the-badge)](#documentação)
 
 </div>
@@ -31,65 +31,22 @@ Sistema web desenvolvido para otimizar a gestão de horários acadêmicos da FAT
 
 ---
 
-## Tema do Semestre
+## 🚀 Tema do Semestre
 
 Desenvolver um sistema web para consulta de horários de aulas e alocação de ambientes, substituindo os informes impressos e otimizando a gestão acadêmica.
 
 ---
 
-## Desafio
+## 🔍 Desafio
 
 Atualmente, os horários de aulas são divulgados por meio de informes impressos e e-mails. Alterações nos horários exigem a reimpressão dos informes, gerando retrabalho. O sistema proposto visa resolver esse problema, permitindo consultas por curso, ambiente, turno e turma.
 
 ---
 
-## Requisitos
-
-### Requisitos Funcionais
-
-- **RF01:** Fazer a ingestão de dados no sistema a partir de um arquivo CSV.
-- **RF02 (Opcional):** Gerenciar os dados do sistema (CRUD) através da interface da aplicação.
-- **RF03:** Garantir que os dados respeitem as regras de alocação (ex.: evitar conflitos de horários e salas).
-- **RF04:** Exportar relatórios/mapas de ambientes e horários em formato PDF.
-- **RF05:** Permitir consultas no sistema (ex.: por turma, turno, professor, data).
-
-### Requisitos Não Funcionais
-
-- **RNF01:** Exibir um mapa interativo de salas, permitindo visualizar a situação do ambiente.
-- **RNF02:** Garantir que o sistema seja responsivo e tenha um layout consistente em dispositivos móveis.
-
-### Restrições de Projeto
-
-- **RP01:** Prototipar e validar o sistema utilizando o Figma.
-- **RP02:** Seguir o catálogo de tecnologias:
-  - HTML, CSS e JavaScript (Vanilla JS).
-  - SGBD PostgreSQL.
-  - Servidor implementado com JavaScript (Node.js com Express).
-  - Repositório público no GitHub.
-  - Ferramenta de controle de tarefas (ex.: GitHub Projects, Trello).
-
----
-
-## Cronograma
-
-- **18/mar:** Kick off e entrega da planilha de avaliação do ABP com informações da equipe e repositório.
-- **24/mar:** Início da Sprint 1.
-- **14/abr:** Envio do vídeo da Review da Sprint 1 (até 4 minutos, não listado no YouTube).
-- **15/abr:** Review da Sprint 1.
-- **16/abr:** Início da Sprint 2.
-- **14/mai:** Envio do vídeo da Review da Sprint 2.
-- **15/mai:** Review da Sprint 2.
-- **16/mai:** Início da Sprint 3.
-- **09/jun:** Envio do vídeo da Review da Sprint 3.
-- **10/jun:** Review da Sprint 3.
-- **11/jun:** Apresentação final do projeto no formato de feira (data sujeita a alteração).
-
----
-
-## 🔄 Sprints
-
 <details open>
-<summary><h3>Sprint 1 - Planejamento Inicial e Infraestrutura</h3></summary>
+<summary>
+<h2>🔄 Sprint 1 - Planejamento Inicial, Infraestrutura e Preparação</h2>
+</summary>
 
 ### 📅 Período
 
@@ -99,116 +56,33 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ### 🎯 Objetivos Principais
 
-- Estabelecer infraestrutura básica do sistema (backend e banco de dados).
-- Desenvolver protótipo e iniciar frontend com responsividade.
-- Garantir configuração adequada das bases de dados.
-- Implementar endpoints CRUD iniciais.
+- Iniciar a infraestrutura básica do sistema (estrutura do backend e banco de dados)
+- Iniciar o desenvolvimento do frontend com prototipação e responsividade inicial
+- Garantir que as bases de dados e a estrutura do backend estejam configuradas
 
 ### 📋 Histórias Planejadas
 
-<table>
-  <tr align="center">
-    <th>ID</th>
-    <th>História</th>
-    <th>Detalhamento</th>
-    <th>Critérios de Aceite</th>
-  </tr>
-  <tr>
-    <td align="center">H1</td>
-    <td><b>Prototipação</b></td>
-    <td>
-      - Criar wireframes detalhados no Figma<br>
-      - Definir e validar paleta de cores com cliente<br>
-      - Realizar refinamentos iterativos<br>
-      - Documentar decisões de design
-    </td>
-    <td>
-      ✓ Wireframes aprovados<br>
-      ✓ Paleta de cores definida<br>
-      ✓ Protótipo responsivo<br>
-      ✓ Design system documentado
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H2</td>
-    <td><b>Frontend Base</b></td>
-    <td>
-      - Implementar layout do Figma<br>
-      - Desenvolver responsividade<br>
-      - Testar em múltiplos dispositivos<br>
-      - Garantir acessibilidade básica
-    </td>
-    <td>
-      ✓ Layout implementado<br>
-      ✓ Responsividade OK<br>
-      ✓ Testes documentados
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H3</td>
-    <td><b>Estrutura Frontend</b></td>
-    <td>
-      - Definir arquitetura de pastas<br>
-      - Configurar ambiente de desenvolvimento<br>
-      - Estabelecer padrões de código<br>
-      - Configurar ferramentas de desenvolvimento
-    </td>
-    <td>
-      ✓ Estrutura definida<br>
-      ✓ Ambiente configurado<br>
-      ✓ Documentação inicial
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H4</td>
-    <td><b>Estrutura Backend</b></td>
-    <td>
-      - Definir arquitetura do servidor<br>
-      - Configurar ambiente Node.js<br>
-      - Implementar servidor base<br>
-      - Configurar rota de teste "OK"
-    </td>
-    <td>
-      ✓ Servidor respondendo<br>
-      ✓ Estrutura organizada<br>
-      ✓ Documentação API
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H5</td>
-    <td><b>Banco de Dados</b></td>
-    <td>
-      - Configurar PostgreSQL<br>
-      - Modelar tabelas iniciais<br>
-      - Criar scripts de migração<br>
-      - Realizar testes de conexão
-    </td>
-    <td>
-      ✓ Banco configurado<br>
-      ✓ Modelos criados<br>
-      ✓ Conexão testada
-    </td>
-  </tr>
-  <tr>
-    <td align="center">H6</td>
-    <td><b>Endpoints CRUD</b></td>
-    <td>
-      - Criar rotas CRUD para:<br>
-      &nbsp;&nbsp;• Semestres<br>
-      &nbsp;&nbsp;• Cursos<br>
-      &nbsp;&nbsp;• Períodos<br>
-      &nbsp;&nbsp;• Matérias<br>
-      &nbsp;&nbsp;• Docentes<br>
-      &nbsp;&nbsp;• Ambientes<br>
-      - Implementar validações
-    </td>
-    <td>
-      ✓ Endpoints criados<br>
-      ✓ Validações OK<br>
-      ✓ Documentação API
-    </td>
-  </tr>
-</table>
+**Histórias selecionadas para esta Sprint:** H1 (Prototipação Figma), H7 (Estrutura Frontend), H8 (Estrutura Backend), H9 (Banco de Dados) e H10 (Endpoints CRUD)
+
+> 📌 Veja detalhes completos de cada história no [Product Backlog](#-product-backlog---sprint-1)
+
+### 📋 Requisitos da Sprint 1
+
+#### Requisitos Funcionais
+
+- **RF1:** Criar wireframes detalhados no Figma para as principais páginas
+- **RF2:** Definir estrutura do projeto Frontend e Backend (pastas, tecnologias)
+- **RF3:** Configurar servidor básico que responde "OK"
+- **RF4:** Modelar e criar tabelas iniciais no banco de dados PostgreSQL
+- **RF5:** Criar rotas CRUD para semestres, cursos, períodos, matérias, docentes e ambientes
+- **RF6:** Implementar validação de campos obrigatórios
+
+#### Requisitos Não Funcionais
+
+- **RNF1:** Garantir que o layout seja responsivo para diferentes dispositivos (testado no Figma)
+- **RNF2:** Estruturar pastas organizadas para backend e frontend
+- **RNF3:** Configurar ambiente de desenvolvimento adequado
+- **RNF4:** Testar conexão com banco de dados e garantir que tabelas foram criadas corretamente
 
 ### ✅ Critérios de Aceite Gerais
 
@@ -232,7 +106,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <td>
       - Estrutura de pastas organizada<br>
       - Ambiente configurado<br>
-      - Layout base responsivo
+      - Layout responsivo testado no Figma
     </td>
     <td align="center">🟢</td>
   </tr>
@@ -258,7 +132,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ### 📊 Métricas da Sprint
 
-- **Histórias Planejadas:** 6  
+- **Histórias Planejadas:** 5  
 - **Complexidade Total:** Média  
 - **Prioridade:** Alta  
 - **Dependências:** Nenhuma (Sprint inicial)  
@@ -274,12 +148,12 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ---
 
-## 📝 Product Backlog
+## 📝 Product Backlog - Sprint 1
 
 <details open>
 <summary><b>Épico: Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos</b></summary>
 
-### 🎯 Histórias de Usuário
+### 🎯 Histórias de Usuário da Sprint 1
 
 <table>
   <tr align="center">
@@ -314,95 +188,28 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <td align="center">RP01</td>
   </tr>
   <tr>
-    <td align="center">H2</td>
-    <td><b>Desenvolvimento do Front-End - Design e Responsividade</b></td>
+    <td align="center">H7</td>
+    <td><b>Definição de Estrutura Frontend</b></td>
     <td>
-      <b>Como</b> usuário,<br>
-      <b>Quero</b> que o sistema funcione bem em dispositivos móveis e desktop,<br>
-      <b>Para</b> ter uma boa experiência em qualquer contexto.
+      <b>Como</b> time de desenvolvimento,<br>
+      <b>Quero</b> definir a estrutura do projeto frontend,<br>
+      <b>Para</b> garantir uma organização adequada e facilitar o desenvolvimento.
     </td>
     <td>
-      • Criar as telas transformando layout do Figma em código<br>
-      • Garantir layout adaptável (CSS puro, sem frameworks)<br>
-      • Ajustar elementos para telas menores<br>
-      • Testar em dispositivos diferentes
+      • Definir a estrutura do projeto (pastas, tecnologias)<br>
+      • Configurar o ambiente inicial de desenvolvimento<br>
+      • Estabelecer padrões de código
     </td>
     <td>
-      • Sistema é utilizável em smartphones e tablets<br>
-      • Layout não quebra em diferentes tamanhos de tela<br>
-      • Sistema navega entre as telas corretamente
-    </td>
-    <td align="center">Alta</td>
-    <td align="center">RNF02</td>
-  </tr>
-  <tr>
-    <td align="center">H3</td>
-    <td><b>Desenvolvimento do Front-End - Usabilidade</b></td>
-    <td>
-      <b>Como</b> desenvolvedor Front-End,<br>
-      <b>Quero</b> que o sistema se comunique com o Back-End e esteja bem estruturado,<br>
-      <b>Para</b> consumir os dados do banco e tratá-los para exibir ao usuário.
-    </td>
-    <td>
-      • Desenvolver lógicas para consumir os endpoints da API<br>
-      • Aplicar métodos de segurança no front-end
-    </td>
-    <td>
-      • Sistema com lógicas para consumo dos endpoints funcionando<br>
-      • Sistema com validações de segurança mínimas
+      • Estrutura de pastas definida e documentada<br>
+      • Ambiente de desenvolvimento configurado<br>
+      • Padrões de código estabelecidos
     </td>
     <td align="center">Alta</td>
-    <td align="center">-</td>
+    <td align="center">RP02</td>
   </tr>
   <tr>
-    <td align="center">H4</td>
-    <td><b>Desenvolvimento do Front-End - Mapa Interativo</b></td>
-    <td>
-      <b>Como</b> secretaria acadêmica,<br>
-      <b>Quero</b> que o sistema possua um mapa interativo de salas,<br>
-      <b>Para</b> visualizar a situação dos ambientes e suas alocações ao longo do dia.
-    </td>
-    <td>
-      • Garantir layout adaptável (CSS puro)<br>
-      • Criar interface de filtro e busca<br>
-      • Endpoint de consulta no backend<br>
-      • Exibir resultados em formato responsivo<br>
-      • Ajustar elementos para telas menores<br>
-      • Testar em dispositivos diferentes
-    </td>
-    <td>
-      • Filtros (turma/professor/turno/ambiente) funcionando<br>
-      • Resultados atualizados dinamicamente<br>
-      • Mapa utilizável em dispositivos móveis<br>
-      • Layout responsivo em diferentes telas<br>
-      • Navegação entre mapas funcionando
-    </td>
-    <td align="center">Alta</td>
-    <td align="center">RNF01</td>
-  </tr>
-  <tr>
-    <td align="center">H5</td>
-    <td><b>Interatividade de Ambientes</b></td>
-    <td>
-      <b>Como</b> usuário,<br>
-      <b>Quero</b> ver um mapa das salas e clicar em cada sala para ver as alocações do dia,<br>
-      <b>Para</b> ter uma visão clara e visual da ocupação da faculdade.
-    </td>
-    <td>
-      • Implementar interação via click (mostrar horários)<br>
-      • Exibir status (livre/ocupada) no mapa<br>
-      • Configurar mapa para receber informações do back-end
-    </td>
-    <td>
-      • Mapa exibe status visual de ocupação<br>
-      • Clique em ambiente abre painel com horários detalhados<br>
-      • Mapa consumindo informações do back-end corretamente
-    </td>
-    <td align="center">Alta</td>
-    <td align="center">RNF01</td>
-  </tr>
-  <tr>
-    <td align="center">H6</td>
+    <td align="center">H8</td>
     <td><b>Definição de Estrutura Backend</b></td>
     <td>
       <b>Como</b> time de desenvolvimento,<br>
@@ -427,7 +234,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <td align="center">RP02</td>
   </tr>
   <tr>
-    <td align="center">H7</td>
+    <td align="center">H9</td>
     <td><b>Banco de Dados</b></td>
     <td>
       <b>Como</b> desenvolvedor,<br>
@@ -455,7 +262,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <td align="center">RP02</td>
   </tr>
   <tr>
-    <td align="center">H8</td>
+    <td align="center">H10</td>
     <td><b>Endpoints CRUD</b></td>
     <td>
       <b>Como</b> desenvolvedor Back-End,<br>
@@ -479,120 +286,6 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RF02</td>
-  </tr>
-  <tr>
-    <td align="center">H9</td>
-    <td><b>Exportação em PDF</b></td>
-    <td>
-      <b>Como</b> secretaria acadêmica,<br>
-      <b>Quero</b> gerar um PDF com os horários e alocações,<br>
-      <b>Para</b> facilitar a impressão ou o envio digital do cronograma.
-    </td>
-    <td>
-      • Criar endpoint de geração de PDF no backend<br>
-      • Definir layout do PDF (mapa e tabelas)<br>
-      • Implementar botão de exportar na interface
-    </td>
-    <td>
-      • PDF gerado contém todas as informações necessárias<br>
-      • Layout legível e pronto para impressão
-    </td>
-    <td align="center">Média</td>
-    <td align="center">RF04</td>
-  </tr>
-  <tr>
-    <td align="center">H10</td>
-    <td><b>Upload de CSV e Processamento</b></td>
-    <td>
-      <b>Como</b> secretaria acadêmica,<br>
-      <b>Quero</b> fazer upload de arquivos CSV com dados do sistema,<br>
-      <b>Para</b> alimentar rapidamente o banco de dados com informações em massa.
-    </td>
-    <td>
-      • Criar endpoint para upload de arquivos CSV<br>
-      • Implementar lógica de validação:<br>
-      &nbsp;&nbsp;• Verificar formato do arquivo<br>
-      &nbsp;&nbsp;• Validar campos obrigatórios<br>
-      &nbsp;&nbsp;• Salvar dados válidos no banco<br>
-      • Retornar feedback ao usuário:<br>
-      &nbsp;&nbsp;• Quantidade de registros processados<br>
-      &nbsp;&nbsp;• Lista de erros encontrados
-    </td>
-    <td>
-      • Sistema aceita arquivos CSV com estrutura válida<br>
-      • Dados válidos salvos; inválidos listados como erros<br>
-      • Feedback detalhado sobre o processamento
-    </td>
-    <td align="center">Média</td>
-    <td align="center">RF01</td>
-  </tr>
-  <tr>
-    <td align="center">H11</td>
-    <td><b>Validação de Regras de Negócio</b></td>
-    <td>
-      <b>Como</b> secretaria acadêmica,<br>
-      <b>Quero</b> validar as regras de alocação de horários,<br>
-      <b>Para</b> evitar conflitos como professores em dois lugares ao mesmo tempo.
-    </td>
-    <td>
-      • Desenvolver lógica de validação para:<br>
-      &nbsp;&nbsp;• Conflito de horários de professores<br>
-      &nbsp;&nbsp;• Duplicidade de ambiente<br>
-      &nbsp;&nbsp;• Horários sobrepostos por turma<br>
-      • Implementar sistema de pendências<br>
-      • Salvar dados válidos parcialmente
-    </td>
-    <td>
-      • Sistema bloqueia alocações inválidas<br>
-      • Pendências salvas para correção futura<br>
-      • Dados válidos armazenados sem interrupções
-    </td>
-    <td align="center">Alta</td>
-    <td align="center">RF03</td>
-  </tr>
-  <tr>
-    <td align="center">H12</td>
-    <td><b>Segurança</b></td>
-    <td>
-      <b>Como</b> desenvolvedor,<br>
-      <b>Quero</b> implementar autenticação e autorização no sistema,<br>
-      <b>Para</b> proteger endpoints e garantir que apenas usuários autorizados tenham acesso.
-    </td>
-    <td>
-      • Configurar autenticação JWT<br>
-      • Implementar middleware de autorização<br>
-      • Criar sistema de roles (admin/usuário)<br>
-      • Adicionar controle de sessões
-    </td>
-    <td>
-      • Endpoints protegidos por autenticação<br>
-      • Tokens JWT validados corretamente<br>
-      • Ações restritas por nível de permissão
-    </td>
-    <td align="center">Alta</td>
-    <td align="center">-</td>
-  </tr>
-  <tr>
-    <td align="center">H13</td>
-    <td><b>Documentação</b></td>
-    <td>
-      <b>Como</b> desenvolvedor,<br>
-      <b>Quero</b> documentar a API,<br>
-      <b>Para</b> garantir que o sistema seja confiável e fácil de usar por outros times.
-    </td>
-    <td>
-      • Criar documentação dos endpoints usando Insomnia/Postman<br>
-      • Documentar estruturas de requisição e resposta<br>
-      • Incluir exemplos de uso<br>
-      • Documentar códigos de status e erros
-    </td>
-    <td>
-      • Documentação completa e acessível<br>
-      • Endpoints documentados com exemplos<br>
-      • Formatos de requisição/resposta detalhados
-    </td>
-    <td align="center">Média</td>
-    <td align="center">RP02</td>
   </tr>
 </table>
 
