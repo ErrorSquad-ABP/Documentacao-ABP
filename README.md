@@ -144,6 +144,10 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - **Formato:** Vídeo não listado no YouTube  
 - **Entrega:** Via Teams para o Focal Point  
 
+### 🚀 Resultados
+
+> 📌 Para visualizar as funcionalidades implementadas nesta Sprint, [clique aqui](#-funcionalidades-implementadas)
+
 </details>
 
 ---
@@ -164,6 +168,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     <th>Critérios de Aceite</th>
     <th>Prioridade</th>
     <th>RF/RNF</th>
+    <th>Status</th>
   </tr>
   <tr>
     <td align="center">H1</td>
@@ -186,6 +191,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RP01</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td align="center">H7</td>
@@ -207,6 +213,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RP02</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td align="center">H8</td>
@@ -232,6 +239,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RP02</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td align="center">H9</td>
@@ -260,6 +268,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RP02</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td align="center">H10</td>
@@ -286,6 +295,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
     </td>
     <td align="center">Alta</td>
     <td align="center">RF02</td>
+    <td align="center">✅</td>
   </tr>
 </table>
 
@@ -293,257 +303,190 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ---
 
-## 📋 Casos de Uso
+## 🎨 Protótipo de Interface no Figma
 
-<details>
-<summary><b>🔄 Diagrama de Casos de Uso</b></summary>
+<details open>
+<summary><b>📱 Design System e Wireframes</b></summary>
 
-### 📊 Visão Geral
-
-O diagrama de casos de uso descreve as interações entre os usuários (atores) e o sistema, ilustrando as principais funcionalidades disponíveis e como elas se relacionam.
-
-### 🖼️ Diagrama
+### 🔗 Acesso ao Protótipo
 
 <div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Casos_de_Uso/Screenshot%202025-04-14%20103344.png" alt="Diagrama de Casos de Uso" width="90%">
+  <a href="https://www.figma.com/design/979HLFTPByEUm9zcip3t2L/frontend-ABP?node-id=0-1&p=f&t=KkWdtxNO08WmIedq-0" target="_blank">
+    <img src="https://img.shields.io/badge/Figma-Acessar_Protótipo_Completo-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
+  </a>
 </div>
 
-> O diagrama completo está disponível na pasta `Casos_de_Uso` no arquivo `UseCase_ABP.asta`
+### 🧭 Objetivo do Protótipo
 
-### 📝 Descrição dos Casos de Uso
+O protótipo tem como finalidade demonstrar visualmente a interface do sistema que permitirá a consulta de horários, turmas, professores e a ocupação de ambientes da instituição. Além disso, visa oferecer uma visualização gráfica e interativa das salas, apoiar a exportação de relatórios e garantir uma experiência fluida tanto em dispositivos desktop quanto móveis.
 
-- **Consultar Horários**: Permite aos usuários visualizar os horários de aulas por curso, turma, professor ou ambiente.
-- **Visualizar Mapa de Salas**: Exibe o mapa interativo de ambientes da faculdade com status de ocupação.
-- **Exportar PDF**: Gera relatórios em formato PDF dos horários e alocações.
-- **Fazer Upload de CSV**: Permite à secretaria acadêmica importar dados através de arquivos CSV.
-- **Gerenciar Dados (CRUD)**: Permite aos administradores criar, ler, atualizar e excluir registros no sistema.
-- **Validar Regras de Alocação**: Garante que não existam conflitos de horários ou ambientes.
+### 🗂️ Arquitetura de Navegação
 
-### 👥 Atores Principais
+O sistema é dividido em páginas principais:
+- **Home**
+- **Consulta** por Turma / Professor / Ambiente
+- **Mapa Interativo** de Ambientes
+- **Relatórios** (PDF Exportável)
+- **Login/Área Administrativa**
 
-- **Comunidade Acadêmica**: Alunos, professores e funcionários que consultam horários.
-- **Secretaria Acadêmica**: Responsável pela gestão e atualização dos horários.
-- **Coordenações de Curso**: Participam do processo de alocação de horários e ambientes.
-- **Administradores do Sistema**: Gerenciam configurações e permissões de acesso.
+### 🖥️ Principais Telas
+
+| Tela | Descrição |
+|------|-----------|
+| **Página Inicial** | Exibe o nome do sistema, menu de navegação e introdução ao sistema |
+| **Consulta** | Permite busca por turma, professor ou ambiente com exibição de resultados |
+| **Mapa Interativo** | Representação gráfica da planta da instituição com elementos clicáveis |
+| **Relatórios** | Interface para geração e exportação de relatórios em formato PDF |
+
+### 📱 Design Responsivo
+
+O protótipo contempla versões adaptadas para dispositivos:
+- **Desktop**: Menu horizontal e visualização ampla
+- **Tablet**: Layout ajustado e elementos redimensionados
+- **Mobile**: Menu hambúrguer e fluxo vertical otimizado
+
+### 🎨 Design System
+
+#### Cores
+- Paleta predominante: tons de azul, branco e cinza
+- Cores de destaque para ações importantes
+- Indicadores visuais por cores (livre/ocupado)
+
+#### Tipografia
+- Fonte sans-serif para boa legibilidade
+- Hierarquia visual por tamanhos de texto
+- Consistência em todos os dispositivos
+
+### 💡 Diferenciais Implementados
+
+- ✅ **Responsividade completa**: adaptação a qualquer tamanho de tela
+- ✅ **Usabilidade**: navegação simples baseada em heurísticas de Nielsen
+- ✅ **Interatividade**: mapa de ambientes com simulação realista
+- ✅ **Exportação**: visualização de relatórios com opção de PDF
+- ✅ **Escalabilidade**: previsão para áreas administrativas futuras
+
+> 📌 O protótipo no Figma foi a base para validação com stakeholders e guiará a implementação em HTML, CSS e JavaScript na próxima sprint.
 
 </details>
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📋 Casos de Uso
 
-```
-Documentacao-ABP/
-├── LICENSE                      # Licença do projeto
-├── Modelo-de-dados-ABP.mwb      # Modelo de dados MySQL Workbench
-├── Product-Backlog.docx         # Documento de Product Backlog
-├── README.md                    # Este arquivo de documentação
-├── Sprint 1.docx                # Documentação da Sprint 1
-└── Casos_de_Uso/                # Documentação de casos de uso
-    └── UseCase_ABP.asta         # Diagrama de casos de uso (Astah)
-```
+<details open>
+<summary><b> Diagrama e Especificações de Casos de Uso</b></summary>
 
-## 🗂️ Estrutura Geral do Projeto ABP
+### 📊 Visão Geral dos Casos de Uso
 
-A estrutura completa do projeto está dividida em 4 repositórios principais:
+O diagrama abaixo ilustra as principais funcionalidades do sistema e como os diferentes usuários (atores) interagem com elas:
 
-```
-ABP/
-├── Documentacao-ABP/            # Documentação e artefatos do projeto
-├── ErrorSquad-Assets1/          # Recursos visuais e mídia
-│   └── Images/                  # Imagens utilizadas no projeto
-├── ErrorSquad-Front/            # Frontend da aplicação
-│   ├── FIGMA/                   # Protótipos e wireframes
-│   └── frontend/                # Código fonte do frontend
-│       ├── assets/              # Recursos estáticos
-│       ├── config/              # Configurações do frontend
-│       ├── includes/            # Componentes reutilizáveis
-│       └── pages/               # Páginas da aplicação
-└── ErrorSquad-Server/           # Backend da aplicação
-    └── src/                     # Código fonte do backend
-        ├── config/              # Configurações do servidor
-        ├── controllers/         # Controladores da API
-        ├── database/            # Camada de acesso a dados
-        ├── lib/                 # Bibliotecas e utilitários
-        ├── routes/              # Rotas da API
-        ├── services/            # Serviços de negócio
-        └── utils/               # Funções auxiliares
-```
+<div align="center">
+    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Casos_de_Uso/Screenshot%202025-04-16%20014857.png" alt="Diagrama de Casos de Uso" width="90%">
+</div>
 
-## ⚙️ Configuração do Ambiente
+### 📝 Principais Funcionalidades
 
-Para cada componente do projeto, existem arquivos de configuração específicos:
+| Caso de Uso | Descrição | Ator Principal |
+|-------------|-----------|----------------|
+| **Consultar Horários** | Visualização dos horários de aulas por curso, turma, professor ou ambiente | Comunidade Acadêmica |
+| **Visualizar Mapa de Salas** | Exibição do mapa interativo de ambientes com status de ocupação | Comunidade Acadêmica |
+| **Exportar PDF** | Geração de relatórios em PDF dos horários e alocações | Comunidade Acadêmica, Secretaria |
+| **Fazer Upload de CSV** | Importação de dados através de arquivos CSV | Secretaria Acadêmica |
+| **Gerenciar Dados (CRUD)** | Criar, ler, atualizar e excluir registros no sistema | Administradores |
+| **Validar Regras de Alocação** | Verificação automática para evitar conflitos de horários/ambientes | Sistema |
 
-### Frontend
-- O frontend utiliza arquivos de configuração em JavaScript localizados em `ErrorSquad-Front/frontend/config/`:
-  - `api_endpoints.js`: Configuração de endpoints da API
-  - `auth_config.js`: Configuração de autenticação
-  - `config.js`: Configurações gerais do frontend
+### 👥 Atores do Sistema
 
-### Backend
-- O backend utiliza um arquivo `.env` localizado na raiz de `ErrorSquad-Server/`:
-  - Caminho: `ErrorSquad-Server/.env`
-  - Contém configurações de banco de dados, porta do servidor e outras variáveis de ambiente
-  - **Importante**: Este arquivo contém informações sensíveis e não é versionado
+- **Comunidade Acadêmica**: Alunos, professores e funcionários que consultam informações
+- **Secretaria Acadêmica**: Responsável pela gestão e atualização dos horários
+- **Coordenações**: Participam do processo de alocação de horários e ambientes
+- **Administradores**: Gerenciam configurações e permissões de acesso ao sistema
+
+</details>
+
+---
 
 ## 📊 Modelo de Dados
 
-O modelo de dados está disponível no arquivo `Modelo-de-dados-ABP.mwb`, que pode ser aberto com o MySQL Workbench. Este modelo representa a estrutura do banco de dados PostgreSQL utilizado no projeto.
+<details open>
+<summary><b>Modelo Relacional do Banco de Dados</b></summary>
+
+### Diagrama ER
 
 <div align="center">
     <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/bdatualizado.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
 </div>
 
+### Principais Entidades
+
+| Entidade | Descrição | Relações |
+|----------|-----------|----------|
+| **Semestre** | Período letivo (ex: 1° sem. 2025) | Possui várias alocações de horários |
+| **Curso** | Cursos oferecidos pela instituição | Possui várias turmas e disciplinas |
+| **Turma** | Grupo de estudantes (ex: 1°DSM) | Pertence a um curso |
+| **Matéria** | Disciplinas ministradas | Atribuídas a professores |
+| **Docente** | Professores da instituição | Ministram várias disciplinas |
+| **Ambiente** | Salas, laboratórios e espaços físicos | Utilizados para aulas e eventos |
+| **Período** | Horários e dias da semana | Define quando as aulas ocorrem |
+
+### Características Técnicas
+
+- **SGBD**: PostgreSQL
+- **Integridade referencial**: Garantida por chaves estrangeiras
+- **Normalização**: Estrutura em 3FN para evitar redundâncias
+- **Índices**: Otimizados para consultas de horários e ambientes
+
+</details>
+
 ---
 
-## Funcionalidades Implementadas
+## 🚀 Funcionalidades Implementadas
 
-### Backend
+<details open>
+<summary><b>Recursos Desenvolvidos na Sprint 1</b></summary>
+
+### 💻 Visão Geral das Implementações
+
+| Área | Funcionalidades | Status |
+|------|----------------|--------|
+| **Backend** | API REST, Endpoints CRUD, Validações | ✅ Concluído |
+| **Frontend** | Wireframes, Protótipos, Componentes | ✅ Concluído |
+| **Banco de Dados** | Modelagem, Conexão, Consultas | ✅ Concluído |
+
+### 🔍 Detalhes das Implementações
+
+#### Backend
 - **API REST com Express.js**
-  - Rotas para gerenciamento de cursos (CRUD completo)
-    - Criação de curso com validação de nome
-    - Listagem de todos os cursos
-    - Atualização de curso com validação
-    - Deleção de curso por ID
-  - Rotas para gerenciamento de usuários (listagem e criação)
-  - Rota de verificação de saúde do servidor
-  - Tratamento de erros padronizado
-    - Logs de erro no console
-    - Respostas de erro padronizadas
-    - Status HTTP apropriados
+  - CRUD completo para gerenciamento de cursos
+  - Verificação de saúde do servidor via endpoint `/health`
+  - Tratamento padronizado de erros e validações
   - Respostas JSON estruturadas
-  - Utilitários
-    - Função para capitalização de primeira letra
+- **Tecnologias**: Node.js, Express, PostgreSQL
 
-### Banco de Dados
-- **PostgreSQL**
-  - Suporte a transações ACID
-  - Queries complexas
-  - Integridade referencial
+#### Banco de Dados
+- **PostgreSQL**: Banco principal com suporte a transações ACID
+- **BigQuery**: Análise de dados para relatórios avançados
 
-- **Google BigQuery**
-  - Dataset: sitefatecdsm-01-2025
-  - Tabela: SiteFatecDSM.curso
-  - Análise de dados em larga escala
-  - Queries SQL otimizadas
+#### Frontend
+- **Prototipação**: Design system completo no Figma
+- **Páginas Principais**: Login, Dashboard, Mapa de Salas e Grade Horária
+- **Tecnologias**: HTML5, CSS3, JavaScript e bibliotecas auxiliares
 
-### Frontend
-- **Estrutura de Páginas**
-  - Login
-  - Dashboard
-  - Mapa
-  - Grade
-  - Edição de Grade
-  - Edição de Mapa
-  - Página 404
+#### Arquitetura e Ferramentas
+- **Backend**: Padrão MVC com Node.js e Express
+- **Frontend**: Arquitetura componentizada e responsiva
+- **Integração**: API REST com endpoints documentados
+- **Design**: Figma para prototipação e design system
+- **Controle de Versão**: Git/GitHub
+- **Gestão**: Trello para acompanhamento de tarefas
 
-## 🔧 Backend
-
-### Estrutura do Servidor
-
-- **Framework**: Node.js com Express
-- **Arquitetura**: MVC (Model-View-Controller)
-- **Estrutura de Pastas**:
-  - `controllers`: Lógica de negócios e manipulação de requisições
-  - `database`: Configuração e modelos de banco de dados
-  - `lib`: Bibliotecas e utilitários
-  - `routes`: Definição de endpoints da API
-  - `utils`: Funções auxiliares
-  - `config`: Configurações do servidor
-  - `services`: Serviços e integrações externas
-
-### Rotas Implementadas
-
-- `/health`: Verificação de status do servidor
-- `/cursos`: CRUD completo de cursos
-- `/users`: Listagem e criação de usuários (definida, mas controlador não encontrado)
-
-### Controladores
-
-- **HealthController**: Monitoramento do servidor
-- **CursoController**: Gerenciamento de cursos
-  - Criação de cursos
-  - Listagem de cursos
-  - Atualização de cursos
-  - Remoção de cursos
-
-### Migrations
-
-- Controle de versão do banco de dados
-- Scripts para criação e atualização de tabelas
-- Manutenção da integridade dos dados
-
-## 🎨 Frontend
-
-### Estrutura de Páginas
-
-- **Páginas Principais**:
-  - `index.html`: Página inicial
-  - `login.html`: Autenticação de usuários
-  - `dashboard.html`: Painel principal
-  - `grade.html`: Visualização de grade horária
-  - `editar_grade.html`: Edição de grade horária
-  - `mapa.html`: Visualização de mapa
-  - `editar_mapa.html`: Edição de mapa
-  - `404.html`: Página de erro
-
-### Recursos Estáticos
-
-- **CSS**: Estilos e layouts
-- **Fonts**: Tipografias
-- **Imagens**: Recursos visuais
-- **JavaScript**: Lógica do cliente
-- **Vendors**: Bibliotecas de terceiros
-
-### Prototipagem
-
-- **Figma**: Protótipos e wireframes
-  - Design system
-  - Fluxos de usuário
-  - Componentes de interface
-
-### Casos de Uso
-
-- Documentação detalhada dos casos de uso do sistema
-- Fluxos de interação do usuário
-- Requisitos funcionais e não funcionais
-
-### Tecnologias Frontend
-
-- HTML5 para estrutura
-- CSS3 para estilização
-- JavaScript para interatividade
-- Bibliotecas de terceiros para componentes
-- Design responsivo
-- Interface moderna e intuitiva
-
-## 🛠️ Tecnologias
-
-<div align="center">
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](#)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](#)
-[![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)](#)
-
-</div>
-
----
-
-### 🔧 Ferramentas
-
-- **Design:** Figma  
-- **Versionamento:** Git/GitHub  
-- **Gestão:** Trello  
-- **Documentação:** Markdown  
+</details>
 
 ---
 
 ## 📉 Burndown Chart
 
-<details>
+<details open>
 <summary><b>📊 Acompanhamento da Sprint</b></summary>
 
 ### 🖼️ Gráfico de Burndown
@@ -552,21 +495,90 @@ O modelo de dados está disponível no arquivo `Modelo-de-dados-ABP.mwb`, que po
     <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-04-14%20191214.png" alt="Burndown Chart da Sprint" width="80%">
 </div>
 
-### 📋 Descrição
+### 📋 Análise do Desempenho
 
-O gráfico de burndown acima ilustra o progresso da equipe ao longo da sprint, mostrando a quantidade de trabalho restante (em pontos de história ou tarefas) em relação ao tempo. A linha ideal representa a trajetória esperada para a conclusão das tarefas, enquanto a linha real reflete o desempenho efetivo do time.
+O gráfico mostra o progresso da equipe durante a Sprint 1, comparando o ritmo planejado (linha ideal) com o desempenho real.
 
-Durante a sprint, observa-se que o ritmo de entrega se manteve próximo ao ideal, com pequenas variações em alguns dias, indicando ajustes naturais no fluxo de trabalho. Nos dias finais, a equipe conseguiu acelerar a conclusão das tarefas, aproximando-se da meta planejada. Isso demonstra um bom acompanhamento das atividades, adaptação às demandas e foco na entrega dos objetivos da sprint.
+**Destaques:**
+- Início alinhado com o planejamento nos primeiros 3 dias
+- Aceleração da entrega a partir do meio da sprint
+- Fechamento da sprint com 100% das histórias concluídas
+- Ritmo consistente de trabalho ao longo do período
 
-O burndown chart é uma ferramenta fundamental para monitorar o andamento do projeto, identificar possíveis gargalos e promover a transparência no processo de desenvolvimento ágil.
+**Pontos Positivos:**
+- ✅ Conclusão de todas as histórias dentro do prazo da sprint
+- ✅ Equipe demonstrou capacidade de aceleração nos momentos necessários
+- ✅ Comunicação eficiente que permitiu ajustes no ritmo de desenvolvimento
+- ✅ Habilidade de priorizar tarefas críticas para evitar atrasos
+
+**Pontos a Melhorar:**
+- ⚠️ Pequeno desvio do planejamento ideal nos dias 4-6
+- ⚠️ Concentração de conclusões na última semana da sprint
+- ⚠️ Necessidade de distribuir melhor as entregas ao longo do período
+- ⚠️ Refinamento do planejamento inicial para tarefas de maior complexidade
+
+> 📊 Gráfico gerado através da ferramenta [Burndown Chart Generator](https://jv-l0pes.github.io/burndown-chart/) desenvolvida pela equipe.
 
 </details>
 
 ---
 
-## Documentação
+## 🔍 Sprint Retrospective
 
-Toda a documentação e artefatos do projeto serão mantidos neste repositório público no GitHub.
+<details open>
+<summary><b>📝 Reflexões e Aprendizados da Sprint 1</b></summary>
+
+### 🎯 Visão Geral da Retrospectiva
+
+A Sprint 1 foi concluída com sucesso, entregando todos os itens planejados, porém com alguns desafios que nos trouxeram importantes aprendizados. Esta retrospectiva visa documentar nossas reflexões e estabelecer melhorias para as próximas sprints.
+
+### ✅ O que funcionou bem
+
+- **Entregas completas**: Conseguimos entregar 100% do escopo planejado dentro do prazo
+- **Protótipo no Figma**: O design system e a prototipação, após incorporar mudanças sugeridas pelo cliente, foram bem recebidos e aprovados
+- **Integração técnica**: As escolhas tecnológicas se mostraram adequadas e integradas
+- **Modelo de dados**: A modelagem inicial do banco atendeu todos os requisitos levantados
+
+### ⚠️ Desafios enfrentados
+
+- **Desvio do planejamento ideal**: Conforme observado no Burndown Chart, nossa curva de execução ficou distante da linha ideal, com concentração de entregas no final da sprint
+- **Comunicação inconsistente**: A ausência de Daily Scrums prejudicou o alinhamento da equipe e criou alguns retrabalhos
+- **Dinâmica de equipe**: Sendo a primeira vez que trabalhamos juntos, houve necessidade de ajuste na forma de colaboração entre pessoas com diferentes perfis
+- **Migração de ferramenta**: A mudança do GitHub Projects para o Trello durante a sprint gerou confusão temporária no acompanhamento das tarefas
+- **Escopo ambicioso**: Inicialmente incluímos a história H2 no backlog da sprint, mas precisamos removê-la por ter sido uma estimativa otimista demais
+
+### 🚀 Plano de melhorias
+
+#### Processo e comunicação
+- **Implementação de Daily Scrums**: Criação de um caderno digital compartilhado para registro das dailys, mesmo que assíncronas
+- **Cerimônias Scrum**: Formalização das reuniões de Planning, Review e Retrospective com calendário fixo
+- **Amadurecimento da equipe**: Definição mais clara de papéis e responsabilidades para reduzir conflitos
+
+#### Gestão de tarefas
+- **Estrutura Trello otimizada**: Refinamento da estrutura em 3 quadros principais (A fazer, Em progresso, Concluído)
+- **Sistema de labels**: Uso consistente de etiquetas para prioridade, complexidade e área técnica
+- **Estimativas mais realistas**: Refinamento do processo de estimativa, considerando dados históricos desta primeira sprint
+
+#### Planejamento e execução
+- **Distribuição de trabalho**: Melhor balanceamento na distribuição de tarefas ao longo da sprint
+- **Divisão de histórias complexas**: Quebrar histórias grandes em incrementos menores e mais gerenciáveis
+- **Acompanhamento diário**: Monitoramento constante do Burndown Chart para identificar desvios precocemente
+- **Melhor definição de escopo**: Ser mais conservador na quantidade de histórias por sprint, priorizando qualidade sobre quantidade
+
+### 📈 Métricas para Sprint 2
+
+Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a avaliar melhorias no processo:
+
+- **Aderência ao planejamento**: Reduzir em 50% o desvio observado no burndown chart
+- **Comunicação**: 100% das dailys registradas, mesmo que de forma assíncrona
+- **Entregas incrementais**: No mínimo 30% das histórias concluídas na primeira metade da sprint
+- **Qualidade**: Redução de retrabalho através de critérios de aceite mais detalhados
+
+> 💡 **Aprendizado-chave:** A Sprint 1 nos mostrou que, apesar dos desafios iniciais de formação de equipe e definição de processos, conseguimos entregar valor. Com os ajustes planejados, estamos confiantes que a Sprint 2 será ainda mais produtiva e fluida.
+
+</details>
+
+---
 
 ## 👥 Nossa Equipe
 
