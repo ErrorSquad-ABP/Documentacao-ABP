@@ -334,7 +334,7 @@ O protótipo tem como finalidade demonstrar visualmente a interface do sistema q
         <p><strong>Grade de Horários:</strong> Visualização principal das aulas por curso</p>
       </td>
       <td>
-        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/mobile/Android%20Compact%20-%2019.png" alt="Grade de Horários Mobile" width="80%" style="display: block; margin: 0 auto;">
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/mobile/Android%20Compact%20-%2012.png" alt="Grade de Horários Mobile" width="80%" style="display: block; margin: 0 auto;">
         <p><strong>Grade de Horários:</strong> Adaptada para dispositivos móveis</p>
       </td>
     </tr>
