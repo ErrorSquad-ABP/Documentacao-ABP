@@ -320,52 +320,71 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 O protótipo tem como finalidade demonstrar visualmente a interface do sistema que permitirá a consulta de horários, turmas, professores e a ocupação de ambientes da instituição. Além disso, visa oferecer uma visualização gráfica e interativa das salas, apoiar a exportação de relatórios e garantir uma experiência fluida tanto em dispositivos desktop quanto móveis.
 
+### 📊 Interfaces Principais
+
+<div align="center">
+  <table>
+    <tr>
+      <th width="50%">Versão Desktop</th>
+      <th width="50%">Versão Mobile</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/desktop/GRADE-DE-AULAS.jpeg" alt="Grade de Horários Desktop" width="100%">
+        <p><strong>Grade de Horários:</strong> Visualização principal das aulas por curso</p>
+      </td>
+      <td>
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/mobile/Android%20Compact%20-%2019.png" alt="Grade de Horários Mobile" width="80%" style="display: block; margin: 0 auto;">
+        <p><strong>Grade de Horários:</strong> Adaptada para dispositivos móveis</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/desktop/MAPA%20INTERATIVO-8.png" alt="Mapa Interativo Desktop" width="100%">
+        <p><strong>Mapa Interativo:</strong> Visualização espacial dos ambientes acadêmicos</p>
+      </td>
+      <td>
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/mobile/Android%20Compact%20-%2022.png" alt="Mapa Interativo Mobile" width="80%" style="display: block; margin: 0 auto;">
+        <p><strong>Mapa Interativo:</strong> Versão otimizada para telas pequenas</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ### 🗂️ Arquitetura de Navegação
 
-O sistema é dividido em páginas principais:
-- **Home**
-- **Consulta** por Turma / Professor / Ambiente
-- **Mapa Interativo** de Ambientes
-- **Relatórios** (PDF Exportável)
-- **Login/Área Administrativa**
-
-### 🖥️ Principais Telas
-
-| Tela | Descrição |
-|------|-----------|
-| **Página Inicial** | Exibe o nome do sistema, menu de navegação e introdução ao sistema |
-| **Consulta** | Permite busca por turma, professor ou ambiente com exibição de resultados |
-| **Mapa Interativo** | Representação gráfica da planta da instituição com elementos clicáveis |
-| **Relatórios** | Interface para geração e exportação de relatórios em formato PDF |
-
-### 📱 Design Responsivo
-
-O protótipo contempla versões adaptadas para dispositivos:
-- **Desktop**: Menu horizontal e visualização ampla
-- **Tablet**: Layout ajustado e elementos redimensionados
-- **Mobile**: Menu hambúrguer e fluxo vertical otimizado
+O sistema é estruturado em páginas principais:
+- **Home**: Página inicial com introdução ao sistema
+- **Consulta**: Por turma, professor ou ambiente
+- **Mapa Interativo**: Visualização espacial dos ambientes
+- **Grade de Horários**: Visualização detalhada das aulas
 
 ### 🎨 Design System
 
-#### Cores
-- Paleta predominante: tons de azul, branco e cinza
-- Cores de destaque para ações importantes
-- Indicadores visuais por cores (livre/ocupado)
+#### Paleta de Cores
 
-#### Tipografia
-- Fonte sans-serif para boa legibilidade
-- Hierarquia visual por tamanhos de texto
-- Consistência em todos os dispositivos
+<div align="center">
+  <table>
+    <tr>
+      <td style="background-color:#FF5757; color:white; text-align:center; padding:8px">Vermelho Principal<br>#FF5757</td>
+      <td style="background-color:#F44336; color:white; text-align:center; padding:8px">Vermelho Escuro<br>#F44336</td>
+      <td style="background-color:#F5F5F5; color:black; text-align:center; padding:8px">Cinza Claro<br>#F5F5F5</td>
+      <td style="background-color:#333333; color:white; text-align:center; padding:8px">Cinza Escuro<br>#333333</td>
+      <td style="background-color:#FFFFFF; color:black; text-align:center; padding:8px; border:1px solid #ccc">Branco<br>#FFFFFF</td>
+    </tr>
+  </table>
+</div>
 
-### 💡 Diferenciais Implementados
+A paleta utiliza predominantemente tons de vermelho para destacar elementos importantes, combinados com cinza e branco para criar contraste e legibilidade. O vermelho transmite energia e destaca as informações críticas do sistema.
 
-- ✅ **Responsividade completa**: adaptação a qualquer tamanho de tela
-- ✅ **Usabilidade**: navegação simples baseada em heurísticas de Nielsen
-- ✅ **Interatividade**: mapa de ambientes com simulação realista
-- ✅ **Exportação**: visualização de relatórios com opção de PDF
-- ✅ **Escalabilidade**: previsão para áreas administrativas futuras
+### 💡 Diferenciais de UX
 
-> 📌 O protótipo no Figma foi a base para validação com stakeholders e guiará a implementação em HTML, CSS e JavaScript na próxima sprint.
+- **Responsividade completa**: Adaptação fluida a qualquer dispositivo
+- **Mapa interativo**: Visualização espacial com status em tempo real
+- **Filtros dinâmicos**: Seleção personalizada de critérios de busca
+- **Experiência intuitiva**: Navegação simplificada e consistente
+
+> 📌 O protótipo completo no Figma serve como referência definitiva para o desenvolvimento frontend, garantindo consistência visual e de interação em toda a aplicação.
 
 </details>
 
