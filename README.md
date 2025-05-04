@@ -400,7 +400,7 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 O diagrama abaixo ilustra as principais funcionalidades do sistema e como os diferentes usuários (atores) interagem com elas:
 
 <div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Casos_de_Uso/Screenshot%202025-04-16%20014857.png" alt="Diagrama de Casos de Uso" width="90%">
+    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Diagramas/Diagrama de Casos de Uso/CasosDeUso.png" alt="Diagrama de Casos de Uso" width="90%">
 </div>
 
 ### 📝 Principais Funcionalidades
