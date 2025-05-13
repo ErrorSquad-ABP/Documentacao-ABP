@@ -148,14 +148,8 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 > 📌 Para visualizar as funcionalidades implementadas nesta Sprint, [clique aqui](#-funcionalidades-implementadas)
 
-</details>
-
----
-
-## 📝 Product Backlog - Sprint 1
-
 <details open>
-<summary><b>Épico: Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos</b></summary>
+<summary><b>📝 Product Backlog - Sprint 1</b></summary>
 
 ### 🎯 Histórias de Usuário da Sprint 1
 
@@ -301,12 +295,8 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 </details>
 
----
-
-## 🎨 Protótipo de Interface no Figma
-
 <details open>
-<summary><b>📱 Design System e Wireframes</b></summary>
+<summary><b>🎨 Protótipo de Interface no Figma</b></summary>
 
 ### 🔗 Acesso ao Protótipo
 
@@ -388,12 +378,8 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 
 </details>
 
----
-
-## 📋 Casos de Uso
-
 <details open>
-<summary><b> Diagrama e Especificações de Casos de Uso</b></summary>
+<summary><b>📋 Casos de Uso</b></summary>
 
 ### 📊 Visão Geral dos Casos de Uso
 
@@ -423,12 +409,8 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 
 </details>
 
----
-
-## 📊 Modelo de Dados
-
 <details open>
-<summary><b>Modelo Relacional do Banco de Dados</b></summary>
+<summary><b>📊 Modelo de Dados</b></summary>
 
 ### Diagrama ER
 
@@ -457,12 +439,8 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 
 </details>
 
----
-
-## 🚀 Funcionalidades Implementadas
-
 <details open>
-<summary><b>Recursos Desenvolvidos na Sprint 1</b></summary>
+<summary><b>🚀 Funcionalidades Implementadas</b></summary>
 
 ### 💻 Visão Geral das Implementações
 
@@ -501,12 +479,8 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 
 </details>
 
----
-
-## 📉 Burndown Chart
-
 <details open>
-<summary><b>📊 Acompanhamento da Sprint</b></summary>
+<summary><b>📉 Burndown Chart</b></summary>
 
 ### 🖼️ Gráfico de Burndown
 
@@ -540,12 +514,8 @@ O gráfico mostra o progresso da equipe durante a Sprint 1, comparando o ritmo p
 
 </details>
 
----
-
-## 🔍 Sprint Retrospective
-
 <details open>
-<summary><b>📝 Reflexões e Aprendizados da Sprint 1</b></summary>
+<summary><b>🔍 Sprint Retrospective</b></summary>
 
 ### 🎯 Visão Geral da Retrospectiva
 
@@ -594,6 +564,8 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 - **Qualidade**: Redução de retrabalho através de critérios de aceite mais detalhados
 
 > 💡 **Aprendizado-chave:** A Sprint 1 nos mostrou que, apesar dos desafios iniciais de formação de equipe e definição de processos, conseguimos entregar valor. Com os ajustes planejados, estamos confiantes que a Sprint 2 será ainda mais produtiva e fluida.
+
+</details>
 
 </details>
 
