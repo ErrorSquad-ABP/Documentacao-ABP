@@ -442,86 +442,169 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 - Inserir front-end, back-end, e banco de dados em serviços de nuvem
 - Sistema CRUD para criação, edição e alteração de docentes, salas e disciplinas
 
-### 📋 Histórias Planejadas
+### 📝 Product Backlog - Sprint 2
 
-**Histórias selecionadas para esta Sprint:** H2, H3, H4, H5
+**Épico:** Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos
 
-### 📋 Requisitos da Sprint 2
+#### Histórias Selecionadas para a Sprint 2
 
-#### Requisitos Funcionais
+---
 
-- **RF1:** Desenvolver telas interativas e fluidas
-- **RF2:** Configurar recursos de fetch
-- **RF3:** Implementar Modais de edição
-- **RF4:** Elaborar sistema de segurança e verificação
-- **RF5:** Ingestão de dados via CSV
-- **RF6:** Modelar e implementar sistema de edição e alteração
+#### História 2 – Desenvolvimento do Front-End - Design e Responsividade
 
-#### Requisitos Não Funcionais
+**Como usuário,**  
+Quero que o sistema funcione bem em dispositivos móveis e desktop,  
+Para ter uma boa experiência em qualquer contexto.
 
-- **RNF1:** Obrigatoriedade de Tokens
-- **RNF2:** Consumo do banco através de CSV
-- **RNF3:** Conexão estável entre as aplicações
-- **RNF4:** Desenvolver telas responsivas
+**Tarefas:**
+- Criar as telas transformando layout do Figma em código.
+- Garantir layout adaptável (CSS puro, sem frameworks).
+- Ajustar elementos para telas menores.
+- Testes em dispositivos diferentes.
 
-### ✅ Critérios de Aceite Gerais
+**Prioridade:** Alta
 
-<table>
-  <tr>
-    <th>Área</th>
-    <th>Critérios</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td><b>Design</b></td>
-    <td>
-      - Design Profissional seguindo UX e UI<br>
-      - Paleta de cores padrão CPS<br>
-      - Design estruturado e Padronizado
-    </td>
-    <td align="center">✅</td>
-  </tr>
-  <tr>
-    <td><b>Frontend</b></td>
-    <td>
-      - Desenvolvimento das telas<br>
-      - Telas interativas com js<br>
-      - Integração com backend e banco
-    </td>
-    <td align="center">✅</td>
-  </tr>
-  <tr>
-    <td><b>Backend</b></td>
-    <td>
-      - Sistema de Verificação de segurança<br>
-      - Uso de Tokens para maior segurança<br>
-      - Integração com frontend e banco
-    </td>
-    <td align="center">✅</td>
-  </tr>
-  <tr>
-    <td><b>Banco de Dados</b></td>
-    <td>
-      - Consumo de CSV para registros<br>
-      - Integração com frontend e backend
-    </td>
-    <td align="center">✅</td>
-  </tr>
-</table>
+**Critérios de Aceite:**
+- Sistema é utilizável em smartphones e tablets.
+- Layout não quebra em diferentes tamanhos de tela.
+- Sistema navega entre as telas corretamente.
 
-### 📊 Métricas da Sprint
+---
 
-- **Histórias Planejadas:** 6  
-- **Complexidade Total:** Alta  
-- **Prioridade:** Alta  
-- **Dependências:** Sprint 1  
+#### História 3 – Desenvolvimento do Front-End - Grade de Horários
 
-### 🎥 Review
+**Como secretaria acadêmica,**  
+Quero que o sistema possua uma grade de horários que exibe semestre, curso, período, disciplinas, docentes e ambientes consumidos do banco de dados,  
+Para facilitar a visualização e manutenção dos horários.
 
-- **Data:** 15/05/2025  
-- **Duração:** 4:40 minutos  
-- **Formato:** Vídeo não listado no YouTube  
-- **Entrega:** Via Teams para o Focal Point  
+**Tarefas:**
+- Garantir layout adaptável (CSS puro, sem frameworks).
+- Criar endpoint de consulta no backend.
+- Tela de manutenção da grade.
+- Criar interface de filtro e busca.
+- Tela de exibição da grade.
+- Exibir resultados em formato de tabela responsiva.
+- Ajustar elementos para telas menores.
+- Testes em dispositivos diferentes.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- Filtros por turma, professor, turno e ambiente funcionam corretamente.
+- Resultados atualizados dinamicamente.
+- Grade é utilizável em smartphones e tablets.
+- Layout não quebra em diferentes tamanhos de tela.
+- Sistema navega entre os diferentes mapas corretamente.
+
+---
+
+#### História 4 – Desenvolvimento do Front-End - Mapa Interativo
+
+**Como secretaria acadêmica,**  
+Quero que o sistema possua um mapa interativo que exibe as salas e permite visualizar a situação de cada ambiente ao longo do dia,  
+Para facilitar o acompanhamento da ocupação dos espaços.
+
+**Tarefas:**
+- Garantir layout adaptável (CSS puro, sem frameworks).
+- Criar interface de filtro e busca.
+- Endpoint de consulta no backend.
+- Tela de manutenção do mapa.
+- Exibir resultados em formato de mapa responsivo.
+- Tela de exibição do mapa.
+- Ajustar elementos para telas menores.
+- Testes em dispositivos diferentes.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- Filtros por turma, professor, turno e ambiente funcionam corretamente.
+- Resultados atualizados dinamicamente.
+- Mapa é utilizável em smartphones e tablets.
+- Layout não quebra em diferentes tamanhos de tela.
+- Sistema navega entre os diferentes mapas corretamente.
+
+---
+
+#### História 5 – Desenvolvimento do Front-End - Usabilidade
+
+**Como desenvolvedor Front-End,**  
+Quero que o sistema se comunique com o Back-End e esteja bem estruturado,  
+Para consumir os dados do banco e tratá-los para exibir ao usuário.
+
+**Tarefas:**
+- Desenvolver lógicas para consumir os dados coletados nos end-points da API.
+- Aplicar métodos de segurança no front-end.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- Sistema com lógicas para consumo dos end-points funcionando.
+- Sistema com validações de segurança mínimas.
+
+---
+
+#### História 12 - Upload de CSV e Processamento
+
+**Como secretaria acadêmica,**  
+Quero fazer upload de arquivos CSV com dados do sistema,  
+Para alimentar rapidamente o banco de dados com informações em massa.
+
+**Tarefas:**
+- Criar endpoint para upload de arquivos CSV.
+- Implementar lógica de leitura e validação de arquivos CSV.
+- Salvar dados válidos no banco de dados.
+- Retornar feedback ao usuário sobre registros processados e erros.
+
+**Prioridade:** Média
+
+**Critérios de Aceite:**
+- O sistema aceita arquivos CSV com estrutura válida.
+- Dados válidos são salvos no banco; inválidos são listados como erros.
+- Feedback detalhado sobre o processamento é exibido.
+
+---
+
+#### História 13 - Validação de Regras de Negócio
+
+**Como secretaria acadêmica,**  
+Quero validar as regras de alocação de horários,  
+Para evitar conflitos como professores em dois lugares ao mesmo tempo.
+
+**Tarefas:**
+- Desenvolver lógica de validação para conflitos de horários, duplicidade de ambiente e sobreposição de horários.
+- Implementar sistema para listar pendências identificadas.
+- Salvar parcialmente dados válidos e marcar pendências para correção posterior.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- Sistema bloqueia alocações inválidas e lista erros para revisão.
+- Pendências são salvas no sistema para correção futura.
+- Dados válidos são armazenados sem interrupções.
+
+---
+
+#### História 14 - Segurança
+
+**Como desenvolvedor,**  
+Quero implementar autenticação e autorização no sistema,  
+Para proteger endpoints e garantir que apenas usuários autorizados tenham acesso.
+
+**Tarefas:**
+- Configurar autenticação utilizando JWT.
+- Implementar middleware de autorização para proteger rotas sensíveis.
+- Criar sistema de roles (ex.: administrador, usuário padrão) para restringir ações específicas.
+- Adicionar controle de sessões para expiração de tokens.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- Endpoints protegidos por autenticação e autorização.
+- Tokens JWT são gerados e validados corretamente.
+- Ações são restritas de acordo com o nível de permissão do usuário.
+
+---
+
 
 ### 📝 Principais Funcionalidades
 
@@ -534,6 +617,30 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 | 5  | Exportar Grade em PDF        | Gera relatórios em PDF a partir de objetos `GradeHorario` e disponibiliza para download.    | `PDFExporter`, `GradeHorario`, `PDF`                          |
 | 6  | Autenticar no Sistema        | Controla login e logout de usuários, emitindo tokens de sessão com expiração.               | `AuthService`, `Credenciais`, `Usuario`, `Session`            |
 | 7  | Validar Regras de Negócio    | Executa um conjunto de regras antes de persistir alterações, impedindo conflitos.           | `ValidatorEngine`, `BusinessRule`, `ResultadoValidacao`       |
+
+### ✅ Critérios de Aceite Gerais da Sprint 2
+
+| Critério                                                                                  | Status   |
+|-------------------------------------------------------------------------------------------|:--------:|
+| Sistema responsivo e utilizável em smartphones/tablets                                    | ✅       |
+| Layout não quebra em diferentes tamanhos de tela                                          | ✅       |
+| Navegação correta entre telas e mapas                                                     | ✅       |
+| Filtros por turma, professor, turno e ambiente funcionam                                  | ✅       |
+| Resultados atualizados dinamicamente                                                      | ✅       |
+| Grade de horários e mapa interativo utilizáveis e responsivos                             | ✅       |
+| Consumo de dados do backend funcionando                                                   | ✅       |
+| Upload de CSV processa dados e retorna feedback detalhado                                 | ✅       |
+| Validação de regras de negócio impede conflitos e lista pendências                        | ✅       |
+| Endpoints protegidos por autenticação e autorização (JWT)                                 | ✅       |
+| Ações restritas conforme o nível de permissão do usuário                                  | ✅       |
+| Tokens JWT gerados e validados corretamente                                               | ✅       |
+
+### 🎥 Review
+
+- **Data:** 15/05/2025  
+- **Duração:** 4:40 minutos  
+- **Formato:** Vídeo não listado no YouTube  
+- **Entrega:** Via Teams para o Focal Point  
 
 </details>
 
