@@ -794,7 +794,7 @@ Eu preciso realizar o deploy do banco de dados em ambiente de produção, para g
         <p><strong>Mapa Interativo:</strong> Visualização espacial dos ambientes acadêmicos</p>
       </td>
       <td>
-        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/mobile/Android%20Compact%20-%2022.png" alt="Mapa Interativo Mobile" width="80%" style="display: block; margin: 0 auto;">
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/frontend/Design/MapaMobile.png" alt="Mapa Interativo Mobile" width="80%" style="display: block; margin: 0 auto;">
         <p><strong>Mapa Interativo:</strong> Versão otimizada para telas pequenas</p>
       </td>
     </tr>
