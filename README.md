@@ -535,42 +535,11 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 | 6  | Autenticar no Sistema        | Controla login e logout de usuários, emitindo tokens de sessão com expiração.               | `AuthService`, `Credenciais`, `Usuario`, `Session`            |
 | 7  | Validar Regras de Negócio    | Executa um conjunto de regras antes de persistir alterações, impedindo conflitos.           | `ValidatorEngine`, `BusinessRule`, `ResultadoValidacao`       |
 
-### 🚀 Resultados
-
-> 📌 Para visualizar as funcionalidades implementadas nesta Sprint, [clique aqui](#-funcionalidades-implementadas)
-
 </details>
 
 <details open>
 <summary><b>🎨 Design do Site</b></summary>
   
-### 🎨 Paleta de Cores
-
-<div align="center">
-  <table>
-    <tr>
-      <td style="background-color:#B20000; color:white; text-align:center; padding:8px">Vermelho Principal<br>#B20000</td>
-      <td style="background-color:#7E0000; color:white; text-align:center; padding:8px">Vermelho Escuro<br>#7E0000</td>
-      <td style="background-color:#DADADA; color:black; text-align:center; padding:8px">Cinza Claro<br>#DADADA</td>
-      <td style="background-color:#666666; color:white; text-align:center; padding:8px">Cinza Escuro<br>#666666</td>
-      <td style="background-color:#E6E6E6; color:black; text-align:center; padding:8px">Cinza Hover<br>#E6E6E6</td>
-      <td style="background-color:#FFFFFF; color:black; text-align:center; padding:8px; border:1px solid #ccc">Branco<br>#FFFFFF</td>
-      <td style="background-color:#F8F8F8; color:black; text-align:center; padding:8px">Prata base<br>#F8F8F8</td>
-    </tr>
-  </table>
-</div>
-
-A paleta utiliza predominantemente tons de vermelho para destacar elementos importantes, combinados com cinza e branco e prata para criar contraste e legibilidade. O vermelho transmite energia e simboliza a cor principal do CPS.
-
-### 💡 Diferenciais de UX
-
-- **Responsividade completa**: Adaptação fluida a qualquer dispositivo
-- **Mapa interativo**: Visualização espacial com status em tempo real
-- **Filtros dinâmicos**: Seleção personalizada de critérios de busca
-- **Experiência intuitiva**: Navegação simplificada e consistente
-
-> 📌 O protótipo completo no Figma serve como referência definitiva para o desenvolvimento frontend, garantindo consistência visual e de interação em toda a aplicação.
-
 ### 📊 Interfaces Principais
 
 <div align="center">
@@ -610,7 +579,7 @@ O sistema é estruturado em páginas principais:
 - **Mapa Interativo**: Visualização espacial dos ambientes
 - **Grade de Horários**: Visualização detalhada das aulas
 
-### 🎨 Design System
+### 🎨 Design do Sistema
 
 #### Paleta de Cores
 
@@ -634,9 +603,7 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 - **Mapa interativo**: Visualização espacial com status em tempo real
 - **Filtros dinâmicos**: Seleção personalizada de critérios de busca
 - **Experiência intuitiva**: Navegação simplificada e consistente
-
-> 📌 O protótipo completo no Figma serve como referência definitiva para o desenvolvimento frontend, garantindo consistência visual e de interação em toda a aplicação.
-
+- 
 </details>
 
 <details open>
@@ -669,6 +636,48 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 - **Administradores**: Gerenciam configurações e permissões de acesso ao sistema
 
 </details>
+
+<details open>
+<summary><b>📊 Diagrama de Classes</b></summary>
+
+### 📊 Visão Geral do Diagrama de Classes
+
+O diagrama abaixo ilustra a estrutura de classes do sistema, mostrando as principais entidades, seus atributos, métodos e relacionamentos:
+
+<div align="center">
+    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Diagramas/Diagrama%20de%20%20classes/DiagramaDeClassesABP.png" alt="Diagrama de Classes" width="90%">
+</div>
+
+### 📝 Principais Classes e Relacionamentos
+
+| Classe | Descrição | Atributos Principais | Métodos Principais |
+|--------|-----------|---------------------|-------------------|
+| **Usuario** | Representa os usuários do sistema | - id<br>- nome<br>- email<br>- senha<br>- tipo | - autenticar()<br>- alterarSenha()<br>- validarPermissao() |
+| **Curso** | Gerencia informações dos cursos | - id<br>- nome<br>- duracao<br>- modalidade | - adicionarDisciplina()<br>- listarTurmas()<br>- gerarGrade() |
+| **Disciplina** | Controla as disciplinas do curso | - id<br>- nome<br>- cargaHoraria<br>- professor | - atribuirProfessor()<br>- definirHorario()<br>- verificarConflitos() |
+| **Ambiente** | Gerencia os espaços físicos | - id<br>- nome<br>- tipo<br>- capacidade<br>- status | - verificarDisponibilidade()<br>- atualizarStatus()<br>- reservar() |
+| **GradeHorario** | Organiza os horários das aulas | - id<br>- periodo<br>- curso<br>- disciplinas | - gerarGrade()<br>- validarConflitos()<br>- exportarPDF() |
+| **Professor** | Gerencia dados dos docentes | - id<br>- nome<br>- especialidade<br>- disponibilidade | - definirDisponibilidade()<br>- visualizarAulas()<br>- solicitarAlteracao() |
+
+### 🔄 Relacionamentos Principais
+
+- **Usuario → Curso**: Um usuário pode gerenciar múltiplos cursos
+- **Curso → Disciplina**: Um curso possui várias disciplinas
+- **Disciplina → Professor**: Uma disciplina é ministrada por um professor
+- **Ambiente → GradeHorario**: Um ambiente pode ser alocado em vários horários
+- **Professor → GradeHorario**: Um professor pode ter várias aulas na grade
+
+### 💡 Características do Sistema
+
+- **Herança**: Implementação de hierarquia de usuários (Admin, Professor, Aluno)
+- **Composição**: Grade de horários composta por disciplinas e ambientes
+- **Agregação**: Cursos agregam disciplinas e turmas
+- **Associação**: Relacionamentos entre professores e disciplinas
+
+> 📌 O diagrama de classes serve como base para a implementação do sistema, garantindo uma estrutura coesa e bem definida para o desenvolvimento.
+
+</details>
+
 
 </details>
 
@@ -718,30 +727,31 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 ### 🖼️ Gráfico de Burndown
 
 <div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-04-14%20191214.png" alt="Burndown Chart da Sprint" width="80%">
+    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-05-14%20234046.png" alt="Burndown Chart da Sprint" width="80%">
 </div>
 
-### 📋 Análise do Desempenho
+#### 📋 Análise do Desempenho
 
-O gráfico mostra o progresso da equipe durante a Sprint 1, comparando o ritmo planejado (linha ideal) com o desempenho real.
+O gráfico apresenta a evolução dos pontos restantes e completados ao longo da sprint, comparando-os com a linha de burndown ideal.
 
-**Destaques:**
-- Início alinhado com o planejamento nos primeiros 3 dias
-- Aceleração da entrega a partir do meio da sprint
-- Fechamento da sprint com 100% das histórias concluídas
-- Ritmo consistente de trabalho ao longo do período
+**Principais observações:**
+- O início da sprint foi marcado por uma redução gradual dos pontos restantes, porém abaixo do ritmo ideal esperado.
+- Entre os dias 16/04 e 10/05, o progresso foi constante, mas lento, com poucas entregas acumuladas.
+- A partir de 11/05, houve uma aceleração significativa nas entregas, refletida pela queda acentuada dos pontos restantes e o aumento dos pontos completados.
+- Nos últimos dias (13/05 a 15/05), praticamente todos os pontos foram concluídos, atingindo o objetivo da sprint.
+- O gráfico mostra um cruzamento entre as linhas de pontos restantes e completados próximo ao final, indicando o momento de virada na produtividade da equipe.
 
-**Pontos Positivos:**
-- ✅ Conclusão de todas as histórias dentro do prazo da sprint
-- ✅ Equipe demonstrou capacidade de aceleração nos momentos necessários
-- ✅ Comunicação eficiente que permitiu ajustes no ritmo de desenvolvimento
-- ✅ Habilidade de priorizar tarefas críticas para evitar atrasos
+**Pontos positivos:**
+- Entrega total dos pontos planejados até o final da sprint.
+- Capacidade de aceleração e foco nos dias finais para garantir a conclusão das tarefas.
+- O time conseguiu recuperar o ritmo e finalizar todas as histórias.
 
-**Pontos a Melhorar:**
-- ⚠️ Pequeno desvio do planejamento ideal nos dias 4-6
-- ⚠️ Concentração de conclusões na última semana da sprint
-- ⚠️ Necessidade de distribuir melhor as entregas ao longo do período
-- ⚠️ Refinamento do planejamento inicial para tarefas de maior complexidade
+**Pontos de atenção:**
+- O ritmo de entregas ficou aquém do ideal na maior parte da sprint, concentrando a maior parte das conclusões nos últimos dias.
+- Recomenda-se buscar uma distribuição mais equilibrada das entregas ao longo do período, evitando sobrecarga e riscos de última hora.
+
+**Resumo:**  
+Apesar do início mais lento, a equipe demonstrou resiliência e capacidade de entrega, conseguindo finalizar todos os pontos planejados. Para as próximas sprints, é importante manter o acompanhamento frequente do burndown e incentivar entregas incrementais e contínuas.
 
 > 📊 Gráfico gerado através da ferramenta [Burndown Chart Generator](https://jv-l0pes.github.io/burndown-chart/) desenvolvida pela equipe.
 
@@ -750,53 +760,38 @@ O gráfico mostra o progresso da equipe durante a Sprint 1, comparando o ritmo p
 <details open>
 <summary><b>🔍 Sprint Retrospective</b></summary>
 
-### 🎯 Visão Geral da Retrospectiva
+### 🎯 Visão Geral da Retrospectiva – Sprint 2
 
-A Sprint 1 foi concluída com sucesso, entregando todos os itens planejados, porém com alguns desafios que nos trouxeram importantes aprendizados. Esta retrospectiva visa documentar nossas reflexões e estabelecer melhorias para as próximas sprints.
+A Sprint 2 representou um avanço significativo em relação à Sprint 1, consolidando aprendizados e implementando melhorias propostas anteriormente. O foco esteve na aplicação prática do protótipo, integração de sistemas e entrega de funcionalidades robustas para o usuário final.
 
-### ✅ O que funcionou bem
+#### ✅ O que funcionou bem
 
-- **Entregas completas**: Conseguimos entregar 100% do escopo planejado dentro do prazo
-- **Protótipo no Figma**: O design system e a prototipação, após incorporar mudanças sugeridas pelo cliente, foram bem recebidos e aprovados
-- **Integração técnica**: As escolhas tecnológicas se mostraram adequadas e integradas
-- **Modelo de dados**: A modelagem inicial do banco atendeu todos os requisitos levantados
+- **Entrega de todas as funcionalidades planejadas:** Todas as histórias e requisitos definidos para a sprint foram concluídos, incluindo integração front-end/back-end, CRUD completo, ingestão de dados via CSV e autenticação robusta.
+- **Adoção de entregas incrementais:** Apesar de ainda haver concentração de entregas nos últimos dias, houve uma melhora perceptível na cadência de entregas intermediárias, especialmente após o acompanhamento mais próximo do burndown chart.
+- **Integração técnica e arquitetura:** A arquitetura MVC, a documentação das APIs e a integração entre as camadas do sistema se mostraram sólidas, facilitando testes e validações.
+- **Design e experiência do usuário:** O design system foi seguido à risca, garantindo consistência visual e usabilidade, com telas responsivas e navegação intuitiva, conforme o protótipo do Figma.
+- **Comunicação e colaboração:** A equipe manteve um fluxo de comunicação mais constante, com reuniões regulares e uso efetivo do Trello para acompanhamento das tarefas.
 
-### ⚠️ Desafios enfrentados
+#### ⚠️ Desafios enfrentados
 
-- **Desvio do planejamento ideal**: Conforme observado no Burndown Chart, nossa curva de execução ficou distante da linha ideal, com concentração de entregas no final da sprint
-- **Comunicação inconsistente**: A ausência de Daily Scrums prejudicou o alinhamento da equipe e criou alguns retrabalhos
-- **Dinâmica de equipe**: Sendo a primeira vez que trabalhamos juntos, houve necessidade de ajuste na forma de colaboração entre pessoas com diferentes perfis
-- **Migração de ferramenta**: A mudança do GitHub Projects para o Trello durante a sprint gerou confusão temporária no acompanhamento das tarefas
-- **Escopo ambicioso**: Inicialmente incluímos a história H2 no backlog da sprint, mas precisamos removê-la por ter sido uma estimativa otimista demais
+- **Ritmo de entregas:** O burndown chart mostra que, embora o início da sprint tenha sido mais equilibrado que na Sprint 1, ainda houve uma aceleração significativa apenas nos dias finais. Isso indica que a equipe está evoluindo, mas ainda pode buscar uma distribuição mais homogênea das entregas.
+- **Complexidade técnica:** A integração de múltiplos serviços em nuvem e a implementação de autenticação trouxeram desafios técnicos que exigiram mais tempo de pesquisa e testes do que o previsto.
+- **Gestão de dependências:** Algumas tarefas dependiam de entregas anteriores, o que gerou pequenos gargalos em momentos críticos da sprint.
 
-### 🚀 Plano de melhorias
+#### 🚀 Melhorias implementadas (e seus resultados)
 
-#### Processo e comunicação
-- **Implementação de Daily Scrums**: Criação de um caderno digital compartilhado para registro das dailys, mesmo que assíncronas
-- **Cerimônias Scrum**: Formalização das reuniões de Planning, Review e Retrospective com calendário fixo
-- **Amadurecimento da equipe**: Definição mais clara de papéis e responsabilidades para reduzir conflitos
+- **Daily Scrums e acompanhamento do burndown:** A implementação de reuniões rápidas e o monitoramento visual do progresso ajudaram a identificar desvios e ajustar prioridades ao longo da sprint.
+- **Quebra de histórias grandes:** A divisão de tarefas complexas em incrementos menores facilitou o acompanhamento e a entrega contínua de valor.
+- **Critérios de aceite mais detalhados:** A definição clara dos critérios de aceite reduziu retrabalho e alinhou as expectativas entre os membros da equipe.
 
-#### Gestão de tarefas
-- **Estrutura Trello otimizada**: Refinamento da estrutura em 3 quadros principais (A fazer, Em progresso, Concluído)
-- **Sistema de labels**: Uso consistente de etiquetas para prioridade, complexidade e área técnica
-- **Estimativas mais realistas**: Refinamento do processo de estimativa, considerando dados históricos desta primeira sprint
+#### 📈 Recomendações para as próximas sprints
 
-#### Planejamento e execução
-- **Distribuição de trabalho**: Melhor balanceamento na distribuição de tarefas ao longo da sprint
-- **Divisão de histórias complexas**: Quebrar histórias grandes em incrementos menores e mais gerenciáveis
-- **Acompanhamento diário**: Monitoramento constante do Burndown Chart para identificar desvios precocemente
-- **Melhor definição de escopo**: Ser mais conservador na quantidade de histórias por sprint, priorizando qualidade sobre quantidade
+- **Manter e reforçar entregas incrementais:** Buscar ainda mais equilíbrio na distribuição das entregas ao longo da sprint, evitando picos de trabalho nos dias finais.
+- **Aprimorar a gestão de dependências:** Planejar com mais antecedência as tarefas que dependem de outras, para minimizar bloqueios.
+- **Investir em automação de testes:** Com a base do sistema consolidada, é o momento ideal para ampliar a cobertura de testes automatizados, garantindo ainda mais qualidade e segurança nas próximas entregas.
+- **Celebrar conquistas:** O avanço em relação à Sprint 1 é notável e deve ser reconhecido! A equipe demonstrou resiliência, capacidade de adaptação e foco em resultados.
 
-### 📈 Métricas para Sprint 2
-
-Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a avaliar melhorias no processo:
-
-- **Aderência ao planejamento**: Reduzir em 50% o desvio observado no burndown chart
-- **Comunicação**: 100% das dailys registradas, mesmo que de forma assíncrona
-- **Entregas incrementais**: No mínimo 30% das histórias concluídas na primeira metade da sprint
-- **Qualidade**: Redução de retrabalho através de critérios de aceite mais detalhados
-
-> 💡 **Aprendizado-chave:** A Sprint 1 nos mostrou que, apesar dos desafios iniciais de formação de equipe e definição de processos, conseguimos entregar valor. Com os ajustes planejados, estamos confiantes que a Sprint 2 será ainda mais produtiva e fluida.
+> 💡 **Resumo:** A Sprint 2 consolidou o amadurecimento da equipe, com entregas robustas, integração técnica eficiente e evolução nos processos internos. O time está cada vez mais alinhado e preparado para desafios maiores, mantendo o foco na qualidade e na experiência do usuário.
 
 </details>
 
