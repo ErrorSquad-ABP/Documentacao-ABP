@@ -50,9 +50,9 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ### 📅 Período
 
-- **Início:** 15/04/2025  
-- **Término:** 05/05/2025  
-- **Review:** 06/05/2025  
+- **Início:** 18/03/2025
+- **Término:** 14/04/2025
+- **Review:** 15/04/2025  
 
 ### 🎯 Objetivos Principais
 
@@ -140,7 +140,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 ### 🎥 Review
 
-- **Data:** 06/05/2025  
+- **Data:** 15/04/2025
 - **Duração máxima:** 4 minutos  
 - **Formato:** Vídeo não listado no YouTube  
 - **Entrega:** Via Teams para o Focal Point  
@@ -434,16 +434,16 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 
 ### 📅 Período
 
-- **Início:** 15/04/2025  
-- **Término:** 05/05/2025  
-- **Review:** 06/05/2025  
+- **Início:** 16/04/2025  
+- **Término:** 14/05/2025  
+- **Review:** 15/05/2025  
 
 ### 🎯 Objetivos Principais
 
-- Implementar as funcionalidades básicas do sistema
-- Desenvolver a interface do usuário com base nos protótipos
-- Integrar frontend com backend
-- Implementar autenticação e autorização
+- Implementação do prototipo em HTML e CSS
+- Integração do front-end e back-end
+- Inserir front-end, back-end, e banco de dados em serviços de nuvem
+- sistema CRUD para criação, edição e alteração de docentes, salas e disciplinas
 
 ### 📋 Histórias Planejadas
 
