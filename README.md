@@ -780,7 +780,7 @@ Eu preciso realizar o deploy do banco de dados em ambiente de produção, para g
     </tr>
     <tr>
       <td>
-        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/desktop/GRADE-DE-AULAS.jpeg" alt="Grade de Horários Desktop" width="100%">
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/frontend/Design/GradeFatec.png" alt="Grade de Horários Desktop" width="100%">
         <p><strong>Grade de Horários:</strong> Visualização principal das aulas por curso</p>
       </td>
       <td>
