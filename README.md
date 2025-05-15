@@ -790,7 +790,7 @@ Eu preciso realizar o deploy do banco de dados em ambiente de produção, para g
     </tr>
     <tr>
       <td>
-        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/FIGMA/desktop/MAPA%20INTERATIVO-8.png" alt="Mapa Interativo Desktop" width="100%">
+        <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Front/blob/main/frontend/Design/MapaInterativo.png" alt="Mapa Interativo Desktop" width="100%">
         <p><strong>Mapa Interativo:</strong> Visualização espacial dos ambientes acadêmicos</p>
       </td>
       <td>
