@@ -425,11 +425,9 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 
 </details>
 
----
-
 <details open>
 <summary>
-<h2>🔄 Sprint 2 - Desenvolvimento Frontend, Backend e Integração</h2>
+<h2>🔄 Sprint 2 - Aplicação do Protótipo na Prática</h2>
 </summary>
 
 ### 📅 Período
@@ -440,34 +438,32 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 
 ### 🎯 Objetivos Principais
 
-- Implementação do prototipo em HTML e CSS
+- Implementação do protótipo em HTML e CSS
 - Integração do front-end e back-end
 - Inserir front-end, back-end, e banco de dados em serviços de nuvem
-- sistema CRUD para criação, edição e alteração de docentes, salas e disciplinas
+- Sistema CRUD para criação, edição e alteração de docentes, salas e disciplinas
 
 ### 📋 Histórias Planejadas
 
-**Histórias selecionadas para esta Sprint:** H2 (Autenticação), H3 (Dashboard), H4 (Consulta de Horários), H5 (Gestão de Ambientes) e H6 (Gestão de Docentes)
-
-> 📌 Veja detalhes completos de cada história no [Product Backlog](#-product-backlog---sprint-2)
+**Histórias selecionadas para esta Sprint:** H2, H3, H4, H5
 
 ### 📋 Requisitos da Sprint 2
 
 #### Requisitos Funcionais
 
-- **RF7:** Implementar sistema de autenticação e autorização
-- **RF8:** Desenvolver dashboard administrativo
-- **RF9:** Criar interface de consulta de horários
-- **RF10:** Implementar gestão de ambientes
-- **RF11:** Desenvolver gestão de docentes
-- **RF12:** Integrar frontend com backend
+- **RF1:** Desenvolver telas interativas e fluidas
+- **RF2:** Configurar recursos de fetch
+- **RF3:** Implementar Modais de edição
+- **RF4:** Elaborar sistema de segurança e verificação
+- **RF5:** Ingestão de dados via CSV
+- **RF6:** Modelar e implementar sistema de edição e alteração
 
 #### Requisitos Não Funcionais
 
-- **RNF5:** Implementar testes unitários e de integração
-- **RNF6:** Garantir segurança na autenticação
-- **RNF7:** Otimizar performance das consultas
-- **RNF8:** Documentar APIs desenvolvidas
+- **RNF1:** Obrigatoriedade de Tokens
+- **RNF2:** Consumo do banco através de CSV
+- **RNF3:** Conexão estável entre as aplicações
+- **RNF4:** Desenvolver telas responsivas
 
 ### ✅ Critérios de Aceite Gerais
 
@@ -478,56 +474,67 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
     <th>Status</th>
   </tr>
   <tr>
-    <td><b>Autenticação</b></td>
+    <td><b>Design</b></td>
     <td>
-      - Sistema de login implementado<br>
-      - Controle de acesso por perfil<br>
-      - Tokens JWT configurados
+      - Design Profissional seguindo UX e UI<br>
+      - Paleta de cores padrão CPS<br>
+      - Design estruturado e Padronizado
     </td>
-    <td align="center">🟡</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td><b>Frontend</b></td>
     <td>
-      - Dashboard responsivo<br>
-      - Consulta de horários funcional<br>
-      - Gestão de ambientes e docentes
+      - Desenvolvimento das telas<br>
+      - Telas interativas com js<br>
+      - Integração com backend e banco
     </td>
-    <td align="center">🟡</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td><b>Backend</b></td>
     <td>
-      - APIs documentadas<br>
-      - Testes implementados<br>
-      - Integração com frontend
+      - Sistema de Verificação de segurança<br>
+      - Uso de Tokens para maior segurança<br>
+      - Integração com frontend e banco
     </td>
-    <td align="center">🟡</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td><b>Banco de Dados</b></td>
     <td>
-      - Queries otimizadas<br>
-      - Índices implementados<br>
-      - Backup configurado
+      - Consumo de CSV para registros<br>
+      - Integração com frontend e backend
     </td>
-    <td align="center">🟡</td>
+    <td align="center">✅</td>
   </tr>
 </table>
 
 ### 📊 Métricas da Sprint
 
-- **Histórias Planejadas:** 5  
+- **Histórias Planejadas:** 6  
 - **Complexidade Total:** Alta  
 - **Prioridade:** Alta  
 - **Dependências:** Sprint 1  
 
 ### 🎥 Review
 
-- **Data:** 06/05/2025  
-- **Duração máxima:** 4 minutos  
+- **Data:** 15/05/2025  
+- **Duração:** 4:40 minutos  
 - **Formato:** Vídeo não listado no YouTube  
 - **Entrega:** Via Teams para o Focal Point  
+
+### 📝 Principais Funcionalidades
+
+| #  | Funcionalidade               | Descrição                                                                                   | Classes Principais                                            |
+|----|------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| 1  | Consultar Grade de Horários  | Permite visualizar os horários de aulas organizados por semestre, disciplina e horário.     | `GradeHorario`, `Disciplina`, `Horario`, `Semestre`           |
+| 2  | Visualizar Mapa Interativo   | Exibe o mapa dos ambientes (salas, laboratórios) e permite selecionar pontos de interesse. | `MapaInterativo`, `Mapa`, `Elemento`, `Ponto`                 |
+| 3  | Gerenciar Dados do Sistema   | Realiza operações CRUD sobre configurações e outros dados persistidos do sistema.           | `Sistema`, `RepositorioDados`, `Configuracao`                 |
+| 4  | Importar Dados via CSV       | Faz upload de arquivos CSV, parseia linhas e registra erros de importação quando ocorrem.   | `CSVImporter`, `CSVParser`, `ErrorHandler`, `Dados`           |
+| 5  | Exportar Grade em PDF        | Gera relatórios em PDF a partir de objetos `GradeHorario` e disponibiliza para download.    | `PDFExporter`, `GradeHorario`, `PDF`                          |
+| 6  | Autenticar no Sistema        | Controla login e logout de usuários, emitindo tokens de sessão com expiração.               | `AuthService`, `Credenciais`, `Usuario`, `Session`            |
+| 7  | Validar Regras de Negócio    | Executa um conjunto de regras antes de persistir alterações, impedindo conflitos.           | `ValidatorEngine`, `BusinessRule`, `ResultadoValidacao`       |
 
 ### 🚀 Resultados
 
@@ -536,19 +543,34 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 </details>
 
 <details open>
-<summary><b>🎨 Protótipo de Interface no Figma</b></summary>
-
-### 🔗 Acesso ao Protótipo
+<summary><b>🎨 Design do Site</b></summary>
+  
+### 🎨 Paleta de Cores
 
 <div align="center">
-  <a href="https://www.figma.com/design/979HLFTPByEUm9zcip3t2L/frontend-ABP?node-id=0-1&p=f&t=KkWdtxNO08WmIedq-0" target="_blank">
-    <img src="https://img.shields.io/badge/Figma-Acessar_Protótipo_Completo-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-  </a>
+  <table>
+    <tr>
+      <td style="background-color:#B20000; color:white; text-align:center; padding:8px">Vermelho Principal<br>#B20000</td>
+      <td style="background-color:#7E0000; color:white; text-align:center; padding:8px">Vermelho Escuro<br>#7E0000</td>
+      <td style="background-color:#DADADA; color:black; text-align:center; padding:8px">Cinza Claro<br>#DADADA</td>
+      <td style="background-color:#666666; color:white; text-align:center; padding:8px">Cinza Escuro<br>#666666</td>
+      <td style="background-color:#E6E6E6; color:black; text-align:center; padding:8px">Cinza Hover<br>#E6E6E6</td>
+      <td style="background-color:#FFFFFF; color:black; text-align:center; padding:8px; border:1px solid #ccc">Branco<br>#FFFFFF</td>
+      <td style="background-color:#F8F8F8; color:black; text-align:center; padding:8px">Prata base<br>#F8F8F8</td>
+    </tr>
+  </table>
 </div>
 
-### 🧭 Objetivo do Protótipo
+A paleta utiliza predominantemente tons de vermelho para destacar elementos importantes, combinados com cinza e branco e prata para criar contraste e legibilidade. O vermelho transmite energia e simboliza a cor principal do CPS.
 
-O protótipo tem como finalidade demonstrar visualmente a interface do sistema que permitirá a consulta de horários, turmas, professores e a ocupação de ambientes da instituição. Além disso, visa oferecer uma visualização gráfica e interativa das salas, apoiar a exportação de relatórios e garantir uma experiência fluida tanto em dispositivos desktop quanto móveis.
+### 💡 Diferenciais de UX
+
+- **Responsividade completa**: Adaptação fluida a qualquer dispositivo
+- **Mapa interativo**: Visualização espacial com status em tempo real
+- **Filtros dinâmicos**: Seleção personalizada de critérios de busca
+- **Experiência intuitiva**: Navegação simplificada e consistente
+
+> 📌 O protótipo completo no Figma serve como referência definitiva para o desenvolvimento frontend, garantindo consistência visual e de interação em toda a aplicação.
 
 ### 📊 Interfaces Principais
 
@@ -648,34 +670,6 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 - **Administradores**: Gerenciam configurações e permissões de acesso ao sistema
 
 </details>
-
-<details open>
-<summary><b>📊 Modelo de Dados</b></summary>
-
-### Diagrama ER
-
-<div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/bdatualizado.jpg" alt="Modelo Relacional do Banco de Dados" width="90%">
-</div>
-
-### Principais Entidades
-
-| Entidade | Descrição | Relações |
-|----------|-----------|----------|
-| **Semestre** | Período letivo (ex: 1° sem. 2025) | Possui várias alocações de horários |
-| **Curso** | Cursos oferecidos pela instituição | Possui várias turmas e disciplinas |
-| **Turma** | Grupo de estudantes (ex: 1°DSM) | Pertence a um curso |
-| **Matéria** | Disciplinas ministradas | Atribuídas a professores |
-| **Docente** | Professores da instituição | Ministram várias disciplinas |
-| **Ambiente** | Salas, laboratórios e espaços físicos | Utilizados para aulas e eventos |
-| **Período** | Horários e dias da semana | Define quando as aulas ocorrem |
-
-### Características Técnicas
-
-- **SGBD**: PostgreSQL
-- **Integridade referencial**: Garantida por chaves estrangeiras
-- **Normalização**: Estrutura em 3FN para evitar redundâncias
-- **Índices**: Otimizados para consultas de horários e ambientes
 
 </details>
 
