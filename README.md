@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/⚙️_Status-Desenvolvimento-yellow?style=for-the-badge)](#-sobre-o-projeto)
-[![Sprint](https://img.shields.io/badge/📅_Sprint-1/3-orange?style=for-the-badge)](#-sprint-1)
+[![Sprint](https://img.shields.io/badge/📅_Sprint-2/3-orange?style=for-the-badge)](#-sprint-2)
 [![Docs](https://img.shields.io/badge/📚_Docs-Wiki-4a90e2?style=for-the-badge)](#documentação)
 
 </div>
@@ -564,6 +564,154 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 - **Qualidade**: Redução de retrabalho através de critérios de aceite mais detalhados
 
 > 💡 **Aprendizado-chave:** A Sprint 1 nos mostrou que, apesar dos desafios iniciais de formação de equipe e definição de processos, conseguimos entregar valor. Com os ajustes planejados, estamos confiantes que a Sprint 2 será ainda mais produtiva e fluida.
+
+</details>
+
+</details>
+
+<details open>
+<summary>
+<h2>🔄 Sprint 2 - Implementação e Integração</h2>
+</summary>
+
+### 📅 Período
+
+- **Início:** 16/04/2025  
+- **Término:** 14/05/2025  
+- **Review:** 15/05/2025  
+
+### 🎯 Objetivos Principais
+
+- Implementação do protótipo em HTML e CSS
+- Integração do front-end e back-end
+- Inserir front-end, back-end, e banco de dados em serviços de nuvem
+- Sistema CRUD para criação, edição e alteração de docentes, salas e disciplinas
+
+### 📋 Histórias Planejadas
+
+**Histórias selecionadas para esta Sprint:** H2, H3, H4 e H5
+
+### 📋 Requisitos da Sprint 2
+
+#### Requisitos Funcionais
+
+- **RF1:** Desenvolver telas interativas e fluidas
+- **RF2:** Configurar recursos de fetch
+- **RF3:** Implementar Modais de edição
+- **RF4:** Elaborar sistema de segurança e verificação
+- **RF5:** Ingestão de dados via CSV
+- **RF6:** Modelar e implementar sistema de edição e alteração
+
+#### Requisitos Não Funcionais
+
+- **RNF1:** Obrigatoriedade de Tokens
+- **RNF2:** Consumo do banco através de CSV
+- **RNF3:** Conexão estável entre as aplicações
+- **RNF4:** Desenvolver telas responsivas
+
+### ✅ Critérios de Aceite Gerais
+
+<table>
+  <tr>
+    <th>Área</th>
+    <th>Critérios</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td><b>Design</b></td>
+    <td>
+      - Design Profissional seguindo UX e UI<br>
+      - Paleta de cores padrão CPS<br>
+      - Design estruturado e Padronizado
+    </td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td>
+      - Desenvolvimento das telas<br>
+      - Telas interativas com js<br>
+      - Integração com backend e banco
+    </td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td><b>Backend</b></td>
+    <td>
+      - Sistema de Verificação de segurança<br>
+      - Uso de Tokens para maior segurança<br>
+      - Integração com frontend e banco
+    </td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td><b>Banco de Dados</b></td>
+    <td>
+      - Consumo de CSV para registros<br>
+      - Integração com frontend e backend
+    </td>
+    <td align="center">✅</td>
+  </tr>
+</table>
+
+### 📊 Métricas da Sprint
+
+- **Histórias Planejadas:** 6  
+- **Complexidade Total:** Alta  
+- **Prioridade:** Alta  
+- **Dependências:** Sprint 1  
+
+### 🎥 Review
+
+- **Data:** 15/05/2025  
+- **Duração:** 4:40 minutos  
+- **Formato:** Vídeo não listado no YouTube  
+- **Entrega:** Via Teams para o Focal Point  
+
+### 🎨 Design da Aplicação
+
+#### Paleta de Cores
+
+<div align="center">
+  <table>
+    <tr>
+      <td style="background-color:#B20000; color:white; text-align:center; padding:8px">Vermelho Principal<br>#B20000</td>
+      <td style="background-color:#7E0000; color:white; text-align:center; padding:8px">Vermelho Escuro<br>#7E0000</td>
+      <td style="background-color:#DADADA; color:black; text-align:center; padding:8px">Cinza Claro<br>#DADADA</td>
+      <td style="background-color:#666666; color:white; text-align:center; padding:8px">Cinza Escuro<br>#666666</td>
+      <td style="background-color:#E6E6E6; color:black; text-align:center; padding:8px">Cinza Hover<br>#E6E6E6</td>
+      <td style="background-color:#FFFFFF; color:black; text-align:center; padding:8px; border:1px solid #ccc">Branco<br>#FFFFFF</td>
+      <td style="background-color:#F8F8F8; color:black; text-align:center; padding:8px">Prata Base<br>#F8F8F8</td>
+    </tr>
+  </table>
+</div>
+
+### 💡 Diferenciais de UX
+
+- **Responsividade completa**: Adaptação fluida a qualquer dispositivo
+- **Mapa interativo**: Visualização espacial com status em tempo real
+- **Filtros dinâmicos**: Seleção personalizada de critérios de busca
+- **Experiência intuitiva**: Navegação simplificada e consistente
+
+### 📝 Principais Funcionalidades
+
+| #  | Funcionalidade               | Descrição                                                                                   | Classes Principais                                            |
+|----|------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| 1  | Consultar Grade de Horários  | Permite visualizar os horários de aulas organizados por semestre, disciplina e horário.     | `GradeHorario`, `Disciplina`, `Horario`, `Semestre`           |
+| 2  | Visualizar Mapa Interativo   | Exibe o mapa dos ambientes (salas, laboratórios) e permite selecionar pontos de interesse. | `MapaInterativo`, `Mapa`, `Elemento`, `Ponto`                 |
+| 3  | Gerenciar Dados do Sistema   | Realiza operações CRUD sobre configurações e outros dados persistidos do sistema.           | `Sistema`, `RepositorioDados`, `Configuracao`                 |
+| 4  | Importar Dados via CSV       | Faz upload de arquivos CSV, parseia linhas e registra erros de importação quando ocorrem.   | `CSVImporter`, `CSVParser`, `ErrorHandler`, `Dados`           |
+| 5  | Exportar Grade em PDF        | Gera relatórios em PDF a partir de objetos `GradeHorario` e disponibiliza para download.    | `PDFExporter`, `GradeHorario`, `PDF`                          |
+| 6  | Autenticar no Sistema        | Controla login e logout de usuários, emitindo tokens de sessão com expiração.               | `AuthService`, `Credenciais`, `Usuario`, `Session`            |
+| 7  | Validar Regras de Negócio    | Executa um conjunto de regras antes de persistir alterações, impedindo conflitos.           | `ValidatorEngine`, `BusinessRule`, `ResultadoValidacao`       |
+
+### 🚀 Funcionalidades Implementadas
+
+| Área | Funcionalidades | Status |
+|------|----------------|--------|
+| **Frontend** | Modais de edição, pop ups, navegação | ✅ Concluído |
+| **Backend** | Fetches, Sistema de Verificação e tokens | ✅ Concluído |
+| **Banco de Dados** | Atualização de dados | ✅ Concluído |
 
 </details>
 
