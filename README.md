@@ -446,10 +446,6 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 
 **Épico:** Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos
 
-#### Histórias Selecionadas para a Sprint 2
-
----
-
 #### História 2 – Desenvolvimento do Front-End - Design e Responsividade
 
 **Como usuário,**  
