@@ -882,12 +882,12 @@ O diagrama abaixo ilustra a estrutura de classes do sistema, mostrando as princi
 
 | Classe | Descrição | Atributos Principais | Métodos Principais |
 |--------|-----------|---------------------|-------------------|
-| **Usuario** | Representa os usuários do sistema | - id<br>- nome<br>- email<br>- senha<br>- tipo | - autenticar()<br>- alterarSenha()<br>- validarPermissao() |
-| **Curso** | Gerencia informações dos cursos | - id<br>- nome<br>- duracao<br>- modalidade | - adicionarDisciplina()<br>- listarTurmas()<br>- gerarGrade() |
-| **Disciplina** | Controla as disciplinas do curso | - id<br>- nome<br>- cargaHoraria<br>- professor | - atribuirProfessor()<br>- definirHorario()<br>- verificarConflitos() |
-| **Ambiente** | Gerencia os espaços físicos | - id<br>- nome<br>- tipo<br>- capacidade<br>- status | - verificarDisponibilidade()<br>- atualizarStatus()<br>- reservar() |
-| **GradeHorario** | Organiza os horários das aulas | - id<br>- periodo<br>- curso<br>- disciplinas | - gerarGrade()<br>- validarConflitos()<br>- exportarPDF() |
-| **Professor** | Gerencia dados dos docentes | - id<br>- nome<br>- especialidade<br>- disponibilidade | - definirDisponibilidade()<br>- visualizarAulas()<br>- solicitarAlteracao() |
+| **Usuario** | Representa os usuários do sistema | - id<br>- nome<br>- email<br>- senha | - autenticate()<br>- alterPassword()<br>- validateLogin() |
+| **Curso** | Gerencia informações dos cursos | - id<br>- nome<br>- coordenador<br>- sigla | - createCurso()<br>- getAllCurso()<br>- updateCurso()<br>- deleteCurso() |
+| **Disciplina** | Controla as disciplinas do curso | - id<br>- nome<br>- professor<br>- curso | - createDisciplina()<br>- getAllDisciplina()<br>- updateDisciplina()<br>- deleteDisciplina() |
+| **Ambiente** | Gerencia os espaços físicos | - id<br>- nome<br>- localização | - createAmbiente()<br>- getAllAmbiente()<br>- updateAmbiente()<br>- deleteAmbiente() |
+| **Periodo** | Representa as células da Grade | - id<br>- dia<br>- horário<br>- disciplina<br>- docente<br>- semestre | - createPeriodo()<br>- getAllPeriodo()<br>- updatePeriodo()<br>- deletePeriodo() |
+| **Docente** | Gerencia dados dos docentes | - id<br>- nome<br>- cor | - createDocente()<br>- getAllDocente()<br>- updateDocente()<br>- deleteDocente() |
 
 ### 🔄 Relacionamentos Principais
 
