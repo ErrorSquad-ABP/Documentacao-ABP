@@ -67,7 +67,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 
 > 📌 Veja detalhes completos de cada história no [Product Backlog](#-product-backlog---sprint-2)
 
-### 📋 Requisitos da Sprint 2
+### 📋 Requisitos da Sprint 1
 
 #### Requisitos Funcionais
 
@@ -100,7 +100,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Controle de acesso por perfil<br>
       - Tokens JWT configurados
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Frontend</b></td>
@@ -109,7 +109,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Consulta de horários funcional<br>
       - Gestão de ambientes e docentes
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Backend</b></td>
@@ -118,7 +118,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Testes implementados<br>
       - Integração com frontend
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
   <tr>
     <td><b>Banco de Dados</b></td>
@@ -127,7 +127,7 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
       - Índices implementados<br>
       - Backup configurado
     </td>
-    <td align="center">🟡</td>
+    <td align="center">🟢</td>
   </tr>
 </table>
 
@@ -136,7 +136,6 @@ Atualmente, os horários de aulas são divulgados por meio de informes impressos
 - **Histórias Planejadas:** 5  
 - **Complexidade Total:** Alta  
 - **Prioridade:** Alta  
-- **Dependências:** Sprint 1  
 
 ### 🎥 Review
 
