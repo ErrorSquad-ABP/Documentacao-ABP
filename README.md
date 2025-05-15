@@ -325,7 +325,7 @@ O diagrama abaixo ilustra as principais funcionalidades do sistema e como os dif
 - **Tecnologias**: HTML5, CSS3, JavaScript e bibliotecas auxiliares
 
 #### Arquitetura e Ferramentas
-- **Backend**: Arquitetura baseada em DDD (Domain-Driven Design) com Node.js e Express
+- **Backend**: Padrão MVC com Node.js e Express
 - **Frontend**: Arquitetura componentizada e responsiva
 - **Integração**: API REST com endpoints documentados
 - **Design**: Figma para prototipação e design system
@@ -445,6 +445,10 @@ Para a próxima sprint, estabelecemos indicadores objetivos que nos ajudarão a 
 ### 📝 Product Backlog - Sprint 2
 
 **Épico:** Sistema Web para Gerenciamento e Consulta de Horários e Visualização de Ambientes Acadêmicos
+
+#### Histórias Selecionadas para a Sprint 2
+
+---
 
 #### História 2 – Desenvolvimento do Front-End - Design e Responsividade
 
@@ -599,6 +603,121 @@ Para proteger endpoints e garantir que apenas usuários autorizados tenham acess
 - Tokens JWT são gerados e validados corretamente.
 - Ações são restritas de acordo com o nível de permissão do usuário.
 
+#### História 15 – API RESTful
+
+**Como desenvolvedor,**  
+Eu preciso implementar uma API RESTful para nossa plataforma de gerenciamento de usuários, para que os sistemas front-end e aplicativos móveis possam consumir dados de forma padronizada e segura.
+
+**Tarefas:**
+- Definir os endpoints para operações CRUD de usuários
+- Implementar o padrão de requisições HTTP (GET, POST, PUT, DELETE)
+- Desenvolver a estrutura de resposta em formato JSON
+- Configurar autenticação via token JWT
+- Implementar tratamento de erros e códigos de status HTTP adequados
+- Realizar testes de integração dos endpoints
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- A aplicação deve estar acessível através de uma URL pública fornecida pelo Render
+- O processo de build deve ser concluído sem erros
+- A aplicação deve carregar corretamente e estar funcional em diferentes navegadores
+- O tempo de carregamento inicial não deve exceder 3 segundos
+- As variáveis de ambiente devem estar corretamente configuradas no ambiente de produção
+- O deploy automático deve funcionar corretamente após cada push na branch principal
+- A documentação do processo de deploy deve ser clara e detalhada
+- O sistema deve manter-se dentro dos limites gratuitos do plano do Render
+
+---
+
+#### História 16 – Deploy Front-End
+
+**Como desenvolvedor,**  
+Eu preciso realizar o deploy da aplicação front-end em um ambiente de produção, para disponibilizar o sistema aos usuários finais de forma segura e eficiente.
+
+**Tarefas:**
+- Preparar o projeto para build de produção
+- Configurar variáveis de ambiente para o ambiente de produção
+- Otimizar assets (imagens, CSS, JavaScript) para melhor performance
+- Realizar configuração de HTTPS para comunicação segura
+- Implementar monitoramento e alertas de disponibilidade
+- Configurar pipeline de CI/CD para automatizar o processo de deploy
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- A aplicação deve estar acessível através de uma URL pública
+- O processo de build deve ser concluído sem erros
+- A aplicação deve carregar corretamente e estar funcional em diferentes navegadores (Chrome, Firefox, Safari, Edge)
+- O tempo de carregamento inicial não deve exceder 3 segundos
+- O certificado SSL deve estar válido e implementado corretamente
+- A aplicação deve manter pelo menos 99.5% de disponibilidade
+- O pipeline de CI/CD deve realizar deploy automaticamente após aprovação
+
+---
+
+#### História 17 – Deploy Back-End
+
+**Como desenvolvedor,**  
+Eu preciso realizar o deploy da aplicação back-end em um ambiente de produção, para disponibilizar a API e serviços necessários para o funcionamento completo do sistema.
+
+**Tarefas:**
+- Configurar ambiente de produção no servidor/cloud
+- Preparar o projeto para build de produção
+- Configurar variáveis de ambiente para produção
+- Implementar conexão com o banco de dados de produção
+- Implementar monitoramento de recursos e performance
+- Configurar backup automático do banco de dados
+- Implementar pipeline de CI/CD para automatizar o deploy
+- Configurar HTTPS e certificados SSL
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- O serviço back-end deve estar acessível através de endpoint seguro
+- As conexões com o banco de dados devem ser estabelecidas corretamente
+- Todas as variáveis de ambiente devem estar configuradas adequadamente
+- Os certificados SSL devem estar válidos e implementados corretamente
+- O pipeline de CI/CD deve realizar deploy automaticamente após aprovação
+- Medidas de segurança contra ataques comuns (DDoS, SQL Injection) devem estar implementadas
+
+---
+
+#### História 18 – Deploy Banco de Dados
+
+**Como desenvolvedor,**  
+Eu preciso realizar o deploy do banco de dados em ambiente de produção, para garantir a persistência e integridade dos dados da aplicação de forma segura e eficiente.
+
+**Tarefas:**
+- Configurar servidor/instância de banco de dados no ambiente de produção
+- Criar scripts de migração para estrutura do banco de dados
+- Implementar estratégia de versionamento do esquema do banco
+- Configurar usuários e permissões com privilégios mínimos necessários
+- Implementar mecanismos de backup e recuperação automatizados
+- Configurar replicação para alta disponibilidade
+- Otimizar índices e consultas para melhor performance
+- Implementar monitoramento de performance e uso de recursos
+- Configurar firewall e regras de acesso ao banco de dados
+- Documentar estrutura do banco e procedimentos de manutenção
+- Criar scripts de seed para dados iniciais necessários
+- Implementar estratégia de rotação de logs
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+- O banco de dados deve estar acessível apenas pela aplicação e através de canais seguros
+- As migrações devem ser executadas corretamente sem perda de dados
+- O tempo de resposta para consultas comuns deve ser inferior a 200ms
+- O sistema de backup deve realizar cópias completas diariamente e incrementais a cada 6 horas
+- O processo de recuperação deve ser testado e documentado
+- Devem existir alarmes configurados para uso de CPU, memória e espaço em disco
+- A replicação deve estar funcionando com latência máxima de 5 segundos
+- Os logs do banco de dados devem ser armazenados por pelo menos 30 dias
+- O acesso ao banco deve ser restrito à rede interna ou VPN
+- O banco de dados deve suportar no mínimo 100 conexões simultâneas
+- A documentação deve incluir diagrama ER atualizado e descrição das tabelas principais
+- Todos os dados sensíveis devem estar criptografados em repouso
+
 ---
 
 
@@ -616,20 +735,28 @@ Para proteger endpoints e garantir que apenas usuários autorizados tenham acess
 
 ### ✅ Critérios de Aceite Gerais da Sprint 2
 
-| Critério                                                                                  | Status   |
-|-------------------------------------------------------------------------------------------|:--------:|
-| Sistema responsivo e utilizável em smartphones/tablets                                    | ✅       |
-| Layout não quebra em diferentes tamanhos de tela                                          | ✅       |
-| Navegação correta entre telas e mapas                                                     | ✅       |
-| Filtros por turma, professor, turno e ambiente funcionam                                  | ✅       |
-| Resultados atualizados dinamicamente                                                      | ✅       |
-| Grade de horários e mapa interativo utilizáveis e responsivos                             | ✅       |
-| Consumo de dados do backend funcionando                                                   | ✅       |
-| Upload de CSV processa dados e retorna feedback detalhado                                 | ✅       |
-| Validação de regras de negócio impede conflitos e lista pendências                        | ✅       |
-| Endpoints protegidos por autenticação e autorização (JWT)                                 | ✅       |
-| Ações restritas conforme o nível de permissão do usuário                                  | ✅       |
-| Tokens JWT gerados e validados corretamente                                               | ✅       |
+| Critério                                                                                                 | Status   | Descrição                                                                                                 |
+|----------------------------------------------------------------------------------------------------------|:--------:|-----------------------------------------------------------------------------------------------------------|
+| Sistema responsivo e utilizável em smartphones/tablets                                                   | ✅       | O sistema adapta o layout para diferentes dispositivos, garantindo boa experiência em mobile e desktop.   |
+| Layout não quebra em diferentes tamanhos de tela                                                         | ✅       | Todos os componentes e páginas mantêm integridade visual em qualquer resolução.                           |
+| Navegação correta entre telas e mapas                                                                    | ✅       | O usuário consegue acessar todas as telas e mapas sem erros de navegação.                                 |
+| Filtros por turma, professor, turno e ambiente funcionam                                                 | ✅       | Filtros implementados e funcionando nas telas de grade e mapa.                                            |
+| Resultados atualizados dinamicamente                                                                     | ✅       | Alterações e buscas refletem imediatamente na interface, sem recarregar a página.                         |
+| Grade de horários e mapa interativo utilizáveis e responsivos                                            | ✅       | Componentes principais funcionam e se adaptam a diferentes dispositivos.                                  |
+| Consumo de dados do backend funcionando                                                                  | ✅       | Front-end consome dados da API e exibe corretamente.                                                      |
+| Upload de CSV processa dados e retorna feedback detalhado                                                | ✅       | Sistema aceita CSV, processa dados e informa sucesso/erros ao usuário.                                    |
+| Validação de regras de negócio impede conflitos e lista pendências                                       | ✅       | Sistema bloqueia conflitos de alocação e exibe pendências para revisão.                                   |
+| Endpoints protegidos por autenticação e autorização (JWT)                                                | ✅       | Rotas sensíveis exigem autenticação e autorização conforme perfil.                                        |
+| Ações restritas conforme o nível de permissão do usuário                                                 | ✅       | Usuários só acessam funcionalidades permitidas pelo seu perfil.                                           |
+| Tokens JWT gerados e validados corretamente                                                              | ✅       | Sistema gera, valida e expira tokens de sessão conforme esperado.                                         |
+| API RESTful implementada e acessível publicamente                                                        | ✅       | API segue padrão REST, está documentada e disponível para consumo externo.                                |
+| Deploy do front-end realizado em ambiente de produção                                                    | ✅       | Aplicação front-end está publicada, acessível por URL pública e com HTTPS.                                |
+| Deploy do back-end realizado em ambiente de produção                                                     | ✅       | API está publicada, acessível por endpoint seguro e com variáveis de ambiente configuradas.               |
+| Deploy do banco de dados realizado em ambiente de produção                                               | ✅       | Banco está configurado, seguro, com backup e acessível apenas pela aplicação.                             |
+| Documentação da API acessível e detalhada                                                                | ✅       | Endpoints documentados em ferramenta como Postman ou Insomnia.                                            |
+| Exportação em PDF funcional                                                                              | ✅       | Sistema gera PDF com horários e alocações, pronto para impressão.                                         |
+| Estrutura de pastas do front-end organizada e escalável                                                  | ✅       | Projeto segue boas práticas de organização de diretórios e arquivos.                                      |
+| Estrutura de pastas do back-end organizada e escalável                                                   | ✅       | Projeto back-end estruturado para facilitar manutenção e crescimento.                                     |
 
 ### 🎥 Review
 
@@ -706,7 +833,7 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 - **Mapa interativo**: Visualização espacial com status em tempo real
 - **Filtros dinâmicos**: Seleção personalizada de critérios de busca
 - **Experiência intuitiva**: Navegação simplificada e consistente
-- 
+
 </details>
 
 <details open>
@@ -755,12 +882,12 @@ O diagrama abaixo ilustra a estrutura de classes do sistema, mostrando as princi
 
 | Classe | Descrição | Atributos Principais | Métodos Principais |
 |--------|-----------|---------------------|-------------------|
-| **Usuario** | Representa os usuários do sistema | - id<br>- nome<br>- email<br>- senha | - autenticate()<br>- alterPassword()<br>- validateLogin() |
-| **Curso** | Gerencia informações dos cursos | - id<br>- nome<br>- coordenador<br>- sigla | - createCurso()<br>- getAllCurso()<br>- updateCurso()<br>- deleteCurso() |
-| **Disciplina** | Controla as disciplinas do curso | - id<br>- nome<br>- professor<br>- curso | - createDisciplina()<br>- getAllDisciplina()<br>- updateDisciplina()<br>- deleteDisciplina() |
-| **Ambiente** | Gerencia os espaços físicos | - id<br>- nome<br>- localização | - createAmbiente()<br>- getAllAmbiente()<br>- updateAmbiente()<br>- deleteAmbiente() |
-| **Periodo** | Representa as células da Grade | - id<br>- dia<br>- horário<br>- disciplina<br>- docente<br>- semestre | - createPeriodo()<br>- getAllPeriodo()<br>- updatePeriodo()<br>- deletePeriodo() |
-| **Docente** | Gerencia dados dos docentes | - id<br>- nome<br>- cor | - createDocente()<br>- getAllDocente()<br>- updateDocente()<br>- deleteDocente() |
+| **Usuario** | Representa os usuários do sistema | - id<br>- nome<br>- email<br>- senha<br>- tipo | - autenticar()<br>- alterarSenha()<br>- validarPermissao() |
+| **Curso** | Gerencia informações dos cursos | - id<br>- nome<br>- duracao<br>- modalidade | - adicionarDisciplina()<br>- listarTurmas()<br>- gerarGrade() |
+| **Disciplina** | Controla as disciplinas do curso | - id<br>- nome<br>- cargaHoraria<br>- professor | - atribuirProfessor()<br>- definirHorario()<br>- verificarConflitos() |
+| **Ambiente** | Gerencia os espaços físicos | - id<br>- nome<br>- tipo<br>- capacidade<br>- status | - verificarDisponibilidade()<br>- atualizarStatus()<br>- reservar() |
+| **GradeHorario** | Organiza os horários das aulas | - id<br>- periodo<br>- curso<br>- disciplinas | - gerarGrade()<br>- validarConflitos()<br>- exportarPDF() |
+| **Professor** | Gerencia dados dos docentes | - id<br>- nome<br>- especialidade<br>- disponibilidade | - definirDisponibilidade()<br>- visualizarAulas()<br>- solicitarAlteracao() |
 
 ### 🔄 Relacionamentos Principais
 
@@ -772,6 +899,7 @@ O diagrama abaixo ilustra a estrutura de classes do sistema, mostrando as princi
 
 ### 💡 Características do Sistema
 
+- **Herança**: Implementação de hierarquia de usuários (Admin, Professor, Aluno)
 - **Composição**: Grade de horários composta por disciplinas e ambientes
 - **Agregação**: Cursos agregam disciplinas e turmas
 - **Associação**: Relacionamentos entre professores e disciplinas
@@ -832,7 +960,7 @@ O diagrama abaixo ilustra a estrutura de classes do sistema, mostrando as princi
     <img src="https://github.com/ErrorSquad-ABP/ErrorSquad-Assets1/blob/main/Images/Screenshot%202025-05-14%20234046.png" alt="Burndown Chart da Sprint" width="80%">
 </div>
 
-#### 📋 Análise do Desempenho
+### 📋 Análise do Desempenho
 
 O gráfico apresenta a evolução dos pontos restantes e completados ao longo da sprint, comparando-os com a linha de burndown ideal.
 
