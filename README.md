@@ -1026,7 +1026,40 @@ A Sprint 2 representou um avanço significativo em relação à Sprint 1, consol
 </details>
 
 </details>
+---
+<details open>
+<summary>
+<h2>🔄 Sprint 3 - Refinamento e entrega final</h2>
+</summary>
 
+### 📅 Período
+
+- **Início:** 16/05/2025
+- **Término:** 09/06/2025
+- **Review:** 10/06/2025
+
+### 🎯 Objetivos Principais
+
+- Implementações finais
+- Melhoria na funcionalidade
+- Refinamento do site
+
+### 📝 Product Backlog - Sprint 3
+
+<details open>
+#### Histórias Selecionadas para a Sprint 3
+
+---
+
+#### História 2 – Desenvolvimento do Front-End - Design e Responsividade
+
+**Como usuário,**  
+Quero que o sistema funcione bem em dispositivos móveis e desktop,  
+Para ter uma boa experiência em qualquer contexto.
+
+**Tarefas:**
+
+</details>
 ---
 
 ## 👥 Nossa Equipe
