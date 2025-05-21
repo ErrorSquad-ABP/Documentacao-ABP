@@ -1058,7 +1058,180 @@ Quero que o sistema funcione bem em dispositivos móveis e desktop,
 Para ter uma boa experiência em qualquer contexto.
 
 **Tarefas:**
+- Criar as telas transformando layout do Figma em código.
+- Garantir layout adaptável (CSS puro, sem frameworks).
+- Ajustar elementos para telas menores.
+- Testes em dispositivos diferentes.
 
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+-	Sistema é utilizável em smartphones e tablets.
+-	Layout não quebra em diferentes tamanhos de tela.
+-	Sistema navega entre as telas corretamente.
+
+---
+
+#### História 4 – Desenvolvimento do Front-End - Mapa Interativo
+
+**Como secretaria acadêmica,**  
+Quero que o sistema possua um mapa interativo que exibe as salas e permite visualizar a situação de cada ambiente ao longo do dia,  
+Para facilitar o acompanhamento da ocupação dos espaços.
+
+**Tarefas:**
+- Garantir layout adaptável (CSS puro, sem frameworks).
+- Criar interface de filtro e busca.
+- Endpoint de consulta no backend.
+- Tela de manutenção do mapa.
+- Exibir resultados em formato de mapa responsivo.
+- Tela de exibição do mapa.
+- Ajustar elementos para telas menores.
+- Testes em dispositivos diferentes.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+-	Filtros por turma, professor, turno e ambiente funcionam corretamente
+-	Resultados atualizados dinamicamente
+-	Mapa é utilizável em smartphones e tablets.
+-	Layout não quebra em diferentes tamanhos de tela.
+-	Sistema navega entre os diferentes mapas corretamente.
+
+---
+
+#### História 6 – Interatividade de Ambientes
+
+**Como usuário,**  
+Quero ver um mapa das salas e clicar em cada sala para ver as alocações do dia,
+Para ter uma visão clara e visual da ocupação da faculdade.
+
+**Tarefas:**
+- Implementar interação via click (mostrar horários).
+-	Exibir status (livre/ocupada) no mapa.
+-	Configurar o mapa para receber informações do back-end para a interação.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+-	Mapa exibe status visual de ocupação.
+-	Clique em cada ambiente abre painel com horários detalhados.
+-	Mapa está consumindo as informações do back-end corretamente.
+
+---
+
+#### História 10 – Endpoints CRUD
+
+**Como desenvolvedor Back-End,**  
+Quero criar endpoints para operações CRUD de semestres, cursos, períodos (horários e dias), matérias, docentes e ambientes,
+Para permitir a manipulação desses dados pelo sistema.
+
+**Tarefas:**
+- Criar rotas para cada entidade: 
+  a.	GET /entidade (Listar)
+  b.	POST /entidade (Criar)
+  c.	PUT /entidade/:id (Atualizar)
+  d.	DELETE /entidade/:id (Excluir)
+-	Implementar controladores para cada operação.
+-	Validar campos obrigatórios antes de salvar ou atualizar registros.
+-	Retornar mensagens de erro e códigos de status apropriados.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+-	Endpoints CRUD estão implementados e integrados ao banco de dados.
+-	Operações retornam respostas adequadas (ex.: 201 para criação, 400 para erros de validação).
+-	Validações de dados garantem integridade mínima das informações.
+
+---
+
+#### História 11 – Exportação em PDF
+
+**Como secretaria acadêmica,**  
+Quero gerar um PDF com os horários e alocações,
+Para facilitar a impressão ou o envio digital do cronograma.
+
+**Tarefas:**
+- Criar endpoint de geração de PDF no backend
+-	Definir layout do PDF (mapa e tabelas)
+-	Botão de exportar na interface de consulta
+
+**Prioridade:** Média
+
+**Critérios de Aceite:**
+-	Criar endpoint de geração de PDF no backend
+-	Definir layout do PDF (mapa e tabelas)
+-	Botão de exportar na interface de consulta
+
+---
+
+#### História 14 - Segurança
+
+**Como desenvolvedor,**  
+Quero implementar autenticação e autorização no sistema,  
+Para proteger endpoints e garantir que apenas usuários autorizados tenham acesso.
+
+**Tarefas:**
+- Configurar autenticação utilizando JWT.
+- Implementar middleware de autorização para proteger rotas sensíveis.
+- Criar sistema de roles (ex.: administrador, usuário padrão) para restringir ações específicas.
+- Adicionar controle de sessões para expiração de tokens.
+
+**Prioridade:** Alta
+
+**Critérios de Aceite:**
+-	Endpoints protegidos por autenticação e autorização.
+-	Tokens JWT são gerados e validados corretamente.
+-	Ações são restritas de acordo com o nível de permissão do usuário.
+
+---
+
+#### História 19 - Refinamento
+
+**Como desenvolvedor,**  
+eu preciso analisar o projeto e encontrar aspectos a melhorar e possíveis implementações adicionas.
+
+**Tarefas:**
+-	Analisar as e descrever as melhorias e possíveis implementações;
+-	Aplicar ao projeto e filtrar possíveis modificações incongruentes.
+
+**Prioridade:** Média
+
+**Critérios de Aceite:**
+-	Todas as modificações e implementações, após filtradas, estarem aplicadas no projeto.
+
+---
+
+#### História 20 - Resolução de Erros
+
+**Como desenvolvedor,**  
+eu preciso analisar o funcionamento do projeto, em busca de encontrar e remediar os erros e inconsistências.
+
+**Tarefas:**
+-	Analisar as e descrever os erros e inconsistências;
+-	Implementar as remediações e correções necessárias.
+
+**Prioridade:** Média
+
+**Critérios de Aceite:**
+-	Todas as correções descritas terem sidos implementadas.
+
+---
+
+#### História 21 - Otimização
+
+**Como desenvolvedor,**  
+eu preciso analisar a latência e encontrar possíveis otimizações a serem implementadas em função de aumentar a eficiência e diminuir o tempo de carregamento das interações do projeto.
+
+**Tarefas:**
+-	Analisar as e descrever as otimizações;
+-	Implementar e revisar, por meio de testes, a eficiência das mesmas.
+
+**Prioridade:** Média
+
+**Critérios de Aceite:**
+-	Todas as otimizações estarem implementadas e revistas por meio dos testes.
+
+---
 </details>
 ---
 
