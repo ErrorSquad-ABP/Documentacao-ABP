@@ -1026,7 +1026,9 @@ A Sprint 2 representou um avanço significativo em relação à Sprint 1, consol
 </details>
 
 </details>
+
 ---
+
 <details open>
 <summary>
 <h2>🔄 Sprint 3 - Refinamento e entrega final</h2>
