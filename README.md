@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/⚙️_Status-Desenvolvimento-yellow?style=for-the-badge)](#-sobre-o-projeto)
-[![Sprint](https://img.shields.io/badge/📅_Sprint-2/3-orange?style=for-the-badge)](#-sprint-2)
+[![Status](https://img.shields.io/badge/⚙️_Status-Concluido-green?style=for-the-badge)](#-sobre-o-projeto)
+[![Sprint](https://img.shields.io/badge/📅_Sprint-3/3-orange?style=for-the-badge)](#-sprint-3)
 [![Docs](https://img.shields.io/badge/📚_Docs-Wiki-4a90e2?style=for-the-badge)](#documentação)
 
 </div>
