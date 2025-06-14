@@ -1171,8 +1171,8 @@ A Sprint 2 representou um avanço significativo em relação à Sprint 1, consol
 ### 📅 Período
 
 - **Início:** 16/05/2025
-- **Término:** 09/06/2025
-- **Review:** 10/06/2025
+- **Término:** 16/06/2025
+- **Review:** 15/06/2025
 
 ### 🎯 Objetivos Principais
 
