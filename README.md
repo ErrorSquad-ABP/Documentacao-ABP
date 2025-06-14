@@ -1372,8 +1372,7 @@ eu preciso analisar a latência e encontrar possíveis otimizações a serem imp
 
 </details>
 
-<details open>
-<summary> 📋 Requisitos da Sprint 3</summary>
+### 📋 Requisitos da Sprint 3
 
 #### Requisitos Funcionais
 
@@ -1497,8 +1496,6 @@ A paleta utiliza tons de vermelho para elementos de destaque, combinados com cin
 - **Navegação otimizada**: Interface intuitiva e fluxo simplificado
 </details>
 
-</details>
-
 <details open>
 <summary><b>🚀 Funcionalidades Implementadas</b></summary>
 
@@ -1549,7 +1546,7 @@ A paleta utiliza tons de vermelho para elementos de destaque, combinados com cin
 
 ### 📋 Sprint final do projeto
 
- - Entrega Completa. A equipe demonstrou máxima maturidade técnica, entregando o projeto completo com excelência. Alcançamos a maior velocidade média da equipe (30 pontos/semana) e produtividade excepcional (12 cards/semana). 
+ - Entrega Completa. A equipe demonstrou máxima maturidade técnica, entregando o projeto completo com excelência. Alcançamos a maior velocidade média da equipe (30 pontos/semana) e produtividade excepcional (12 cards/semana). 
 
 ---
 
@@ -1594,7 +1591,7 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 | *Produtividade (cards/semana)* | 6 |  8 | 12 | +50% |
 | *Eficiência temporal* | 60% | 86.96% | 93.33% | +7.37% |
 | *Qualidade (retrabalho)* | 15% | 8% | 0% | -100% |
-| *Cobertura de testes* | 60% | 80% | 95% | +35% |
+| *Cobertura de testes* | 60% | 80% | 95% | +35% |
 
 ---
 
@@ -1677,10 +1674,10 @@ Com o projeto entregue com excelência técnica e aprovação, a equipe ErrorSqu
 
 #### 💡 Reflexão final:
 
-A jornada das 3 sprints demonstrou que crescimento sustentável, qualidade técnica e entrega de valor não são conceitos conflitantes, mas sim pilares complementares de projetos verdadeiramente exitosos.
+A jornada das 3 sprints demonstrou que crescimento sustentável, qualidade técnica e entrega de valor não são conceitos conflitantes, mas sim pilares complementares de projetos verdadeiramente exitosos.
 
 ---
-
+</details>
 </details>
 
 ## 👥 Nossa Equipe
