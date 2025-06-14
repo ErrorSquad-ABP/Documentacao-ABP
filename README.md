@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Site](https://img.shields.io/badge/🌐_Site-Online-000000?style=for-the-badge)](https://gerenciamento-pedagogico.vercel.app/)
 [![Status](https://img.shields.io/badge/⚙️_Status-Concluido-green?style=for-the-badge)](#-sobre-o-projeto)
 [![Sprint](https://img.shields.io/badge/📅_Sprint-3/3-orange?style=for-the-badge)](#-sprint-3)
 [![Docs](https://img.shields.io/badge/📚_Docs-Wiki-4a90e2?style=for-the-badge)](#documentação)
@@ -1452,7 +1453,7 @@ eu preciso analisar a latência e encontrar possíveis otimizações a serem imp
 </details>
 
 <details open>
-<summary><b>🎨 Design do Site</b></summary>
+<summary><b>🎨 Site Definitivo</b></summary>
 
 ### 🔗 Acesso ao Site
 <div align="center">
