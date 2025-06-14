@@ -263,7 +263,7 @@ Para ter uma visão clara e visual da ocupação da faculdade.
 </details>
 
 <details open>
-<summary><b>Design do site</b></summary>
+<summary><b>🎨 Design do site</b></summary>
 
 ### 🔗 Acesso ao Protótipo
 
