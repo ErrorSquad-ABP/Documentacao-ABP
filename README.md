@@ -1607,12 +1607,11 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 
 #### ✅ O que funcionou bem
 
-- **Entrega 100% completa com antecedência:** Todas as 48 histórias planejadas foram entregues 2 dias antes do prazo, demonstrando planejamento eficaz e execução precisa.
+- **Entrega 100% completa com antecedência:** Todas as histórias planejadas foram entregues 2 dias antes do prazo, demonstrando planejamento eficaz e execução precisa.
 - **Velocidade record:** Alcançamos 30 pontos por semana, um aumento de 50% em relação à Sprint 1 e 100% em relação à Sprint 2.
 - **Produtividade excepcional:** 12 cards por semana, estabelecendo um novo benchmark de eficiência para a equipe.
 - **Zero retrabalho:** Pela primeira vez, não houve necessidade de refatoração ou correções após a entrega.
 - **Documentação técnica completa:** Manual do usuário, documentação da API e guias de deploy finalizados com qualidade profissional.
-- **Deploy sem intercorrências:** Pipeline CI/CD funcionou perfeitamente, com deploy automatizado e rollback testado.
 - **Qualidade superior:** Cobertura de testes atingiu 95%, com zero bugs críticos reportados.
 
 ---
@@ -1621,7 +1620,7 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 
 - **Arquitetura consolidada:** Sistema escalável e bem estruturado, preparado para futuras expansões.
 - **Performance otimizada:** Tempo de resposta das APIs < 100ms, carregamento de páginas < 2 segundos.
-- **Segurança robusta:** A Implementação completa de OAuth 2.0, criptografia de dados sensíveis e proteção contra ataques comuns.
+- **Segurança robusta:** A Implementação completa de OAuth, criptografia de dados sensíveis e proteção contra ataques comuns.
 - **UX/UI polida:** Interface intuitiva com 98% de aprovação nos testes de usabilidade.
 - **Integração perfeita:** Front-end, back-end e banco de dados funcionando em harmonia total.
 - **Monitoramento ativo:** Dashboards de métricas em tempo real e alertas automáticos configurados.
@@ -1645,15 +1644,13 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 - **Complexidade técnica máxima:** Integração de múltiplos microserviços, cache distribuído e processamento assíncrono.
 - **Pressão de deadline:** Entrega final do projeto com stakeholders observando cada progresso.
 - **Integração de sistemas legados:** Compatibilização com sistemas existentes da FATEC sem interrupção dos serviços.
-- **Escalabilidade:** Arquitetura preparada para suportar toda a instituição (estimativa: 5.000+ usuários simultâneos).
-- **Compliance e segurança:** Adequação à LGPD e padrões de segurança institucionais.
+- **Escalabilidade:** Arquitetura preparada para suportar toda a instituição. 
 
 ---
 
 #### 🧠 Lições aprendidas consolidadas
 
 - **Planejamento antecipado compensa:** O tempo investido em arquitetura nas primeiras sprints facilitou implementações complexas nesta fase final.
-- **Automação é investimento, não custo:** Pipeline CI/CD economizou 40% do tempo de deploy e eliminou erros humanos.
 - **Comunicação transparente acelera entregas:** Daily Scrums de 10 minutos mantiveram alinhamento total da equipe.
 - **Documentação técnica salva projetos:** Documentação detalhada permitiu onboarding rápido e transferência de conhecimento eficiente.
 - **Testes não são opcionais:** Cobertura alta de testes garantiu deploy sem medo e refatorações seguras.
@@ -1669,8 +1666,6 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 | *Comunicação (dailys registradas)*  | 100%                   | 100%                 | ✅ Concluído    |
 | *Redução de bugs*                   | < 5 bugs críticos      | 0 bugs críticos      | ✅ Concluído    |
 | *Performance*                       | < 200ms APIs           | < 100ms APIs         | ✅ Concluído    |
-| *Satisfação do cliente*             | > 85%                  | 98%                  | ✅ Concluído    |
-
 
 ---
 
@@ -1680,7 +1675,6 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 - **Base de código reutilizável:** Componentes e módulos prontos para reuso em outros sistemas.
 - **Documentação como referência:** Processo documentado serve como template para outras equipes.
 - **Equipe consolidada:** DTime maduro e alinhado, preparado para desafios ainda maiores.
-- **Relacionamento com stakeholders:** Confiança estabelecida para futuras parcerias.
 
 ---
 
@@ -1690,7 +1684,6 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 - **Event Sourcing para auditoria:** Rastreabilidade completa de todas as operações.
 - **Cache inteligente:** Redução de 70% na carga do banco de dados.
 - **API GraphQL:** Consultas eficientes e flexíveis para o frontend.
-- **Containerização completa:** Deploy facilitado com Docker e Kubernetes.
 
 ---
 
@@ -1716,10 +1709,9 @@ A Sprint 3 não foi apenas a conclusão de um projeto, mas a consolidação de u
 
 #### 🚀 Próximos horizontes
 
-Com o projeto entregue com excelência técnica e aprovação unânime dos stakeholders, a equipe ErrorSquad está preparada para:
+Com o projeto entregue com excelência técnica e aprovação, a equipe ErrorSquad está preparada para:
 
 - **Liderar projetos de maior complexidade e escala**
-- **Mentorizar outras equipes em metodologias ágeis**
 - **Contribuir para a evolução dos padrões de desenvolvimento da instituição**
 - **Expandir o sistema atual com novas funcionalidades baseadas no feedback dos usuários**
 
