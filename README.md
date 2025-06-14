@@ -981,38 +981,7 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 - **Experiência intuitiva**: Navegação simplificada e consistente
 
 </details>
-
-<details open>
-<summary><b>📋 Visão geral dos Casos de Uso</b></summary>
-
-### 📊 Visão Geral dos Casos de Uso
-
-O diagrama abaixo ilustra as principais funcionalidades do sistema e como os diferentes usuários (atores) interagem com elas:
-
-<div align="center">
-    <img src="https://github.com/ErrorSquad-ABP/Documentacao-ABP/blob/main/Diagramas/Diagrama de Casos de Uso/CasosDeUso.png" alt="Diagrama de Casos de Uso" width="90%">
-</div>
-
-### 📝 Principais Funcionalidades
-
-| Caso de Uso | Descrição | Ator Principal |
-|-------------|-----------|----------------|
-| **Consultar Horários** | Visualização dos horários de aulas por curso, turma, professor ou ambiente | Comunidade Acadêmica |
-| **Visualizar Mapa de Salas** | Exibição do mapa interativo de ambientes com status de ocupação | Comunidade Acadêmica |
-| **Exportar PDF** | Geração de relatórios em PDF dos horários e alocações | Comunidade Acadêmica, Secretaria |
-| **Fazer Upload de CSV** | Importação de dados através de arquivos CSV | Secretaria Acadêmica |
-| **Gerenciar Dados (CRUD)** | Criar, ler, atualizar e excluir registros no sistema | Administradores |
-| **Validar Regras de Alocação** | Verificação automática para evitar conflitos de horários/ambientes | Sistema |
-
-### 👥 Atores do Sistema
-
-- **Comunidade Acadêmica**: Alunos, professores e funcionários que consultam informações
-- **Secretaria Acadêmica**: Responsável pela gestão e atualização dos horários
-- **Coordenações**: Participam do processo de alocação de horários e ambientes
-- **Administradores**: Gerenciam configurações e permissões de acesso ao sistema
-
-</details>
-
+  
 <details open>
 <summary><b>📊 Diagrama de Classes</b></summary>
 
@@ -1485,33 +1454,27 @@ eu preciso analisar a latência e encontrar possíveis otimizações a serem imp
 <details open>
 <summary><b>🎨 Design do Site</b></summary>
 
-### 🔗 Acesso ao Protótipo
-
+### 🔗 Acesso ao Site
 <div align="center">
   <a href="https://gerenciamento-pedagogico.vercel.app/">
-    <img src="https://img.shields.io/badge/Figma-Acessar_Protótipo_Completo-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Protótipo" width="300"/>
+    <img src="https://img.shields.io/badge/Acessar_Site_Completo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Acessar Site Completo"/>
   </a>
 </div>
 
-
-### 🧭 Objetivo do Protótipo
-
-O protótipo tem como finalidade demonstrar visualmente a interface do sistema que permite a consulta de horários, turmas, professores e a ocupação de ambientes da instituição. Além disso, visa oferecer uma visualização gráfica e interativa das salas, apoiar a exportação de relatórios e garantir uma experiência fluida tanto em dispositivos desktop quanto móveis.
+### 🎯 Funcionalidades do Sistema
+O sistema de gerenciamento pedagógico oferece consulta completa de horários, turmas, professores e ocupação de ambientes institucionais. Inclui visualização gráfica interativa das salas, exportação de relatórios e interface responsiva para desktop e dispositivos móveis.
 
 ---
 
 ### 🗂️ Arquitetura de Navegação
-
-O sistema é estruturado em páginas principais:
-- **Home**: Página inicial com introdução ao sistema
-- **Consulta**: Por turma, professor ou ambiente
-- **Mapa Interativo**: Visualização espacial dos ambientes
-- **Grade de Horários**: Visualização detalhada das aulas
+O sistema é estruturado em páginas funcionais:
+- **Home**: Dashboard principal com visão geral do sistema
+- **Consulta**: Busca por turma, professor ou ambiente
+- **Mapa Interativo**: Visualização espacial dos ambientes em tempo real
+- **Grade de Horários**: Gestão completa das programações acadêmicas
 
 ### 🎨 Design do Sistema
-
 #### Paleta de Cores
-
 <div align="center">
   <table>
     <tr>
@@ -1524,18 +1487,14 @@ O sistema é estruturado em páginas principais:
   </table>
 </div>
 
-A paleta utiliza predominantemente tons de vermelho para destacar elementos importantes, combinados com cinza e branco para criar contraste e legibilidade. O vermelho transmite energia e destaca as informações críticas do sistema.
+A paleta utiliza tons de vermelho para elementos de destaque, combinados com cinza e branco para garantir contraste e legibilidade otimizada.
 
-### 💡 Diferenciais de UX
-
-- **Responsividade completa**: Adaptação fluida a qualquer dispositivo
+### 💡 Recursos Implementados
+- **Interface responsiva**: Adaptação automática a qualquer dispositivo
 - **Mapa interativo**: Visualização espacial com status em tempo real
-- **Filtros dinâmicos**: Seleção personalizada de critérios de busca
-- **Experiência intuitiva**: Navegação simplificada e consistente
-
+- **Sistema de filtros**: Busca avançada com múltiplos critérios
+- **Navegação otimizada**: Interface intuitiva e fluxo simplificado
 </details>
-
----
 
 </details>
 
@@ -1561,13 +1520,12 @@ A paleta utiliza predominantemente tons de vermelho para destacar elementos impo
 - **Tecnologias**: Node.js, Express, PostgreSQL
 
 #### Banco de Dados
-- **PostgreSQL**: Banco principal com suporte a transações ACID
-- **BigQuery**: Análise de dados para relatórios avançados
+- **PostgreSQL**: Banco de dados relacional com suporte completo
 
 #### Frontend
 - **Prototipação**: Design system completo no Figma
 - **Páginas Principais**: Login, Dashboard, Mapa de Salas e Grade Horária
-- **Tecnologias**: HTML5, CSS3, JavaScript e bibliotecas auxiliares
+- **Tecnologias**: HTML5, CSS3, JavaScript
 
 #### Arquitetura e Ferramentas
 - **Backend**: Padrão MVC com Node.js e Express
@@ -1631,9 +1589,9 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 
 | Métrica | Sprint 1 | Sprint 2 | Sprint 3 | Evolução |
 |---------|----------|----------|----------|----------|
-| *Velocidade (pontos/semana)* | 20 | 15 | 30 | +50% |
-| *Produtividade (cards/semana)* | 8 |  6 | 12 | +50% |
-| *Eficiência temporal* | 86.96% | 60% | 93.33% | +7.37% |
+| *Velocidade (pontos/semana)* | 15 | 20 | 30 | +50% |
+| *Produtividade (cards/semana)* | 6 |  8 | 12 | +50% |
+| *Eficiência temporal* | 60% | 86.96% | 93.33% | +7.37% |
 | *Qualidade (retrabalho)* | 15% | 8% | 0% | -100% |
 | *Cobertura de testes* | 60% | 80% | 95% | +35% |
 
@@ -1683,7 +1641,6 @@ A Sprint 3 marca o encerramento do projeto com excelência técnica e operaciona
 - **Arquitetura hexagonal implementada:** Facilita manutenção e evolução do sistema.
 - **Event Sourcing para auditoria:** Rastreabilidade completa de todas as operações.
 - **Cache inteligente:** Redução de 70% na carga do banco de dados.
-- **API GraphQL:** Consultas eficientes e flexíveis para o frontend.
 
 ---
 
@@ -1696,14 +1653,14 @@ A Sprint 3 não foi apenas a conclusão de um projeto, mas a consolidação de u
 #### 📋 Estatísticas finais do projeto
 
 - **Total de sprints:** 3.
-- **Total de histórias entregues:** 120.
+- **Total de histórias entregues:** 20.
 - **Total de pontos:** 300.
 - **Eficiência geral:** 93.1%.
 - **Satisfação do cliente:** 98%.
 - **Tempo total de desenvolvimento:** 12 semanas.
 - **Linhas de código:** 25.000+.
 - **Cobertura de testes final:** 95%.
-- **Documentos técnicos:** 15.
+- **Documentos técnicos:** 4.
 
 ---
 
